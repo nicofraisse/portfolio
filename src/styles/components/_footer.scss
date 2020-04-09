@@ -1,0 +1,19 @@
+.footer-container  {
+  background-color: $white;
+  position: relative;
+  width: 100vw;
+  height: 92px;
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0em 5em;
+  width: 100%;
+  max-width: 1024px;
+  clear: both;
+}

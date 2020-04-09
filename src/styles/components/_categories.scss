@@ -1,0 +1,27 @@
+.categories {
+  display: flex;
+  // align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  margin-bottom: 64px;
+}
+
+.category {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  flex: 0 0 112px;
+  height: 112px;
+  text-align: center;
+  img {
+    width: 72px;
+    height: 72px;
+    object-fit: cover;
+  }
+
+  span {
+    color: $grey
+
+  }
+}

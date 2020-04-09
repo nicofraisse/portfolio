@@ -1,0 +1,40 @@
+.header-container  {
+  background-color: $white;
+  width: 100vw;
+  height: 160px;
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0em 5em;
+  width: 100%;
+  max-width: 1024px;
+}
+
+.header-links {
+  display: flex;
+  justify-content: space-between;
+  width: 280px;
+}
+
+.header-logo {
+  position: relative;
+  top: -8px;
+}
+
+@media only screen and (max-width: $Phones) {
+  .header {
+    padding: 0em 2em;
+  }
+  .header-links {
+    width: 260px;
+  }
+}
+
+
