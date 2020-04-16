@@ -9,11 +9,11 @@ import Categories from "../components/categories.js"
 export default () =>
 
   <Main>
-
-
     <Container width='large'>
       <h1>Recent Work</h1>
-      <Categories />
+      <div style={{width: '100%', display: 'flex', justifyContent: 'center'}}>
+        <Categories />
+      </div>
       <Project
       img='bandwizard.png'
       title='BandWizard'

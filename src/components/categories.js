@@ -33,7 +33,10 @@ const Categories = (props) => (
       <img src="wordpress.png" alt="wordpress"/>
       <span>WordPress</span>
     </div>
-
+    <div className="category">
+      <img src="python.png" alt="python"/>
+      <span>Python</span>
+    </div>
   </div>
 
 );

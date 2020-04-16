@@ -16,7 +16,7 @@ const Header = () => {
         <Link to="/">Code</Link>
         <Link to="/photography">Photography</Link>
         <Link to="/about">About</Link>
-        <Link to="/contact">Contact</Link>
+        <a href="mailto:ni.fraisse@gmail.com?subject=hey">Contact</a>
       </div>
     </div>
   </div>
