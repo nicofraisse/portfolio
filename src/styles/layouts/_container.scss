@@ -1,9 +1,10 @@
-  .container {
-    padding: 0em 4em 4em 4em;
-    margin: 0 auto;
-    overflow: auto;
-    max-width: 1024px;
-  }
+.container {
+  padding-right: 4em;
+  padding-left: 4em;
+  margin: 0 auto;
+  overflow: auto;
+  max-width: 1024px;
+}
 
 
 @media (min-width: $Desktops) {

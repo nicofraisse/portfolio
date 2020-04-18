@@ -6,7 +6,7 @@ import Logo from "./logo.js"
 const Header = () => {
   return(
   <div className="header-container">
-    <div className="header">
+    <div className="header container">
       <div className="header-logo">
         <Link to="/">
           <Logo />
@@ -14,7 +14,7 @@ const Header = () => {
       </div>
       <div className="header-links">
         <Link to="/code">Code</Link>
-        <Link to="/photography">Photography</Link>
+        <Link to="/photography">Photo</Link>
         <Link to="/about">About</Link>
         <a href="mailto:ni.fraisse@gmail.com?subject=hey">Contact</a>
       </div>

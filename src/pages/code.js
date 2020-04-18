@@ -11,9 +11,9 @@ export default () =>
   <Main>
     <Container>
       <h1>Recent Work</h1>
-      <div style={{width: '100%', display: 'flex', justifyContent: 'center'}}>
-        <Categories />
-      </div>
+
+
+      <Categories />
       <Project
       img='bandwizard.png'
       title='BandWizard'

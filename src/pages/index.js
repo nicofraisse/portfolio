@@ -10,10 +10,10 @@ export default () =>
 
   <Main>
     <Container>
-      <h3>I'm a web developer based in Montreal, building front-end and full-stack projects.</h3>
-      <div style={{width: '100%', display: 'flex', justifyContent: 'center'}}>
-        <Categories />
-      </div>
+      <h1>I'm a web developer based in Montreal, building front-end and full-stack projects.</h1>
+      <p>View all projects --></p>
+      <p>Discover photography --></p>
+
 
     </Container>
   </Main>

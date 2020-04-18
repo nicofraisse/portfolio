@@ -3,42 +3,29 @@ import React from "react"
 import '../styles/imports.scss'
 
 const Categories = (props) => (
-
-  <div className="categories">
+  <div className="categories sticky-onscroll">
     <div className="category">
-      <img src="rails.png" alt="rails"/>
+      <span style={{textDecoration: 'underline'}}>Select All</span>
+    </div>
+    <div className="category">
       <span>Ruby On Rails</span>
     </div>
     <div className="category">
-      <img src="html.png" alt="html"/>
-      <span>HTML</span>
+      <span>Vanilla JavaScript</span>
     </div>
     <div className="category">
-      <img src="css.png" alt="css"/>
-      <span>CSS</span>
-    </div>
-    <div className="category">
-      <img src="javascript.png" alt="javascript"/>
-      <span>JavaScript</span>
-    </div>
-    <div className="category">
-      <img src="react.png" alt="react"/>
       <span>React.js</span>
     </div>
     <div className="category">
-      <img src="gatsby.png" alt="gatsby"/>
       <span>Gatsby.js</span>
     </div>
     <div className="category">
-      <img src="wordpress.png" alt="wordpress"/>
       <span>WordPress</span>
     </div>
     <div className="category">
-      <img src="python.png" alt="python"/>
       <span>Python</span>
     </div>
   </div>
-
 );
 
 export default Categories;
