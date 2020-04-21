@@ -4,16 +4,28 @@ import Container from "../layouts/container.js"
 import { Link } from "gatsby"
 import '../styles/imports.scss'
 import Project from "../components/project.js"
-import Categories from "../components/categories.js"
+import Toolkit from "../components/toolkit.js"
 
 export default () =>
 
   <Main>
     <Container>
-      <h1>Recent Work</h1>
-      <div style={{width: '100%', display: 'flex', justifyContent: 'center'}}>
-        <Categories />
+      <div className="title-arrows d-flex">
+        <div>
+          <img src="back.png" alt=""/>
+        </div>
+        <h2>Web Development</h2>
+        <div>
+          <img src="next.png" alt=""/>
+        </div>
       </div>
+
+      <a href="#" className="btn btn-primary">Hi</a>
+
+      <div className="section">
+        <Toolkit />
+      </div>
+
       <Project
       img='bandwizard.png'
       title='BandWizard'

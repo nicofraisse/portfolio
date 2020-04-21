@@ -3,7 +3,6 @@ import React from "react"
 import '../styles/imports.scss'
 
 const Project = (props) => {
-  console.log(props)
   const projectIcons = props.icons.map((icon) =>
     <li key={icon} className='skill-icon'><img src={icon} alt=""/></li>
   );

@@ -1,5 +1,6 @@
 // External imports
 @import url('https://fonts.googleapis.com/css?family=Muli:400,700&display=swap');
+@import url("https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css");
 
 
 // Internal imports
@@ -12,11 +13,13 @@
 @import './components/footer';
 @import './components/flick';
 @import './components/project';
-@import './components/categories';
+@import './components/toolkit';
 
 @import './layouts/main';
 @import './layouts/container';
+@import './layouts/utils';
 @import './components/logo';
 
 @import './pages/photography';
+@import './pages/code';
 
