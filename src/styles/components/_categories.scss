@@ -1,0 +1,19 @@
+.categories {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 64px;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.sticky-onscroll {
+  // position: fixed;
+}
+
+.category {
+  text-align: center;
+
+  span {
+    color: $grey125
+  }
+}

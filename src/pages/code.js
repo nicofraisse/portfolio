@@ -9,6 +9,7 @@ import Toolkit from "../components/toolkit.js"
 export default () =>
 
   <Main>
+
     <div className="container-md">
       <div className="d-flex my-3 my-sm-5 justify-content-center align-items-center">
         <img src="back.png" className="arrow px-5" alt=""/>
@@ -18,7 +19,6 @@ export default () =>
 
 
       <Toolkit />
-
 
       <Project
       img='bandwizard.png'
