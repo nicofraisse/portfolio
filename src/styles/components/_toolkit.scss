@@ -1,33 +1,10 @@
-.toolkit-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 16px;
-  margin-bottom: 48px;
-}
-
 .toolkit {
   max-width: 600px;
-  // margin: 0 auto;
   .main-tools {
     font-size: 22px;
     cursor: pointer;
   }
   .misc-tools > p {
     color: $grey150;
-  }
-
-  > div > p {
-    text-align: justify;
-  }
-}
-
-@media (max-width: $Phones) {
-  .toolkit-container {
-    flex-direction: column;
-  }
-
-  .toolkit > div > p{
-    text-align: center;
   }
 }

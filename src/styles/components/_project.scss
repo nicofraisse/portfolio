@@ -1,33 +1,12 @@
-.project {
-  display: flex;
-  margin: 4em 0;
-}
-
-.project-description {
-  margin: auto 0;
-}
-
 .project-img {
   object-fit: cover;
   height: 100%;
   border-radius: 8px;
   box-shadow: 0px 0px 20px rgba(100, 100, 100, .15);
-  margin: 0 2.5em 0 .5em;
-  transition: 0.6s;
+  transition: 0.3s;
   &:hover {
-    transform: scale(1.04);
     cursor: pointer;
   }
-}
-
-.skill-list {
-  margin: 20px 0;
-  text-align: center
-}
-
-.skill-icon {
-  display: inline;
-  list-style-type:none;
 }
 
 .skill-icon img {
@@ -36,58 +15,37 @@
   margin: 8px;
 }
 
-.project-source {
-  text-align: center;
-  display: block;
-}
-
 .reverse {
   flex-direction: row-reverse;
-  .project-img {
-    margin: 0 .5em 0 2.5em;
+}
+
+
+@media (min-width: $LG) {
+  .project-img:hover {
+    transform: scale(1.025);
   }
 }
 
-@media (max-width: $Tablets) {
-
+@media (max-width: $LG) {
   .project-img {
-    max-width: 40vw;
-    border-radius: 8px;
-    box-shadow: 0px 0px 16px rgba(0, 0, 0, .2);
+    max-width: 36vw;
     margin: 8px 1.5em 0 .5em;
   }
-
-  .reverse {
-    margin-top: 0px !important;
-    .project-img {
-      margin: 24px .5em 0 1.5em !important;
-    }
-  }
 }
 
-@media (max-width: $Phones) {
+@media (max-width: $MD) {
   .project {
     flex-direction: column !important;
     justify-content: center;
     align-items: center;
-    margin-bottom: 2em;
   }
-
   .project-description {
-    margin-top: 24px;
     text-align: left !important;
-
     h3 {
       text-align: center;
     }
   }
-
   .project-img {
-    object-fit: cover;
-    height: 100%;
     max-width: calc(100vw - 3em);
-    border-radius: 8px;
-    box-shadow: 0px 0px 16px rgba(0, 0, 0, .2);
-    margin: 0 2.5em;
   }
 }

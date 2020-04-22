@@ -4,8 +4,6 @@ import { Link } from "gatsby"
 import "../styles/imports.scss"
 import Logo from "./logo.js"
 
-
-
 const Header = () => {
   // for header opaque on scroll
   const [headerBig, setHeaderBig] = useState(false)
@@ -24,21 +22,18 @@ const Header = () => {
   }, [headerBig])
 
   return (
-    <div className="header-container d-flex" id="header">
-      <div className="header container d-flex">
-        <div>
-          <img src="moon.png" style={{width: 24}} alt=""/>
-        </div>
-        <div className="header-logo">
+    <div className="vw-100" id="header">
+      <div className="container h-100 d-flex align-items-center justify-content-between">
+        <div id="header-logo">
           <Link to="/">
             <Logo />
           </Link>
         </div>
-        <div className="header-links d-flex">
-          <Link to="/code">code</Link>
-          <Link to="/photography">photo</Link>
-          <Link to="/about">about</Link>
-          <a href="mailto:ni.fraisse@gmail.com?subject=hey">contact</a>
+        <div className="d-flex align-items-center">
+          <Link to="/code" className="mx-1 mx-sm-2 mx-md-3">code</Link>
+          <Link to="/photography" className="mx-1 mx-sm-2 mx-md-3">photo</Link>
+          <Link to="/about" className="mx-1 mx-sm-2 mx-md-3 active-link">about</Link>
+          <a href="mailto:ni.fraisse@gmail.com?subject=hey" className="mx-1 mx-sm-2 mx-md-3">contact</a>
         </div>
       </div>
     </div>

@@ -1,3 +1,22 @@
-.d-flex {
-  display: flex;
+.social-icon {
+  font-size: 48px;
+  transition: 0.1s;
+  &:hover {
+    color: #575ff7;
+  }
 }
+
+.avatar-round {
+  width: 240px;
+  // height: 240px;
+  object-fit: cover;
+  // border-radius: 50%;
+  box-shadow: 0 0 30px rgba(0,0,0,0.1)
+}
+
+@media (min-width: $Phones) {
+  .text-sm-justify {
+    text-align: justify !important;
+  }
+}
+

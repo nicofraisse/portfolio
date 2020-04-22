@@ -1,42 +1,26 @@
-.header-container  {
-  height: 184px;
+#header {
+  overflow: hidden;
   background-color: rgb(254,253,252);
-  width: 100vw;
+  box-shadow: 0px 0px 20px rgba(0,0,0,0.1);
+  height: 184px;
   position: sticky;
   top: 0;
-  justify-content: center;
-  box-shadow: 0px 0px 20px rgba(0,0,0,0.1);
   z-index: 10;
   overflow: hidden;
 }
 
-.header {
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  max-width: 1024px;
-  // overflow: hidden;
-    overflow: hidden;
-
-}
-
-.header-links {
-  justify-content: space-between;
-  width: 280px;
-}
-
-.header-logo {
+#header-logo {
   position: relative;
   top: -8px;
 }
 
-@media only screen and (max-width: $Phones) {
-  .header {
-    padding: 0em 2em;
-  }
-  .header-links {
-    width: 260px;
+.active-link {
+  background-color: rgb(141, 167, 221);
+  padding: 4px 12px;
+  border-radius: 4px;
+  color: white;
+
+  &:hover {
+    color: white;
   }
 }
-
-

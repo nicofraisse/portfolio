@@ -1,16 +1,10 @@
-.title-arrows {
-  // border: 1px solid black;
-  margin-top: 64px;
-  margin-bottom: 40px;
-  align-items: center;
-  justify-content: space-around;
-  > div > img {
-    width: 40px;
-    opacity: 0.3;
-    transition: 0.3s;
-    &:hover {
-      opacity: 0.9;
-      cursor: pointer;
-    }
+.arrow {
+  height: 32px;
+  object-fit: cover;
+  opacity: 0.3;
+  transition: 0.3s;
+  &:hover {
+    opacity: 0.9;
+    cursor: pointer;
   }
 }
