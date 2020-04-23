@@ -1,17 +1,29 @@
 .social-icon {
-  font-size: 48px;
+  font-size: 40px;
   transition: 0.1s;
   &:hover {
     color: #575ff7;
   }
 }
 
-.avatar-round {
-  width: 240px;
-  // height: 240px;
-  object-fit: cover;
-  // border-radius: 50%;
-  box-shadow: 0 0 30px rgba(0,0,0,0.1)
+.icon-tooltip {
+  color: white;
+  padding: 0;
+  margin: 0;
+  font-size: 18px;
+}
+
+.profile-picture {
+  box-shadow: 0 0 30px rgba(0,0,0,0.1);
+  width: 100%;
+}
+
+@media (max-width: $MD) {
+  .profile-picture {
+    margin: 0 auto;
+    width: 50%;
+    display: block;
+  }
 }
 
 @media (min-width: $Phones) {

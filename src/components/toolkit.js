@@ -13,7 +13,7 @@ const Toolkit = () => {
 
   return (
     <div className="d-flex flex-column flex-sm-row align-items-center justify-content-center">
-      <img src="tools.png" alt="" width="64" className="m-5"/>
+      <i class="fas fa-tools toolkit-icon px-5" />
       <div className="toolkit">
         <div className="main-tools" onClick={() => toggle(!state)}>
           <p className="text-center text-sm-justify">Ruby On Rails・HTML・CSS・JavaScript・React.js・Gatsby.js・Python</p>

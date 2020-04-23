@@ -18,17 +18,23 @@
     "@fortawesome/free-solid-svg-icons": "^5.13.0",
     "@fortawesome/react-fontawesome": "^0.1.9",
     "bootstrap": "^4.4.1",
+    "fallback": "^1.0.1",
     "gatsby": "^2.20.12",
     "gatsby-cli": "^2.11.10",
     "gatsby-plugin-layout": "^1.2.3",
     "gatsby-plugin-sass": "^2.2.1",
     "gatsby-plugin-transitions": "^2.1.6",
+    "local-storage": "^2.0.0",
+    "local-storage-fallback": "^4.1.1",
     "node-sass": "^4.13.1",
     "react": "^16.13.1",
     "react-bootstrap": "^1.0.0",
     "react-dom": "^16.13.1",
     "react-spring": "^8.0.27",
-    "spring": "^0.0.0"
+    "react-tooltip": "^4.2.5",
+    "spring": "^0.0.0",
+    "styled-components": "^5.1.0",
+    "styled-theming": "^2.2.0"
   },
   "devDependencies": {
     "prettier": "^1.19.1"

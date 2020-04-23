@@ -1,18 +1,61 @@
-import React from "react"
+import React, { useState, useEffect } from "react"
 import Header from "../components/header.js"
 import Footer from "../components/footer.js"
-
+import { ThemeProvider, createGlobalStyle } from "styled-components"
 import '../styles/imports.scss'
+import storage from 'local-storage-fallback'
 
+const GlobalStyle = createGlobalStyle`
+* {
+  color: ${props => props.theme.mode === 'dark' ? '#FBFBFB' : '#0E0E0E'};
+  transition: background-color 0.2s;
+}
+html, body {
+  background-color: ${props => props.theme.mode === 'dark' ? '#1C1C1C' : 'rgb(252,250,249);'};
+}
+#header {
+  background-color: ${props => props.theme.mode === 'dark' ? '#0E0E0E' : 'rgb(254,253,252);'};
+  box-shadow: 0px 0px 20px ${props => props.theme.mode === 'dark' ? 'rgba(0,0,0,0.3)' : 'rgba(0,0,0,0.1)'};
+}
+.nicolas, .logo-description {
+  color: ${props => props.theme.mode === 'dark' ? '#FBFBFB' : '#0E0E0E'};
+  transition: color 0.2;
+}
+.fraisse {
+  color: ${props => props.theme.mode === 'dark' ? '#EBEBEB' : 'rgba(0,0,0,0.8)'};
+  transition: color 0.2;
+}
+.arrow:hover {
+  color: ${props => props.theme.mode === 'dark' ? '#FBFBFB' : '#1C1C1C'};
+  text-shadow: 0px 5px 15px ${props => props.theme.mode === 'dark' ? 'rgba(230,230,230,0.3)' : 'rgba(0,0,0,0.15)'};
+  background-color: none;
+  transition: 0.1s;
+}
+`
 
-const Main = ({ children }) => (
-  <div>
-    <Header />
-      <div className="main">
-        { children }
-      </div>
-    <Footer />
-  </div>
-);
+const getInitialTheme = () => {
+  const savedTheme = storage.getItem('theme')
+  return savedTheme ? JSON.parse(savedTheme) : { mode : 'light' }
+}
+
+const Main = ({ children }) => {
+
+  const [theme, setTheme] = useState(getInitialTheme)
+  useEffect(
+    () => {
+      storage.setItem('theme', JSON.stringify(theme))
+    }
+  )
+  return (
+    <ThemeProvider theme={theme}>
+      <Header onClickity={e=>setTheme(theme.mode === 'dark' ? {mode:'light'} : {mode:'dark'})}/>
+      <GlobalStyle />
+        <div className="main">
+          { children }
+        </div>
+      <Footer />
+    </ThemeProvider>
+  )
+};
 
 export default Main;

@@ -12,9 +12,9 @@ export default () =>
 
     <div className="container-md">
       <div className="d-flex my-3 my-sm-5 justify-content-center align-items-center">
-        <img src="back.png" className="arrow px-5" alt=""/>
-        <h2>Web Development</h2>
-        <img src="next.png" className="arrow px-5" alt=""/>
+        <i class="fas fa-arrow-left arrow"></i>
+        <h2 className="mx-5">Web Development</h2>
+        <i class="fas fa-arrow-right arrow"></i>
       </div>
 
 
