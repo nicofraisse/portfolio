@@ -3,6 +3,8 @@ import { Transition, animated } from 'react-spring/renderprops'
 import { Link } from "gatsby"
 import "../styles/imports.scss"
 import Logo from "./logo.js"
+// import { Link, animateScroll as scroll } from "react-scroll";
+
 
 const Header = ({onClickity}) => {
   // for header shrinking on scroll
