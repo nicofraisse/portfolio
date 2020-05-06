@@ -5,15 +5,39 @@ import { Link } from "gatsby"
 import '../styles/imports.scss'
 import Project from "../components/project.js"
 import Toolkit from "../components/toolkit.js"
+import Intro from './intro.js'
+import Code from './code.js'
+import Photography from './photography.js'
+import About from './about.js'
+import Contact from './contact.js'
+import ReactTooltip from "react-tooltip";
 
 export default () =>
 
   <Main>
+    <Intro />
+
+
     <Container>
-
-      <h1>I'm a web developer based in Montreal, building front-end and full-stack projects.</h1>
-      <p>View all projects --></p>
-      <p>Discover photography --></p>
-
+      <Code />
     </Container>
+    <br/>
+    <br/>
+    <br/>
+    <div style={{backgroundColor: 'rgb(235, 228, 230)'}}>
+      <br/>
+      <Container>
+        <h2 style={{margin: '100px auto 72px auto'}}>Photography</h2>
+        <Photography />
+        <br/>
+        <br/>
+        <br/>
+      </Container>
+      <br/>
+    </div>
+      <br/>
+    <br/>
+    <About />
+    <Contact />
+
   </Main>

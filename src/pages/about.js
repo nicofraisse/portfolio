@@ -8,10 +8,10 @@ import ReactTooltip from "react-tooltip";
 
 export default () =>
 
-<Main>
+<div id="about">
   <ReactTooltip effect="solid" html="true" />
   <div className="container">
-    <h2 className="my-5">Who's this?</h2>
+    <h2 className="my-5">About me</h2>
     <div className="row">
       <div className="col-md-4">
         <img src="nicolas-fraisse.jpg" className="profile-picture rounded" alt=""/>
@@ -22,6 +22,7 @@ export default () =>
             <li>I teach front-end (HTML & CSS) at Le Wagon coding bootcamp in Montreal, Canada.</li>
             <li>I work on <a href="#">full-stack projects</a> using React.JS and Ruby On Rails.</li>
             <li>I give one on one classes in Python for data science.</li>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat numquam quibusdam ipsum itaque alias! Minus quas, earum at fugiat perferendis atque, deleniti placeat voluptas non reprehenderit eligendi neque. Possimus, soluta impedit porro quisquam iste quibusdam, adipisci delectus, perferendis esse totam quas veniam repellendus praesentium, officiis accusantium excepturi quod laudantium. Maxime.</p>
           </ul>
         </div>
       </div>
@@ -102,4 +103,4 @@ export default () =>
     <a href="#!" className="list-inline-item mx-5"><i class="fab fa-github social-icon"></i></a>
   </div>
 
-</Main>
+</div>

@@ -3,3 +3,13 @@
   border: 10px solid red !important;
   margin: 200px !important;
 }
+
+.full-height-intro {
+  background-color: rgba(151, 157, 163, 1.00);
+  height: calc(100vh - 184px);
+  color: white !important;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
