@@ -13,13 +13,12 @@ const Toolkit = () => {
 
   return (
     <div className="d-flex flex-column flex-sm-row align-items-center justify-content-center">
-      <i class="fas fa-tools toolkit-icon px-5" />
       <div className="toolkit">
         <div className="main-tools" onClick={() => toggle(!state)}>
-          <p className="text-center text-sm-justify">Ruby On Rails・HTML・CSS・JavaScript・React.js・Gatsby.js・Python</p>
+          <p className="text-center">Ruby On Rails・HTML・CSS・JavaScript・React.js・Gatsby.js・Python</p>
         </div>
         <animated.div style={animation} className="misc-tools">
-          <p className="text-center text-sm-justify">Heroku・Git・SQL・Active Records・GraphQL・Wordpress・Python・AJAX・Figma・Sublime Text・Photoshop・GitHum・MacOS・Bootstrap</p>
+          <p className="text-center">Heroku・Git・SQL・Active Records・GraphQL・Wordpress・Python・AJAX・Figma・Sublime Text・Photoshop・GitHum・MacOS・Bootstrap</p>
         </animated.div>
       </div>
     </div>

@@ -6,10 +6,16 @@ import '../styles/imports.scss'
 
 export default () =>
 
-  <div className="photography">
-    <Main>
-      <Flick source='montreal.jpg'></Flick>
-      <Flick source='jellyfish.jpg'></Flick>
-      <Flick source='eiffel.jpg'></Flick>
-    </Main>
+  <div className="photography flick-container" id="photo">
+    <Flick source='montreal.jpg'></Flick>
+    <Flick source='montreal.jpg'></Flick>
+    <Flick source='montreal.jpg'></Flick>
+    <Flick source='montreal.jpg'></Flick>
+    <Flick source='jellyfish.jpg'></Flick>
+    <Flick source='jellyfish.jpg'></Flick>
+    <Flick source='eiffel.jpg'></Flick>
+    <Flick source='eiffel.jpg'></Flick>
+    <Flick source='eiffel.jpg'></Flick>
+
+
   </div>
