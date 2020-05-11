@@ -40,3 +40,29 @@
   }
   &:focus {outline:0;}
 }
+
+@media (max-width: $SM) {
+  #header {
+    position: relative;
+    height: 212px;
+  }
+
+  #nav-links {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100vw;
+    transition: none;
+
+  }
+  .sticky-links {
+    position: fixed;
+    background-color: white;
+
+    height: 104px;
+  }
+  .logo {
+    line-height: 140px !important;
+  }
+
+}

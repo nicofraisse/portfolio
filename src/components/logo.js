@@ -5,7 +5,7 @@ import '../styles/imports.scss'
 const Logo = () => (
 
   <div className="logo">
-    <span className="nicolas">nicolas</span><span className="fraisse">fraisse</span>
+    <span className="nicolas">n<span className="d-none">icolas</span></span><span className="fraisse">fraisse</span>
     <div className="logo-description">fullstack web developer</div>
   </div>
 

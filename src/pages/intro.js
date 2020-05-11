@@ -13,7 +13,7 @@ const Intro = () =>  {
         <div className="intro-text d-flex flex-column align-items-center justify-content-center">
           <div>
             <h1>HI</h1>
-            <h3>I build elegant, simple, stable & user-friendly web-applications for front-end and full-stack projects. I also give private lessons for programming Python, JavaScript, HTML, CSS, Webscraping, and more. Scroll around to view my work ;-)
+            <h3>I build elegant, stable & accessible web-applications for front-end and full-stack projects. I also give private lessons for programming Python, JavaScript, HTML, CSS, Webscraping, and more. Scroll around to view some of my work ;-)
             </h3>
           </div>
         </div>
