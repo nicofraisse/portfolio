@@ -1,10 +1,34 @@
 .intro {
-  background: rgb(141, 167, 221);
+  position: relative;
+}
+
+.fullscreen-video {
   height: calc(100vh - 184px);
+  width: 100%;
+  object-fit: cover;
+}
+
+.intro-text-wrapper {
+  height: 86%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.background-css-animation {
+  height: calc(100vh - 184px);
+  background: rgba(36, 9, 21, 1.00);
+
 }
 
 .intro-text {
-  height: 86%;
+  max-width: 960px;
+  text-align: center;
+  h1, h3 {
+    color: white;
+  }
 }
 
 .arrow {
@@ -12,6 +36,10 @@
   display: flex;
   align-items: flex-start;
   justify-content: center;
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  left: 0;
 }
 
 .arrow i {
@@ -38,7 +66,7 @@
 }
 
 @media (max-height: 744px) {
-  .intro-text {
+  .intro-text-wrapper {
     height: 80%
   }
   .arrow {
@@ -47,11 +75,51 @@
 }
 
 @media (max-height: 480px) {
-  .intro-text {
+  .intro-text-wrapper {
     height: 100%
   }
   .arrow {
     display: none;
+  }
+}
+
+
+$particleSize: 10vmin;
+$animationDuration: 10s;
+$amount: 20;
+.background-css-animation span {
+  width: $particleSize;
+  height: $particleSize;
+  border-radius: $particleSize;
+  backface-visibility: hidden;
+  position: absolute;
+  animation-name: move;
+  animation-duration: $animationDuration;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  $colors: (
+    rgba(73, 59, 93, 1.00),
+    rgba(152, 15, 92, 1.00),
+    #b0412e,
+  );
+  @for $i from 1 through $amount {
+    &:nth-child(#{$i}) {
+      color: nth($colors, random(length($colors)));
+      top: random(100) * 1%;
+      left: random(100) * 1%;
+      animation-duration: (random($animationDuration * 10) / 10) * 1s + 40s;
+      animation-delay: random(($animationDuration + 10s) * 10) / 10 * -1s;
+      transform-origin: (random(50) - 25) * 1vw (random(50) - 25) * 1vh;
+      $blurRadius: (random() + 0.5) * $particleSize * 0.5;
+      $x: if(random() > 0.5, -1, 1);
+      box-shadow: ($particleSize * 2 * $x) 0 $blurRadius currentColor;
+    }
+  }
+}
+
+@keyframes move {
+  100% {
+    transform: translate3d(0, 0, 1px) rotate(360deg);
   }
 }
 

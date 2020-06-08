@@ -1,8 +1,8 @@
 .project-img {
   object-fit: cover;
   height: 100%;
-  border-radius: 8px;
-  box-shadow: 0px 0px 20px rgba(100, 100, 100, .15);
+  border-radius: 6px;
+  box-shadow: 0px 0px 24px rgba(0, 0, 0, .1);
   transition: 0.3s;
   &:hover {
     cursor: pointer;
@@ -10,9 +10,9 @@
 }
 
 .skill-icon img {
-  height: 48px;
+  height: 40px;
   border-radius: 2px;
-  margin: 8px;
+  margin: 4px;
 }
 
 .reverse {

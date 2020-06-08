@@ -16,22 +16,12 @@ export default () =>
 
   <Main>
     <Intro />
-
-
-    <Container>
-      <Code />
-    </Container>
-    <br/>
-    <br/>
-    <br/>
-    <div style={{backgroundColor: 'rgb(235, 228, 230)'}}>
+    <Code />
+    <div>
       <br/>
       <Container>
         <h2 style={{margin: '100px auto 72px auto'}}>Photography</h2>
         <Photography />
-        <br/>
-        <br/>
-        <br/>
       </Container>
       <br/>
     </div>

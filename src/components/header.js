@@ -10,24 +10,32 @@ const Header = ({onClickity}) => {
   // for header shrinking on scroll
   const [headerBig, setHeaderBig] = useState(false);
 
-  let viewportWidth = window.innerWidth || document.documentElement.clientWidth;
   useEffect(() => {
     const navLinks = document.getElementById('nav-links');
-    // if (viewportWidth <= 576) {
-    //   navLinks.classList.add('sticky-links')
-    // }
+
     const handleScroll = () => {
+      let viewportWidth = window.innerWidth || document.documentElement.clientWidth;
       const scrollPosition = window.scrollY;
-      let height = viewportWidth > 576 ? 184 : 300;
-      if (viewportWidth > 576) {
+      let height = viewportWidth > 768 ? 184 : 300;
+      if (viewportWidth > 768) {
         if (scrollPosition < 240) {
           header.style.height = `${184 - Math.round(window.scrollY / 3)}px`
+          logoFull.style.opacity = 1
+          logoFull.style.position = 'static'
+          logoInitials.style.opacity = 0
+          logoInitials.style.position = 'absolute'
         } else {
           header.style.height = '104px'
+          logoFull.style.position = 'absolute'
+          logoFull.style.opacity = 0
+          logoInitials.style.opacity = 1
+          logoInitials.style.position = 'static'
+
         }
       }
       else {
         if (scrollPosition > 100) {
+          header.style.height = '212px'
           navLinks.classList.add('sticky-links')
         }
         else {
@@ -36,13 +44,15 @@ const Header = ({onClickity}) => {
       }
     }
     const header = document.getElementById('header');
+    const logoFull = document.querySelector('.logo-full');
+    const logoInitials = document.querySelector('.logo-initials');
     window.addEventListener('scroll', handleScroll);
   }, [headerBig])
 
 
   return (
-    <div className="vw-100" id="header">
-      <div className="container-md h-100 d-flex flex-column flex-sm-row align-items-center justify-content-sm-between">
+    <div className="w-100" id="header">
+      <div className="container-md h-100 d-flex flex-column flex-md-row align-items-center justify-content-md-between">
         <div id="header-logo">
           <Link to="/">
             <Logo />

@@ -1,8 +1,8 @@
 .toolkit {
   max-width: 600px;
-  .main-tools {
-    font-size: 22px;
-    cursor: pointer;
+  cursor: pointer;
+  .main-tools > p {
+    font-size: 20px;
   }
   .misc-tools > p {
     color: $grey150;

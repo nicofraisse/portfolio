@@ -1,7 +1,7 @@
 .logo {
   font-size: 40px;
   line-height: 108px;
-  position: relative
+  position: relative;
 }
 
 .logo-description {
@@ -23,3 +23,30 @@
   letter-spacing: 0.5px;
   padding-left: 1.5px;
 }
+
+.logo-full {
+  transition: 0.5s;
+  opacity: 1;
+}
+
+.logo-initials {
+  font-family: 'Avenir';
+  font-size: 36px;
+  background-color: black;
+  padding: 16px 8px 0px 16px;
+  border-radius: 3px;
+  line-height: 1;
+  display: inline-block;
+  transition: 0.5s;
+  position: absolute;
+  opacity: 0;
+  box-shadow: 8px 8px 0px grey;
+  margin-top: 40px;
+  .n {
+    color: white;
+  }
+  .f {
+    color: white;
+  }
+}
+
