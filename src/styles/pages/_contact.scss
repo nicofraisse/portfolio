@@ -1,9 +1,14 @@
 .contact {
-  height: 67vh;
+  height: calc(100vh - 184px);
+  display: flex;
+  flex-direction: column;
+}
+.contact-center-container {
   background-color: rgba(69, 103, 148, 1.00);
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-grow: 1
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');

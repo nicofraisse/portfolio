@@ -26,18 +26,23 @@ const Contact = () => {
   }
 
   return (
-
   <div className="contact">
-    <h2>Contact Me.</h2>
-    <div className="contact-buttons">
-      <div class="btn-3d-container">
-        <div class="btn-3d">
-          <a href="mailto:ni.fraisse@gmail.com?subject=hey" class="btn-front">contact</a>
-          <div class="btn-back"></div>
+    <div style={{backgroundColor: '#e6948a'}}className="list-inline text-center mb-0 py-4">
+      <a href="#!" className="list-inline-item mx-5"><i className="fab fa-linkedin-in social-icon"></i></a>
+      <a href="#!" className="list-inline-item mx-5"><i className="fab fa-instagram social-icon"></i></a>
+      <a href="#!" className="list-inline-item mx-5"><i className="fab fa-flickr social-icon"></i></a>
+      <a href="#!" className="list-inline-item mx-5"><i className="fab fa-github social-icon"></i></a>
+    </div>
+    <div className="contact-center-container">
+      <h2>Contact Me.</h2>
+      <div className="contact-buttons">
+        <div className="btn-3d-container">
+          <div className="btn-3d">
+            <a href="mailto:ni.fraisse@gmail.com?subject=hey" className="btn-front">contact</a>
+            <div className="btn-back"></div>
+          </div>
         </div>
       </div>
-
-
     </div>
   </div>
   )

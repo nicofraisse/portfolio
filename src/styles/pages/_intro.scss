@@ -2,12 +2,6 @@
   position: relative;
 }
 
-.fullscreen-video {
-  height: calc(100vh - 184px);
-  width: 100%;
-  object-fit: cover;
-}
-
 .intro-text-wrapper {
   height: 86%;
   position: absolute;
@@ -18,7 +12,7 @@
 }
 
 .background-css-animation {
-  height: calc(100vh - 184px);
+  height: 100vh;
   background: rgba(36, 9, 21, 1.00);
 
 }

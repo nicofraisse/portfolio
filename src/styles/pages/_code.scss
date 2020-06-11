@@ -18,11 +18,12 @@
   margin: 72px auto;
   display: block;
   background: none;
-  color: rgb(150, 150, 150);
+  color: rgb(150, 150, 150) !important;
   padding: 10px;
   border-radius: 50px;
   width: 180px;
   transition: 0.15s;
+  text-align: center;
 }
 
 .btn-more i {

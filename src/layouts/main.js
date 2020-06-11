@@ -8,13 +8,13 @@ import storage from 'local-storage-fallback'
 const GlobalStyle = createGlobalStyle`
 * {
   color: ${props => props.theme.mode === 'dark' ? '#FBFBFB' : '#0E0E0E'};
-  transition: background-color 0.2s;
 }
 html, body {
-  background-color: ${props => props.theme.mode === 'dark' ? '#1C1C1C' : 'rgb(252,250,249);'};
+  background-color: ${props => props.theme.mode === 'dark' ? '#1C1C1C' : 'rgba(252,250,249, 1);'};
+    transition: background-color 0.2s;
 }
 #header {
-  background-color: ${props => props.theme.mode === 'dark' ? '#0E0E0E' : 'rgb(254,253,252);'};
+  background-color: ${props => props.theme.mode === 'dark' ? 'rgba(14,14,14, 0.95)' : 'rgba(254,253,252, 0.95);'};
   box-shadow: 0px 0px 20px ${props => props.theme.mode === 'dark' ? 'rgba(0,0,0,0.3)' : 'rgba(0,0,0,0.1)'};
 }
 .nicolas, .logo-description {
@@ -31,6 +31,12 @@ html, body {
   background-color: none;
   transition: 0.1s;
 }
+.code-wrapper {
+  background-color: ${props => props.theme.mode === 'dark' ? '#1C1C1C' : 'rgba(254,253,252, 0.95);'};
+  box-shadow: inset 0px 0px 20px ${props => props.theme.mode === 'dark' ? 'rgba(0,0,0,0.3)' : 'rgba(0,0,0,0.05)'};
+  padding-bottom: 40px;
+}
+
 `
 
 const getInitialTheme = () => {
@@ -48,6 +54,7 @@ const Main = ({ children }) => {
   )
   return (
     <ThemeProvider theme={theme}>
+      <div className="invisible-hover-box"></div>
       <Header onClickity={e=>setTheme(theme.mode === 'dark' ? {mode:'light'} : {mode:'dark'})}/>
       <GlobalStyle />
         <div className="main">

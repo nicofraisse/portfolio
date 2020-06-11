@@ -18,6 +18,42 @@
   width: 100%;
 }
 
+
+.disabled-link, .disabled-link i {
+  color: rgb(180, 180, 180);
+  cursor: default;
+}
+
+.text-grey {
+  color: rgb(160, 160, 160)
+}
+
+.text-color-shadow {
+  position: relative;
+  z-index: 100;
+  transition: 0.3s;
+  &:hover {
+    text-shadow: none;
+    transform: translate(0px, -6px);
+  }
+  color: rgba(14, 14, 14, 1.00);
+  cursor: default;
+  letter-spacing: .05em;
+  user-select: none;
+  // text-shadow:
+  //   4px 4px 0px rgba(254, 253, 252, 1.00),
+  //   7px 7px 0px rgba(0, 0, 0, 0.1);
+}
+
+.separator {
+  z-index: 10;
+  margin: 0 auto;
+  height: 48px;
+  transform: perspective(18px) rotateX(8deg);
+  position: relative;
+
+}
+
 @media (max-width: $MD) {
   .profile-picture {
     margin: 0 auto;

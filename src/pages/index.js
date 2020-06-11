@@ -1,6 +1,5 @@
 import React from "react"
 import Main from "../layouts/main.js"
-import Container from "../layouts/container.js"
 import { Link } from "gatsby"
 import '../styles/imports.scss'
 import Project from "../components/project.js"
@@ -15,19 +14,10 @@ import ReactTooltip from "react-tooltip";
 export default () =>
 
   <Main>
+    <span id='top'></span>
     <Intro />
     <Code />
-    <div>
-      <br/>
-      <Container>
-        <h2 style={{margin: '100px auto 72px auto'}}>Photography</h2>
-        <Photography />
-      </Container>
-      <br/>
-    </div>
-      <br/>
-    <br/>
+    <Photography />
     <About />
     <Contact />
-
   </Main>

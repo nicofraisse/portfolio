@@ -17,6 +17,7 @@ const Project = (props) => {
       style={{
         width: props.imgWidth || '320px',
       }}
+      onClick={() => window.open(props.site, "_blank")}
       />
       <div className="project-description my-5 my-md-auto px-2 px-sm-4 px-xl-5" style={props.reverse ? {textAlign: 'right'} : {}}>
         <h3>{props.title} <span style={{color: 'rgba(0, 0, 0, 0.4)', fontSize: '1.5rem'}}>/ {props.date}</span></h3>
@@ -24,7 +25,12 @@ const Project = (props) => {
         <ul className='list-inline mt-4' style={props.reverse ? {textAlign: 'right'} : {}}>
           {projectIcons}
         </ul>
-        <span><a href={props.source} className="text-center d-inline">View source</a> / <a href={props.site}>View site</a></span>
+        <span>
+          <a href={props.site} class="p-0" target="blank">View site</a>
+          <span className="text-grey"> / </span>
+          <a href={props.source} className={props.source ? "" : "d-none"} target="blank">View source</a>
+          <span className={props.source ? "d-none" : "disabled-link"} target="blank">Source private</span>
+          </span>
       </div>
     </div>
   )
