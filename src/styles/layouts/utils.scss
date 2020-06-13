@@ -36,7 +36,6 @@
     text-shadow: none;
     transform: translate(0px, -6px);
   }
-  color: rgba(14, 14, 14, 1.00);
   cursor: default;
   letter-spacing: .05em;
   user-select: none;
@@ -52,6 +51,10 @@
   transform: perspective(18px) rotateX(8deg);
   position: relative;
 
+}
+
+.date-section {
+  font-size: 1.5rem;
 }
 
 @media (max-width: $MD) {

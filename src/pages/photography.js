@@ -9,7 +9,7 @@ export default () =>
   <div className="photography" id="photo">
     <h2 className="text-color-shadow">Photography</h2>
     <Separator
-      color='rgba(86, 99, 238, 0.4)'
+      color='linear-gradient(135deg, rgba(200, 99, 238, 0.6), rgba(86, 99, 238, 0.8))'
       width='288px'
       marginBottom= '60px'
       marginTop= '-110px'

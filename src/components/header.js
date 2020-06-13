@@ -1,6 +1,7 @@
 // ES6 Imports
 import * as Scroll from 'react-scroll';
 import { Link, Element , Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
+import { ThemeProvider, createGlobalStyle } from "styled-components"
 
 
 
@@ -15,29 +16,26 @@ import Logo from "./logo.js"
 const Header = ({onClickity}) => {
   // for header shrinking on scroll
   const [headerBig, setHeaderBig] = useState(false);
+  const initialViewHeight = window.innerHeight;
   useEffect(() => {
     const navLinks = document.getElementById('nav-links');
     const handleScroll = () => {
       let viewportWidth = window.innerWidth || document.documentElement.clientWidth;
       const scrollPosition = window.scrollY;
-      let height = viewportWidth > 768 ? 184 : 300;
       if (viewportWidth > 768) {
         if (scrollPosition < 240) {
           header.style.height = `${184 - Math.round(window.scrollY / 3)}px`
-          header.style.opacity = 0
-          logoFull.style.opacity = 1
-          logoFull.style.position = 'static'
-          logoInitials.style.opacity = 0
-          logoInitials.style.position = 'absolute'
-
+          logoImg.style.display = 'none'
+          bounce.style.opacity = 1;
         } else {
+          bounce.style.opacity = 0;
           header.style.height = '104px'
-          logoFull.style.position = 'absolute'
-          header.style.opacity = 0
-          logoInitials.style.opacity = 1
-          logoInitials.style.position = 'static'
-          if (scrollPosition > 500) {
-            header.style.opacity = 1
+          if (scrollPosition > (window.innerHeight - 104)) {
+            headerBackground.style.opacity = 1;
+            header.style.boxShadow = '0 0 16px rgba(0, 0, 0, 0.3)'
+          } else {
+            headerBackground.style.opacity = 0;
+            header.style.boxShadow = 'none'
           }
         }
       }
@@ -52,17 +50,18 @@ const Header = ({onClickity}) => {
       }
     }
     const header = document.getElementById('header');
-    const logoFull = document.querySelector('.logo-full');
-    const logoInitials = document.querySelector('.logo-initials');
+    const logoImg = document.getElementById('logo-img');
+    const bounce = document.querySelector('.bounce');
+    const headerBackground = document.querySelector('.header-background')
     window.addEventListener('scroll', handleScroll);
   }, [headerBig])
 
 
   return (
     <div className="w-100" id="header">
-      <div className="container-md h-100 d-flex flex-column flex-md-row align-items-center justify-content-md-between">
+      <div className="header-background"></div>
+      <div className="header-content container-md h-100 d-flex flex-column flex-md-row align-items-center justify-content-md-between">
         <div id="header-logo">
-        <img src="logo-full.png" width='64'alt="" style={{marginTop: '16px'}}/>
           <Link
               activeClass="active-link"
               className="mx-md-2 link clicky-effect box-shadow-3d"

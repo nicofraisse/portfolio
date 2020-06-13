@@ -20,7 +20,7 @@ const Project = (props) => {
       onClick={() => window.open(props.site, "_blank")}
       />
       <div className="project-description my-5 my-md-auto px-2 px-sm-4 px-xl-5" style={props.reverse ? {textAlign: 'right'} : {}}>
-        <h3>{props.title} <span style={{color: 'rgba(0, 0, 0, 0.4)', fontSize: '1.5rem'}}>/ {props.date}</span></h3>
+        <h3>{props.title} <span className='date-section'>/ {props.date}</span></h3>
         {props.description.split('<br>').map(text => <p>{text}</p>)}
         <ul className='list-inline mt-4' style={props.reverse ? {textAlign: 'right'} : {}}>
           {projectIcons}

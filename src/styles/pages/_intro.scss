@@ -3,7 +3,7 @@
 }
 
 .intro-text-wrapper {
-  height: 86%;
+  height: 100vh;
   position: absolute;
   top: 0;
   left: 0;
@@ -13,8 +13,6 @@
 
 .background-css-animation {
   height: 100vh;
-  background: rgba(36, 9, 21, 1.00);
-
 }
 
 .intro-text {
@@ -26,25 +24,24 @@
 }
 
 .arrow {
-  height: 14%;
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
   position: absolute;
-  bottom: 10px;
+  bottom: -10px;
   width: 100%;
   left: 0;
 }
 
 .arrow i {
-  font-size: 60px;
-  color:rgba(254, 253, 252, 1.00)
+  font-size: 48px;
 }
 
 .bounce {
   -moz-animation: bounce 2s infinite;
   -webkit-animation: bounce 2s infinite;
   animation: bounce 2s infinite;
+  transition: 0.5s opacity;
 }
 
 @keyframes bounce {
@@ -60,9 +57,6 @@
 }
 
 @media (max-height: 744px) {
-  .intro-text-wrapper {
-    height: 80%
-  }
   .arrow {
     height: 20%;
   }

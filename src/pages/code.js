@@ -29,7 +29,7 @@ const Code = () => {
       <div className="container-md">
         <h2 className="mb-4 mt-0 pt-5 text-color-shadow">Toolkit</h2>
         <Separator
-          color='rgba(86, 99, 238, 0.4)'
+          color='linear-gradient(135deg, rgba(200, 99, 238, 0.6), rgba(86, 99, 238, 0.8))'
           width='160px'
           transform="perspective(48px) rotateX(18deg)"
           marginTop="-64px"
@@ -43,10 +43,10 @@ const Code = () => {
             />
             <div className="toolkit">
               <div className="main-tools">
-                <p className="text-center text-sm-justify">JavaScript・React.js・Rails</p>
+                <p className="text-center">JavaScript・React.js・Rails</p>
               </div>
               <div className="misc-tools">
-                <p className="text-center text-sm-justify">Gatsby.js・JQuery・Vanilla JS・AJAX・Shell・Python・Regex・Git・npm・Yarn・Wordpress</p>
+                <p className="text-center">Gatsby.js・JQuery・Vanilla JS・AJAX・Shell・Python・Regex・Git・npm・Yarn・Wordpress</p>
               </div>
             </div>
           </div>
@@ -58,10 +58,10 @@ const Code = () => {
             />
             <div className="toolkit">
               <div className="main-tools">
-                <p className="text-center text-sm-justify">HTML・CSS・Figma</p>
+                <p className="text-center">HTML・CSS・Figma</p>
               </div>
               <div className="misc-tools">
-                <p className="text-center text-sm-justify">SCSS/SASS・Bootstrap・Animate.js・React Spring・Adobe Photoshop CC・Adobe Lightroom CC</p>
+                <p className="text-center">SCSS/SASS・Bootstrap・Animate.js・React Spring・Adobe Photoshop CC・Adobe Lightroom CC</p>
               </div>
             </div>
           </div>
@@ -73,17 +73,17 @@ const Code = () => {
             />
             <div className="toolkit">
               <div className="main-tools">
-                <p className="text-center text-sm-justify">GraphQL・PostgreSQL・Active Record</p>
+                <p className="text-center">GraphQL・PostgreSQL・Active Record</p>
               </div>
               <div className="misc-tools">
-                <p className="text-center text-sm-justify">Heroku・Netlify・Cloudinary・Mapbox・Stripe・GraphQL・Pandas・BeautifulSoup・Microsoft SQL Server</p>
+                <p className="text-center">Heroku・Netlify・Cloudinary・Mapbox・Stripe・GraphQL・Pandas・BeautifulSoup・Microsoft SQL Server</p>
               </div>
             </div>
           </div>
         </div>
         <h2 className="mb-4 mt-0 pt-5 text-color-shadow">Web Development Projects</h2>
         <Separator
-          color='rgba(86, 99, 238, 0.4)'
+          color='linear-gradient(135deg, rgba(200, 99, 238, 0.6), rgba(86, 99, 238, 0.8))'
           width='580px'
           transform="perspective(30px) rotateX(6deg)"
           marginTop="-64px"
@@ -162,7 +162,7 @@ const Code = () => {
           source='https://github.com/nicofraisse/nf'
           date='Jun 2020'
           imgWidth='440px'
-          description='I have designed and built my own portfolio website from scratch, using the Gatsby.js react framework. Animations and other dynamic elements were made thanks to react hooks as well as the react sping library.'
+          description='I have designed and built my this --single page application--  portfolio website from scratch, using the Gatsby.js react framework. Animations and other dynamic elements were made thanks to react hooks as well as the react sping library.'
           icons={['react.png', 'gatsby.png']}
           reverse
           />

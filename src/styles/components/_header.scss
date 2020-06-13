@@ -25,6 +25,15 @@
   opacity: 1 !important;
 }
 
+
+.header-background {
+  position: absolute;
+  width: 100vw;
+  height: 100%;
+  opacity: 0;
+  z-index: -1;
+}
+
 #header-logo {
   position: relative;
   top: -8px;
@@ -32,7 +41,7 @@
 
 .link {
   padding: 4px 12px;
-  color: rgb(135, 167, 226) !important;
+  color: rgba(154, 162, 239, 1.00) !important;
   border-radius: 2px;
   transition: 0.2s;
   transition-property: background-color, color, box-shadow;
