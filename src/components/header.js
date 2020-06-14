@@ -26,9 +26,9 @@ const Header = ({onClickity}) => {
         if (scrollPosition < 240) {
           header.style.height = `${184 - Math.round(window.scrollY / 3)}px`
           logoImg.style.display = 'none'
-          bounce.style.opacity = 1;
+          arrow.style.opacity = 1;
         } else {
-          bounce.style.opacity = 0;
+          arrow.style.opacity = 0;
           header.style.height = '104px'
           if (scrollPosition > (window.innerHeight - 104)) {
             headerBackground.style.opacity = 1;
@@ -51,7 +51,7 @@ const Header = ({onClickity}) => {
     }
     const header = document.getElementById('header');
     const logoImg = document.getElementById('logo-img');
-    const bounce = document.querySelector('.bounce');
+    const arrow = document.querySelector('.arrow');
     const headerBackground = document.querySelector('.header-background')
     window.addEventListener('scroll', handleScroll);
   }, [headerBig])

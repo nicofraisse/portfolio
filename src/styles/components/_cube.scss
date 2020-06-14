@@ -6,7 +6,6 @@
     height: 200px;
     margin: 80px;
     perspective: 600px;
-    border: 2px solid rgba(0, 0, 0, 0);
   }
 
   .cube {
@@ -63,30 +62,7 @@
 }
 
 
-  .cube__face--front  {
-    background: linear-gradient(159deg, rgba(117, 24, 123, 0.9) 0%, rgba(234, 50, 35, 0.9) 100%);
-    transition: 0.3s;
-  }
-  .cube__face--right  {
-    background: linear-gradient(159deg, rgba(234, 50, 35, 0.9) 0%, rgba(117, 24, 123, 0.9) 100%);
-    transition: 0.3s;
-  }
-  .cube__face--back   {
-    background: linear-gradient(159deg, rgba(117, 24, 123, 0.9) 0%, rgba(234, 50, 35, 0.9) 100%);
-    transition: 0.3s;
-  }
-  .cube__face--left   {
-    background: linear-gradient(159deg, rgba(234, 50, 35, 0.9) 0%, rgba(117, 24, 123, 0.9) 100%);
-    transition: 0.3s;
-  }
-  .cube__face--top    {
-    background: linear-gradient(159deg, rgba(117, 24, 123, 0.9) 0%, rgba(234, 50, 35, 0.9) 100%);
-    transition: 0.3s;
-  }
-  .cube__face--bottom {
-    background: linear-gradient(159deg, rgba(234, 50, 35, 0.9) 0%, rgba(117, 24, 123, 0.9) 100%);
-    transition: 0.3s;
-  }
+
 
   .cube__face--front  { transform: rotateY(  0deg) translateZ(100px); }
   .cube__face--right  { transform: rotateY( 90deg) translateZ(100px); }
@@ -134,7 +110,6 @@
 @media (min-width: $XL) {
   .scene {
     transform: scale(1.5, 1.5) !important;
-    border: 100px solid blue;
   }
 }
 

@@ -29,7 +29,6 @@ const Code = () => {
       <div className="container-md">
         <h2 className="mb-4 mt-0 pt-5 text-color-shadow">Toolkit</h2>
         <Separator
-          color='linear-gradient(135deg, rgba(200, 99, 238, 0.6), rgba(86, 99, 238, 0.8))'
           width='160px'
           transform="perspective(48px) rotateX(18deg)"
           marginTop="-64px"
@@ -83,7 +82,6 @@ const Code = () => {
         </div>
         <h2 className="mb-4 mt-0 pt-5 text-color-shadow">Web Development Projects</h2>
         <Separator
-          color='linear-gradient(135deg, rgba(200, 99, 238, 0.6), rgba(86, 99, 238, 0.8))'
           width='580px'
           transform="perspective(30px) rotateX(6deg)"
           marginTop="-64px"

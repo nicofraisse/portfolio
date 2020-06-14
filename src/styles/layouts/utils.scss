@@ -1,13 +1,8 @@
 .social-icon {
   font-size: 40px;
-  transition: 0.1s;
-  &:hover {
-    color: #575ff7;
-  }
 }
 
 .icon-tooltip {
-  color: white;
   padding: 0;
   margin: 0;
   font-size: 18px;
@@ -20,12 +15,7 @@
 
 
 .disabled-link, .disabled-link i {
-  color: rgb(180, 180, 180);
   cursor: default;
-}
-
-.text-grey {
-  color: rgb(160, 160, 160)
 }
 
 .text-color-shadow {
@@ -39,12 +29,10 @@
   cursor: default;
   letter-spacing: .05em;
   user-select: none;
-  // text-shadow:
-  //   4px 4px 0px rgba(254, 253, 252, 1.00),
-  //   7px 7px 0px rgba(0, 0, 0, 0.1);
 }
 
 .separator {
+
   z-index: 10;
   margin: 0 auto;
   height: 48px;

@@ -41,7 +41,6 @@
 
 .link {
   padding: 4px 12px;
-  color: rgba(154, 162, 239, 1.00) !important;
   border-radius: 2px;
   transition: 0.2s;
   transition-property: background-color, color, box-shadow;
@@ -50,20 +49,6 @@
   }
 }
 
-.active-link {
-  // background-color: rgb(141, 167, 221);
-  background-color: #575ff7;
-  color: white !important;
-  &:hover {
-    color: white !important;
-  }
-  // box-shadow: 1px 1px 0.0px rgba(141, 167, 221, 0.3),
-  //             2px 2px 0.0px rgba(141, 167, 221, 0.3),
-  //             3px 3px 0.0px rgba(141, 167, 221, 0.3),
-  //             4px 4px 0.0px rgba(141, 167, 221, 0.3),
-  //             5px 5px 0.0px rgba(141, 167, 221, 0.3),
-  //             6px 6px 0.0px rgba(141, 167, 221, 0.3);
-}
 
 #dark-mode-icon {
   display: flex;

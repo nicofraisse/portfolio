@@ -17,7 +17,6 @@ export default () =>
       <div className="col-md-7 pr-lg-5 pr-md-4">
         <h2 className="my-5 text-color-shadow">Experience</h2>
         <Separator
-          color='linear-gradient(135deg, rgba(200, 99, 238, 0.6), rgba(86, 99, 238, 0.8))'
           width='240px'
           marginBottom= '60px'
           marginTop= '-90px'
@@ -35,7 +34,6 @@ export default () =>
       <div className="col-md-5">
         <h2 className="my-5 text-color-shadow">Education</h2>
         <Separator
-          color='linear-gradient(135deg, rgba(200, 99, 238, 0.6), rgba(86, 99, 238, 0.8))'
           width='220px'
           marginBottom= '60px'
           marginTop= '-90px'
