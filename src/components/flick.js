@@ -1,5 +1,5 @@
 import React from "react"
-
+import ReactTooltip from "react-tooltip";
 import '../styles/imports.scss'
 
 const Flick = (props) => {
@@ -14,7 +14,10 @@ const Flick = (props) => {
   }
   window.addEventListener('resize', adjustImgHeight);
   return (
-    <div className="flick" style={{ backgroundImage: `url(${props.source})`}}>
+    <div>
+      <div className="flick" style={{ backgroundImage: `url(${props.source})`}} data-for="photo-tooltip" data-tip={props.description} data-delay-hide='1000'>
+      </div>
+      <ReactTooltip id="photo-tooltip" effect="solid" place="bottom" backgroundColor="rgba(0, 0, 0, 0)" offset={{top: 8}}/>
     </div>
   )
 

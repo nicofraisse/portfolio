@@ -64,7 +64,7 @@ const Header = ({onClickity}) => {
         <div id="header-logo">
           <Link
               activeClass="active-link"
-              className="mx-md-2 link clicky-effect box-shadow-3d"
+              className="mx-md-2 navlink clicky-effect box-shadow-3d"
               to="top"
               spy={true}
               smooth={true}
@@ -76,7 +76,7 @@ const Header = ({onClickity}) => {
         <div className="d-flex align-items-center" id="nav-links">
           <Link
             activeClass="active-link"
-            className="mx-md-2 link clicky-effect box-shadow-3d"
+            className="mx-md-2 navlink clicky-effect box-shadow-3d"
             id="codelink"
             to="code"
             spy={true}
@@ -91,7 +91,7 @@ const Header = ({onClickity}) => {
           >code</Link>
           <Link
               activeClass="active-link"
-              className="mx-md-1 link clicky-effect box-shadow-3d"
+              className="mx-md-1 navlink clicky-effect box-shadow-3d"
               id="photolink"
               to="photo"
               spy={true}
@@ -106,7 +106,7 @@ const Header = ({onClickity}) => {
           >photo</Link>
           <Link
               activeClass="active-link"
-              className="mx-md-1 link clicky-effect box-shadow-3d"
+              className="mx-md-1 navlink clicky-effect box-shadow-3d"
               id="aboutlink"
               to="about"
               spy={true}
@@ -122,7 +122,7 @@ const Header = ({onClickity}) => {
           >about</Link>
           <Link
               activeClass="active-link"
-              className="mx-md-1 link clicky-effect box-shadow-3d"
+              className="mx-md-1 navlink clicky-effect box-shadow-3d"
               id="contactlink"
               to="contact"
               spy={true}
@@ -135,7 +135,7 @@ const Header = ({onClickity}) => {
                 }, 550)
               }}
           >contact</Link>
-          <button id="dark-mode-icon" className="ml-4 ml-lg-5 d-none d-sm-inline-block clicky-effect" onClick={onClickity}>
+          <button id="dark-mode-icon" className="ml-4 ml-lg-5 d-none d-sm-inline-block" onClick={onClickity}>
             <i className="fas fa-adjust" />
           </button>
         </div>

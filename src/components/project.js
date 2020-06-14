@@ -1,10 +1,11 @@
 import React from "react"
-
+import ReactTooltip from "react-tooltip";
 import '../styles/imports.scss'
+
 
 const Project = (props) => {
   const projectIcons = props.icons.map((icon) =>
-    <li key={icon} className='skill-icon list-inline-item'><img src={icon} alt=""/></li>
+    <li key={icon} data-for="bis" className='skill-icon list-inline-item' html={true} data-delay-hide='200' data-tip={`<span>${icon.split('.')[0]}</span>`}><img src={icon} alt=""/></li>
   );
   const reverse = props.reverse ? 'reverse' : ''
 
@@ -25,12 +26,13 @@ const Project = (props) => {
         <ul className='list-inline mt-4' style={props.reverse ? {textAlign: 'right'} : {}}>
           {projectIcons}
         </ul>
-        <span>
-          <a href={props.site} class="p-0" target="blank">View site</a>
+        <ReactTooltip id="bis" effect="solid" html={true} textColor={"rgba(251, 251, 251, 1.00)"} offset={{'top': -4, 'left': 0}}/>
+        <div>
+          <a href={props.site} class="p-0 clicky-effect link" target="blank">View site</a>
           <span className="text-grey"> / </span>
-          <a href={props.source} className={props.source ? "" : "d-none"} target="blank">View source</a>
+          <a href={props.source} className={props.source ? "clicky-effect link" : "d-none"} target="blank">View source</a>
           <span className={props.source ? "d-none" : "disabled-link"} target="blank">Source private</span>
-          </span>
+        </div>
       </div>
     </div>
   )

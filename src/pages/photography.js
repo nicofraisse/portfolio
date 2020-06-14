@@ -3,6 +3,7 @@ import Main from "../layouts/main.js"
 import Container from "../layouts/container.js"
 import Flick from "../components/flick.js"
 import Separator from "../components/separator.js"
+import ReactTooltip from "react-tooltip";
 import '../styles/imports.scss'
 
 export default () =>
@@ -16,10 +17,10 @@ export default () =>
     />
     <Container>
       <div className="flick-container">
+        <Flick source='montreal.jpg' description="Montreal was beautiful"></Flick>
         <Flick source='montreal.jpg'></Flick>
         <Flick source='montreal.jpg'></Flick>
-        <Flick source='montreal.jpg'></Flick>
-        <Flick source='montreal.jpg'></Flick>
+        <Flick source='montreal.jpg' description="Lundon was beautiful"></Flick>
         <Flick source='jellyfish.jpg'></Flick>
         <Flick source='jellyfish.jpg'></Flick>
         <Flick source='eiffel.jpg'></Flick>

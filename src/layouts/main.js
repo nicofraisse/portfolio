@@ -9,14 +9,14 @@ import storage from 'local-storage-fallback'
 const moonBlue = '#323442'
 const moonBlueSecondary = '#1d1f26'
 const dayCream = '#f7f3eb'
-const dayCreamSecondary = 'white'
+const dayCreamSecondary = 'rgb(252, 251, 247)'
 
 const cubeOrange = 'rgba(234, 50, 35, 0.9)'
 const cubePink = 'rgba(117, 24, 123, 0.9)'
 
 const gradedRed ='#ff5e62'
 const gradedOrange = '#ff9966'
-const gradedPink = '#c863ee'
+const gradedPink = 'rgba(200, 99, 238, 0.9)'
 const gradedBlue = '#5663ee'
 const gradedOtherBlue = '#7c6efa'
 
@@ -63,16 +63,16 @@ p, h3, i  {
   transition: 0.15s background-color, color;
 }
 
-.link, a {
+.navlink {
   color: ${props => props.theme.mode === 'dark' ? linkBlueLight : linkBlueDark} !important;
   transition: 0.15s;
 }
 
-.link:hover{
+.navlink:hover {
   color: ${props => props.theme.mode === 'dark' ? linkBlueLightHover : linkBlueDarkHover} !important;
 }
 
-.active-link {
+#header .active-link {
   background: ${props => props.theme.mode === 'dark' ?  `linear-gradient(135deg, ${gradedBlue}, ${gradedOtherBlue})` : `linear-gradient(135deg, ${gradedOtherBlue}, ${gradedBlue})`} !important;
   color: white !important;
   &:hover {
@@ -80,7 +80,16 @@ p, h3, i  {
   }
 }
 
-.date-section, .misc-tools > p, .text-grey, {
+.link {
+  color: ${props => props.theme.mode === 'dark' ? linkBlueDark  : linkBlueLight} !important;
+}
+
+.link:hover {
+  color: ${props => props.theme.mode === 'dark' ? linkBlueDarkHover : linkBlueLightHover} !important;
+}
+
+
+.date-section, .misc-tools > p, .text-grey {
   color: ${props => props.theme.mode === 'dark' ? lightTextThird : darkTextThird};
   transition: 0.15s color;
 }
@@ -88,6 +97,12 @@ p, h3, i  {
 .disabled-link {
   color: ${props => props.theme.mode === 'dark' ? lightTextThird : darkTextThird};
   transition: 0.15s color;
+}
+
+.flick-container * {
+  color: ${props => props.theme.mode === 'dark' ? 'rgba(0, 0, 0, 0.08)' : 'rgba(255, 255, 255, 0.08)'} !important;
+  font-size: 15px;
+
 }
 
 //
@@ -161,6 +176,19 @@ p, h3, i  {
 
 .btn-more:active {
   box-shadow: 0px 2px 6px ${props => props.theme.mode === 'dark' ? 'rgba(0, 0, 0, 0.2)' : 'rgba(0, 0, 0, 0.6)' };
+}
+
+#dark-mode-icon {
+  transform-origin: 12px 12px;
+  transform: ${props => props.theme.mode === 'dark' ? 'rotateZ(180deg)' : 'rotateZ(0deg)' };
+  transition: 0.3s;
+}
+
+.header-tooltip h3 {
+  color: ${lightText};
+  line-height: 1;
+  margin-bottom: 0;
+  font-size: 16px;
 }
 
 //

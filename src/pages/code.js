@@ -7,6 +7,7 @@ import Project from "../components/project.js"
 import Toolkit from "../components/toolkit.js"
 import {useSpring, animated} from 'react-spring'
 import Separator from "../components/separator.js"
+import ReactTooltip from "react-tooltip";
 
 
 
@@ -25,7 +26,7 @@ const Code = () => {
 
   return (
   <div className="code-wrapper">
-    <div className="code">
+    <div className="code pt-3">
       <div className="container-md">
         <h2 className="mb-4 mt-0 pt-5 text-color-shadow">Toolkit</h2>
         <Separator
@@ -33,10 +34,10 @@ const Code = () => {
           transform="perspective(48px) rotateX(18deg)"
           marginTop="-64px"
         />
-        <div className="row">
-          <div className="col-md-4">
+        <div className="row" style={{marginTop: 40}}>
+          <div className="col-md-4 header-tooltip" data-for="toolkit-tooltip" data-tip="<h3 className='icon-tooltip'>Languages & Frameworks</h3>">
+          <ReactTooltip id="toolkit-tooltip" effect="solid" html={true} offset={{'top': -16, 'left': 0}}/>
             <i
-              data-tip="<h3 className='icon-tooltip'>Languages & Frameworks</h3>"
               style={{fontSize: 48}}
               className="fas fa-code text-center w-100 my-4"
             />
@@ -47,11 +48,12 @@ const Code = () => {
               <div className="misc-tools">
                 <p className="text-center">Gatsby.js・JQuery・Vanilla JS・AJAX・Shell・Python・Regex・Git・npm・Yarn・Wordpress</p>
               </div>
+
             </div>
           </div>
-          <div className="col-md-4">
+
+          <div className="col-md-4 header-tooltip" data-for="toolkit-tooltip" data-tip="<h3 className='icon-tooltip'>Front-end tools</h3>">
             <i
-              data-tip="<h3 className='icon-tooltip'>Front-end tools</h3>"
               style={{fontSize: 48}}
               className="fas fa-magic text-center w-100 my-4"
             />
@@ -64,9 +66,8 @@ const Code = () => {
               </div>
             </div>
           </div>
-          <div className="col-md-4">
+          <div className="col-md-4 header-tooltip" data-for="toolkit-tooltip" data-tip="<h3 className='icon-tooltip'>Back-end tools</h3>">
             <i
-              data-tip="<h3 className='icon-tooltip'>Back-end tools</h3>"
               style={{fontSize: 48}}
               className="fas fa-database text-center w-100 my-4"
             />
