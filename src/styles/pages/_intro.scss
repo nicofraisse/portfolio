@@ -88,9 +88,13 @@ $amount: 20;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
   $colors: (
-    rgba(73, 59, 93, 1.00),
-    rgba(152, 15, 92, 1.00),
-    #b0412e,
+    rgba(152, 15, 92, 0.6),
+    // #b0412e,
+    rgba(117, 24, 123, 0.6),
+    rgba(234, 50, 35, 0.6),
+    rgba(255, 94, 98, 0.3),
+    rgba(255, 153, 102, 0.3),
+
   );
   @for $i from 1 through $amount {
     &:nth-child(#{$i}) {

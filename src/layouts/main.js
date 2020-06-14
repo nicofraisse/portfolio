@@ -7,15 +7,18 @@ import storage from 'local-storage-fallback'
 
 
 const moonBlue = '#323442'
-const moonBlueSecondary = '#464854'
-const dayCream = '#e5e0d6'
-const dayCreamSecondary = '#f5f3ef'
+const moonBlueSecondary = '#1d1f26'
+const dayCream = '#f7f3eb'
+const dayCreamSecondary = 'white'
 
-const intenseOrange = '#ea3223'
-const intensePink = '#75187b'
+const cubeOrange = 'rgba(234, 50, 35, 0.9)'
+const cubePink = 'rgba(117, 24, 123, 0.9)'
 
+const gradedRed ='#ff5e62'
+const gradedOrange = '#ff9966'
 const gradedPink = '#c863ee'
 const gradedBlue = '#5663ee'
+const gradedOtherBlue = '#7c6efa'
 
 const darkText = '#0e0e0e'
 const darkTextSecondary = '#2e2d2b'
@@ -25,8 +28,10 @@ const lightText = '#fbfbfb'
 const lightTextSecondary = '#ebebeb'
 const lightTextThird = '#84858e'
 
-const linkBlue = '#9aa2ef'
-const linkBlueActive = '#575ff7'
+const linkBlueLight = '#9aa2ef';
+const linkBlueDark = '#838df2';
+const linkBlueLightHover = "#bac1ff";
+const linkBlueDarkHover = '#575ff7'
 
 const GlobalStyle = createGlobalStyle`
 
@@ -59,19 +64,30 @@ p, h3, i  {
 }
 
 .link, a {
-  color: ${props => props.theme.mode === 'dark' ? linkBlue : linkBlue} !important;
+  color: ${props => props.theme.mode === 'dark' ? linkBlueLight : linkBlueDark} !important;
+  transition: 0.15s;
+}
+
+.link:hover{
+  color: ${props => props.theme.mode === 'dark' ? linkBlueLightHover : linkBlueDarkHover} !important;
 }
 
 .active-link {
-  background-color: ${props => props.theme.mode === 'dark' ? linkBlueActive : linkBlueActive} !important;
+  background: ${props => props.theme.mode === 'dark' ?  `linear-gradient(135deg, ${gradedBlue}, ${gradedOtherBlue})` : `linear-gradient(135deg, ${gradedOtherBlue}, ${gradedBlue})`} !important;
   color: white !important;
   &:hover {
     color: white !important;
   }
 }
 
-.date-section, .misc-tools > p {
-  color: ${props => props.theme.mode === 'dark' ? lightTextThird : darkTextThird}
+.date-section, .misc-tools > p, .text-grey, {
+  color: ${props => props.theme.mode === 'dark' ? lightTextThird : darkTextThird};
+  transition: 0.15s color;
+}
+
+.disabled-link {
+  color: ${props => props.theme.mode === 'dark' ? lightTextThird : darkTextThird};
+  transition: 0.15s color;
 }
 
 //
@@ -108,7 +124,7 @@ p, h3, i  {
   transition: 0.15s background-color;
 }
 .separator {
-  background: ${props => props.theme.mode === 'dark' ? 'linear-gradient(135deg, rgba(200, 99, 238, 0.6), rgba(86, 99, 238, 0.8))' : 'linear-gradient(135deg, rgba(200, 99, 238, 0.6), rgba(86, 99, 238, 0.8))'};
+  background: ${props => props.theme.mode === 'dark' ? `linear-gradient(135deg, ${gradedPink}, ${gradedOrange})` : `linear-gradient(135deg, ${gradedRed}, ${gradedBlue})`};
 }
 
 //
@@ -152,27 +168,27 @@ p, h3, i  {
 //
 
 .cube__face--front  {
-  background: linear-gradient(159deg, rgba(117, 24, 123, 0.9) 0%, rgba(234, 50, 35, 0.9) 100%);
+  background: linear-gradient(159deg, ${cubePink} 0%, ${cubeOrange} 100%);
   transition: 0.3s;
 }
 .cube__face--right  {
-  background: linear-gradient(159deg, rgba(234, 50, 35, 0.9) 0%, rgba(117, 24, 123, 0.9) 100%);
+  background: linear-gradient(159deg, ${cubeOrange} 0%, ${cubePink} 100%);
   transition: 0.3s;
 }
 .cube__face--back   {
-  background: linear-gradient(159deg, rgba(117, 24, 123, 0.9) 0%, rgba(234, 50, 35, 0.9) 100%);
+  background: linear-gradient(159deg, ${cubePink} 0%, ${cubeOrange} 100%);
   transition: 0.3s;
 }
 .cube__face--left   {
-  background: linear-gradient(159deg, rgba(234, 50, 35, 0.9) 0%, rgba(117, 24, 123, 0.9) 100%);
+  background: linear-gradient(159deg, ${cubeOrange} 0%, ${cubePink} 100%);
   transition: 0.3s;
 }
 .cube__face--top    {
-  background: linear-gradient(159deg, rgba(117, 24, 123, 0.9) 0%, rgba(234, 50, 35, 0.9) 100%);
+  background: linear-gradient(159deg, ${cubePink} 0%, ${cubeOrange} 100%);
   transition: 0.3s;
 }
 .cube__face--bottom {
-  background: linear-gradient(159deg, rgba(234, 50, 35, 0.9) 0%, rgba(117, 24, 123, 0.9) 100%);
+  background: linear-gradient(159deg, ${cubeOrange} 0%, ${cubePink} 100%);
   transition: 0.3s;
 }
 
