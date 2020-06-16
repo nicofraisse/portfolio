@@ -205,7 +205,7 @@ p, h3, i  {
   border: 1px solid ${props => props.theme.mode === 'dark' ? 'rgba(0, 0, 0, 0.12)' : moonBlue };
   box-shadow: 10px 10px 0px ${props => props.theme.mode === 'dark' ? 'rgba(0, 0, 0, 0.12)' : moonBlue };
   background-color: ${props => props.theme.mode === 'dark' ? 'rgba(255, 255, 255, 0.5)' : 'rgba(0, 0, 0, 0)' };
-  transition: 0.15s;
+  transition: 0.10s;
 }
 
 .profile-card:hover {
@@ -214,7 +214,7 @@ p, h3, i  {
 }
 
 .profile-card:active {
-  transform: translate(8px, 8px);
+  transform: translate(7px, 7px);
   box-shadow: 3px 3px 0px ${props => props.theme.mode === 'dark' ? 'rgba(0, 0, 0, 0.17)' : moonBlue };
 }
 
