@@ -70,4 +70,33 @@ a:hover {
   margin-left: 40px;
 }
 
+@media (max-width: $MD) {
+  h2 {
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    margin: 0.5em;
+  }
+}
 
+@media (max-width: $SM) {
+  h2 {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    margin: 0.5em;
+  }
+}
+@media (max-width: $XS) {
+  h2 {
+    font-weight: bold;
+    text-align: center;
+    margin: 0.5em;
+  }
+  h3 {
+    font-size: 26px;
+  }
+  p {
+    font-size: 14px;
+  }
+}

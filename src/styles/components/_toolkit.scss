@@ -1,5 +1,6 @@
 .toolkit {
-  max-width: 600px;
+  max-width: 480px;
+  margin: 0 auto;
   cursor: pointer;
   .main-tools > p {
     font-size: 20px;
@@ -8,4 +9,15 @@
 
 .toolkit-icon {
   font-size: 56px;
+}
+
+
+
+@media (max-width: $MD) {
+  .main-tools > p {
+    font-size: 18px !important;
+  }
+  .misc-tools > p {
+    font-size: 14px !important;
+  }
 }

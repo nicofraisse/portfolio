@@ -3,7 +3,6 @@ import Main from "../layouts/main.js"
 import { Link } from "gatsby"
 import '../styles/imports.scss'
 import Project from "../components/project.js"
-import Toolkit from "../components/toolkit.js"
 import Intro from './intro.js'
 import Code from './code.js'
 import Photography from './photography.js'

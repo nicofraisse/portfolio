@@ -32,7 +32,6 @@
   bottom: -10px;
   width: 100%;
   left: 0;
-  font-size: 32px;
   cursor: pointer;
 }
 
@@ -60,23 +59,12 @@
 }
 
 
-@media (min-width: $XL) {
-  @media (max-height: 600px) {
-    .arrow {
-      display: none;
-    }
-  }
-}
 
-@media (min-width: $LG) {
-  @media (max-height: 540px) {
-    .arrow {
-      display: none;
-    }
-  }
-}
 
 @media (min-width: $MD) {
+  .arrow i {
+    font-size: 36px;
+  }
   @media (max-height: 500px) {
     .arrow {
       display: none;
@@ -84,7 +72,29 @@
   }
 }
 
+
+@media (min-width: $LG) {
+  .arrow i {
+    font-size: 40px;
+  }
+  @media (max-height: 540px) {
+    .arrow {
+      display: none;
+    }
+  }
+}
+
+@media (min-width: $XL) {
+  @media (max-height: 600px) {
+    .arrow {
+      display: none;
+    }
+  }
+}
 @media (max-width: $MD) {
+  .arrow i {
+    font-size: 32px;
+  }
   @media (max-height: 420px) {
     .arrow {
       display: none;

@@ -4,7 +4,6 @@ import Container from "../layouts/container.js"
 import { Link } from "gatsby"
 import '../styles/imports.scss'
 import Project from "../components/project.js"
-import Toolkit from "../components/toolkit.js"
 import {useSpring, animated} from 'react-spring'
 import Separator from "../components/separator.js"
 import ReactTooltip from "react-tooltip";
@@ -29,75 +28,73 @@ const Code = () => {
     <div className="code pt-3">
       <div className="container-md">
         <h2 className="mb-4 mt-0 pt-5 text-color-shadow">Toolkit</h2>
-        <Separator
-          width='160px'
-          transform="perspective(48px) rotateX(18deg)"
-          marginTop="-64px"
-        />
-        <div className="row" style={{marginTop: 40}}>
-          <div className="col-md-4 header-tooltip" data-for="toolkit-tooltip" data-tip="<h3 className='icon-tooltip'>Languages & Frameworks</h3>">
+        <div id="sc1">
+          <Separator
+            transform="perspective(48px) rotateX(18deg)"
+            marginBottom="-16px"
+          />
+        </div>
+        <div className="row justify-content-center">
+          <div className="col-md-4 col-sm-12 header-tooltip" data-for="toolkit-tooltip" data-tip="<h3 className='icon-tooltip'>Languages & Frameworks</h3>">
           <ReactTooltip id="toolkit-tooltip" effect="solid" html={true} offset={{'top': -16, 'left': 0}}/>
             <i
-              style={{fontSize: 48}}
-              className="fas fa-code text-center w-100 my-4"
+              className="toolkit-icon fas fa-code text-center w-100 mb-md-4 mb-2"
             />
-            <div className="toolkit">
+            <div className="toolkit mb-5 mb-md-0">
               <div className="main-tools">
                 <p className="text-center">JavaScript・React.js・Rails</p>
               </div>
               <div className="misc-tools">
-                <p className="text-center">Gatsby.js・JQuery・Vanilla JS・AJAX・Shell・Python・Regex・Git・npm・Yarn・Wordpress</p>
+                <p className="text-justify text--center">Gatsby.js・JQuery・Vanilla JS・AJAX・Shell・Python・Regex・Git・npm・Yarn・Wordpress</p>
               </div>
-
             </div>
           </div>
 
-          <div className="col-md-4 header-tooltip" data-for="toolkit-tooltip" data-tip="<h3 className='icon-tooltip'>Front-end tools</h3>">
+          <div className="col-md-4 col-sm-5 header-tooltip" data-for="toolkit-tooltip" data-tip="<h3 className='icon-tooltip'>Front-end tools</h3>">
             <i
-              style={{fontSize: 48}}
-              className="fas fa-magic text-center w-100 my-4"
+              className="toolkit-icon fas fa-magic text-center w-100 mb-md-4 mb-2"
             />
-            <div className="toolkit">
+            <div className="toolkit mb-5 mb-md-0">
               <div className="main-tools">
                 <p className="text-center">HTML・CSS・Figma</p>
               </div>
               <div className="misc-tools">
-                <p className="text-center">SCSS/SASS・Bootstrap・Animate.js・React Spring・Adobe Photoshop CC・Adobe Lightroom CC</p>
+                <p className="text-justify text--center">SCSS/SASS・Bootstrap・Animate.js・React Spring・Inkscape・Adobe Creative Suite</p>
               </div>
             </div>
           </div>
-          <div className="col-md-4 header-tooltip" data-for="toolkit-tooltip" data-tip="<h3 className='icon-tooltip'>Back-end tools</h3>">
+          <div className="col-md-4 col-sm-5 header-tooltip" data-for="toolkit-tooltip" data-tip="<h3 className='icon-tooltip'>Back-end tools</h3>">
             <i
-              style={{fontSize: 48}}
-              className="fas fa-database text-center w-100 my-4"
+              className="toolkit-icon fas fa-database text-center w-100 mb-md-4 mb-2"
             />
-            <div className="toolkit">
+            <div className="toolkit mb-5 mb-md-0">
               <div className="main-tools">
                 <p className="text-center">GraphQL・PostgreSQL・Active Record</p>
               </div>
               <div className="misc-tools">
-                <p className="text-center">Heroku・Netlify・Cloudinary・Mapbox・Stripe・GraphQL・Pandas・BeautifulSoup・Microsoft SQL Server</p>
+                <p className="text-justify text--center">SQLite・Heroku・Netlify・Cloudinary・Mapbox・Stripe・GraphQL・Pandas・BeautifulSoup・Microsoft SQL Server</p>
               </div>
             </div>
           </div>
         </div>
-        <h2 className="mb-4 mt-0 pt-5 text-color-shadow">Web Development Projects</h2>
-        <Separator
-          width='580px'
-          transform="perspective(30px) rotateX(6deg)"
-          marginTop="-64px"
-        />
-
-        <Project
-        img='incorpus.png'
-        title='inCORPUS'
-        site='https://www.in-corpus.com/'
-        source='https://github.com/amrschmitz/incorpus'
-        date='Apr 2020'
-        imgWidth='340px'
-        description='Creation of webpages & animations for a French tech company developing a training app for professional athletes.'
-        icons={['gatsby.png', 'react.png', 'javascript.png', 'html.png', 'css.png', 'sass.png']}
-        />
+        <h2 className="mb-4 pt-5 text-color-shadow title-smaller">Web Development Projects</h2>
+        <div id="sc2">
+          <Separator
+            transform="perspective(30px) rotateX(6deg)"
+          />
+        </div>
+        <div className="push-higher">
+          <Project
+          img='incorpus.png'
+          title='inCORPUS'
+          site='https://www.in-corpus.com/'
+          source='https://github.com/amrschmitz/incorpus'
+          date='Apr 2020'
+          imgWidth='340px'
+          description='Creation of webpages & animations for a French tech company developing a training app for professional athletes.'
+          icons={['gatsby.png', 'react.png', 'javascript.png', 'html.png', 'css.png', 'sass.png']}
+          />
+        </div>
 
         <Project
         img='bandwizard.png'

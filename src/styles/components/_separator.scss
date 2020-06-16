@@ -1,0 +1,129 @@
+.separator {
+  position: relative;
+  z-index: 10;
+  margin: 0 auto;
+  height: 48px;
+  transform: perspective(18px) rotateX(8deg);
+}
+
+#sc1 > div {
+  width: 160px;
+  top: -64px;
+}
+
+#sc2 > div {
+  width: 580px;
+  top: -64px;
+}
+
+#sc3 > div {
+  width: 288px;
+  top: -110px;
+}
+
+#sc4 > div {
+  width: 212px;
+  top: -90px;
+}
+
+#sc5 > div {
+  width: 220px;
+  top: -90px;
+}
+
+#sc6 > div {
+  width: 220px;
+  top: -90px;
+}
+
+@media (max-width: $MD) {
+  .separator {
+    height: 44px;
+  }
+
+  #sc1 > div {
+    width: 150px;
+    top: -62px;
+  }
+
+  #sc2 > div {
+    width: 540px;
+    top: -60px;
+  }
+
+  #sc3 > div {
+    width: 268px;
+    top: -108px;
+  }
+
+  #sc4 > div {
+    width: 200px;
+    top: -85px;
+  }
+
+  #sc5 > div {
+    width: 210px;
+    top: -85px;
+  }
+
+  #sc6 > div {
+    width:190px;
+    top: -86px;
+  }
+}
+
+@media (max-width: $SM) {
+  .separator {
+    height: 44px;
+  }
+
+  #sc1 > div {
+    width: 140px;
+    top: -62px;
+  }
+
+  #sc2 > div {
+    width: 460px;
+    top: -60px;
+  }
+
+  #sc3 > div {
+    width: 240px;
+    top: -108px;
+  }
+
+  #sc4 > div {
+    width: 190px;
+    top: -85px;
+  }
+
+  #sc5 > div {
+    width: 180px;
+    top: -85px;
+  }
+
+  #sc6 > div {
+    width: 160px;
+    top: -86px;
+  }
+}
+
+@media (max-width: 492px) {
+  .separator {
+  }
+  #sc2 > div {
+    height: 80px;
+    top: -100px;
+    width: 90%
+  }
+}
+
+@media (max-width: 360px) {
+  .title-smaller {
+    font-size: 24px;
+  }
+  #sc2 > div {
+    height: 64px;
+    top: -86px;
+  }
+}

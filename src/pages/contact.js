@@ -28,14 +28,16 @@ const Contact = () => {
   return (
   <div className="contact">
     <h2 className="my-5 text-color-shadow">Contact</h2>
-    <Separator
-      width='220px'
-      marginBottom= '80px'
-      marginTop= '-90px'
-      transform= 'perspective(48px) rotateX(18deg)'
-    />
-
-    <h3 className="text-center my-5" style={{fontSize: 28}}>Available for hire ✌️ <br/>For any enquiries, please <span style={{textDecoration: 'underline'}}>email me here.</span></h3>
+    <div id="sc6">
+      <Separator
+        marginBottom= '-80px'
+        transform= 'perspective(48px) rotateX(18deg)'
+      />
+    </div>
+    <div className="px-sm-5 px-3">
+      <h3 className="text-center mt-5 text-large">Available for hire ✌️</h3>
+      <h3 className="justify-max-xs text-center mb-md-4 mb-3 text-large">For any enquiries, please <span style={{textDecoration: 'underline'}}>email me here.</span></h3>
+    </div>
     <div className="profile-card-container">
       <div className="profile-card">
         <img src="nicolas-fraisse.jpg" class="nicolas-pdp" alt=""/>

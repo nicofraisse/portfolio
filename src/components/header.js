@@ -2,9 +2,6 @@
 import * as Scroll from 'react-scroll';
 import { Link, Element , Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
 import { ThemeProvider, createGlobalStyle } from "styled-components"
-
-
-
 import React, { useState, useEffect } from 'react'
 import { Transition, animated } from 'react-spring/renderprops'
 // import { Link } from "gatsby"
@@ -60,10 +57,12 @@ const Header = ({onClickity}) => {
         if (scrollPosition > (window.innerHeight - 120)) {
           headerMobile.style.opacity = 1;
           headerBackground.style.opacity = 1;
+          arrow.style.opacity = 0;
         }
         else {
           headerMobile.style.opacity = 0;
           headerBackground.style.opacity = 0;
+          arrow.style.opacity = 1;
 
         }
         if (Math.abs(lastScrollTop - scrollPosition) <= delta) {
@@ -73,14 +72,12 @@ const Header = ({onClickity}) => {
         if (scrollPosition > lastScrollTop && scrollPosition > navbarHeight) {
           headerMobile.style.top = '-84px'
         } else {
-          console.log('NO')
           headerMobile.style.top = '0px'
         }
         lastScrollTop = scrollPosition;
       }
     }
     const handleResize = () => {
-      console.log('hey')
       let viewportWidth = window.innerWidth || document.documentElement.clientWidth;
       const scrollPosition = window.scrollY;
       if (viewportWidth > 768) {
@@ -129,7 +126,6 @@ const Header = ({onClickity}) => {
         if (scrollPosition > lastScrollTop && scrollPosition > navbarHeight) {
           headerMobile.style.top = '-84px'
         } else {
-          console.log('NO')
           headerMobile.style.top = '0px'
         }
         lastScrollTop = scrollPosition;
@@ -140,6 +136,8 @@ const Header = ({onClickity}) => {
     var delta = 80;
     var navbarHeight = 100
 
+    const separators = document.querySelectorAll('.separator');
+    console.log(separators)
     const headerDesktop = document.getElementById('header');
     const headerMobile = document.getElementById('header-mobile');
     const headerDesktopContainer = document.querySelector('.header-content-container');
@@ -255,7 +253,7 @@ const Header = ({onClickity}) => {
             <Link
               activeClass="active-link"
               className="mx-md-2 navlink clicky-effect"
-              id="codelink"
+              id="codelink-mobile"
               to="code"
               spy={true}
               smooth={true}
@@ -270,7 +268,7 @@ const Header = ({onClickity}) => {
             <Link
                 activeClass="active-link"
                 className="mx-md-1 navlink clicky-effect"
-                id="photolink"
+                id="photolink-mobile"
                 to="photo"
                 spy={true}
                 smooth={true}
@@ -285,7 +283,7 @@ const Header = ({onClickity}) => {
             <Link
                 activeClass="active-link"
                 className="mx-md-1 navlink clicky-effect"
-                id="aboutlink"
+                id="aboutlink-mobile"
                 to="about"
                 spy={true}
                 smooth={true}
@@ -301,7 +299,7 @@ const Header = ({onClickity}) => {
             <Link
                 activeClass="active-link"
                 className="mx-md-1 navlink clicky-effect"
-                id="contactlink"
+                id="contactlink-mobile"
                 to="contact"
                 spy={true}
                 smooth={true}

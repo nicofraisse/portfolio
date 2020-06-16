@@ -72,7 +72,7 @@ p, h3, i  {
   color: ${props => props.theme.mode === 'dark' ? linkBlueLightHover : linkBlueDarkHover} !important;
 }
 
-#header .active-link {
+.active-link {
   background: ${props => props.theme.mode === 'dark' ?  `linear-gradient(135deg, ${gradedBlue}, ${gradedOtherBlue})` : `linear-gradient(135deg, ${gradedOtherBlue}, ${gradedBlue})`} !important;
   color: white !important;
   &:hover {
@@ -104,6 +104,14 @@ p, h3, i  {
   font-size: 14px;
 }
 
+@media (max-width: 992px) {
+  .photo-tooltip {
+    background-color: white !important;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+}
+
+
 //
 // BACKGROUND
 //
@@ -125,7 +133,6 @@ p, h3, i  {
 
 .code-wrapper {
   background-color: ${props => props.theme.mode === 'dark' ? dayCream : moonBlue};
-  padding-bottom: 40px;
   transition: 0.15s background-color;
 }
 
