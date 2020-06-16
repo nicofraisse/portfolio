@@ -25,11 +25,16 @@
   opacity: 1 !important;
 }
 
+.sticky-links {
+  position: fixed;
+  top: 0;
+  width: 50%;;
+}
 
 .header-background {
   position: absolute;
   width: 100vw;
-  height: 100%;
+  height: 104px;
   opacity: 0;
   z-index: -1;
 }
@@ -49,7 +54,7 @@
   }
 }
 
-#dark-mode-icon {
+#dark-mode-icon-desktop, #dark-mode-icon-mobile {
   display: flex;
   align-items: center;
   background: 0;
@@ -68,10 +73,7 @@
 }
 
 @media (max-width: $MD) {
-  #header {
-    position: fixed;
-  }
-  #dark-mode-icon {
+  #dark-mode-icon-desktop, #dark-mode-icon-mobile {
     transform-origin: 11px 11px !important;
     > i {
       font-size: 22px;
@@ -94,13 +96,26 @@
   }
 
   .header-content {
-    height: 152px;
+    height: 100%;
+    // border: 1px solid red;
+  }
+  .header-content-container {
+    height: 148px;
+    // border: 1px solid blue;
+    // position: relative;
+    // top: -16px;
+  }
+  .header-background {
+    height: 104px;
   }
 }
 
 @media (max-width: $SM) {
   .header-content {
     margin-top: 32px;
+  }
+  #header {
+    position: absolute;
   }
   #nav-links {
     justify-content: space-between !important;
@@ -109,24 +124,39 @@
   #header-logo {
     margin-left: 6px;
   }
-  #dark-mode-icon {
+  #dark-mode-icon-desktop, #dark-mode-icon-mobile {
     margin-right: 8px;
     padding-left: 0;
   }
   .header-content-container {
     width: 100vw;
   }
-  .header-content {
-    max-width: 392px;
-    // margin: 24px auto;
-    padding: 8px;
+
+  #header-mobile {
+    opacity: 0;
+    position: fixed;
+    z-index: 10000;
+    left: 0;
+    width: 100vw;
+    .logo {
+      position: relative;
+      left: 14px;
+    }
+    #header-logo {
+      height: 72px;
+      margin-top: 8px;
+      margin-bottom: 4px;
+    }
+    .header-content {
+      margin: 0;
+    }
+    .header-link-container {
+      height: 60px;
+    }
   }
 }
 
 @media (max-width: $XS) {
-  .header-content {
-    margin-top: 32px;
-  }
   #nav-links {
     justify-content: space-between !important;
     font-size: 14px;
@@ -134,18 +164,23 @@
   #header-logo {
     margin-left: 6px;
   }
-  #dark-mode-icon {
+  #dark-mode-icon-desktop, #dark-mode-icon-mobile {
   transform-origin: 10px 10px !important;
     i {
       font-size: 20px;
     }
   }
-  .header-content-container {
-    width: 100vw;
-  }
-  .header-content {
-    max-width: 360px;
-    margin: 24px auto;
-    padding: 16px;
-  }
+
 }
+
+
+
+
+
+
+
+
+
+
+
+

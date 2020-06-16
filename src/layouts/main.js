@@ -49,7 +49,7 @@ const GlobalStyle = createGlobalStyle`
   transition: 0.15s background-color, color;
 }
 
-#header i {
+#header i, #dark-mode-icon-mobile i {
   color: ${props => props.theme.mode === 'dark' ? lightText : darkText};
 }
 
@@ -111,6 +111,11 @@ p, h3, i  {
 .header-background {
   background-color: ${props => props.theme.mode === 'dark' ? moonBlue : dayCream };
   transition: 0.15s background-color;
+}
+
+#header-mobile {
+  background-color: ${props => props.theme.mode === 'dark' ? moonBlue : dayCream };
+  transition: 0.3s ease-in-out;
 }
 
 .background-css-animation {
@@ -184,7 +189,7 @@ p, h3, i  {
   box-shadow: 0px 2px 6px ${props => props.theme.mode === 'dark' ? 'rgba(0, 0, 0, 0.2)' : 'rgba(0, 0, 0, 0.6)' };
 }
 
-#dark-mode-icon {
+#dark-mode-icon-desktop, #dark-mode-icon-mobile {
   transform: ${props => props.theme.mode === 'dark' ? 'rotateZ(180deg)' : 'rotateZ(0deg)' };
   transition: 0.3s;
 }
