@@ -28,6 +28,7 @@
   align-items: center;
   justify-content: center;
   position: absolute;
+  height: 20%;
   bottom: -10px;
   width: 100%;
   left: 0;
@@ -58,63 +59,46 @@
   }
 }
 
-@media (max-height: 744px) {
-  .arrow {
-    height: 20%;
-  }
-}
 
-@media (max-height: 480px) {
-  .intro-text-wrapper {
-    height: 100%
-  }
-  .arrow {
-    display: none;
-  }
-}
-
-
-$particleSize: 10vmin;
-$animationDuration: 10s;
-$amount: 20;
-.background-css-animation span {
-  width: $particleSize;
-  height: $particleSize;
-  border-radius: $particleSize;
-  backface-visibility: hidden;
-  position: absolute;
-  animation-name: move;
-  animation-duration: $animationDuration;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-  $colors: (
-    rgba(152, 15, 92, 0.6),
-    // #b0412e,
-    rgba(117, 24, 123, 0.6),
-    rgba(234, 50, 35, 0.6),
-    rgba(255, 94, 98, 0.3),
-    rgba(255, 153, 102, 0.3),
-
-  );
-  @for $i from 1 through $amount {
-    &:nth-child(#{$i}) {
-      color: nth($colors, random(length($colors)));
-      top: random(100) * 1%;
-      left: random(100) * 1%;
-      animation-duration: (random($animationDuration * 10) / 10) * 1s + 40s;
-      animation-delay: random(($animationDuration + 10s) * 10) / 10 * -1s;
-      transform-origin: (random(50) - 25) * 1vw (random(50) - 25) * 1vh;
-      $blurRadius: (random() + 0.5) * $particleSize * 0.5;
-      $x: if(random() > 0.5, -1, 1);
-      box-shadow: ($particleSize * 2 * $x) 0 $blurRadius currentColor;
+@media (min-width: $XL) {
+  @media (max-height: 600px) {
+    .arrow {
+      display: none;
     }
   }
 }
 
-@keyframes move {
-  100% {
-    transform: translate3d(0, 0, 1px) rotate(360deg);
+@media (min-width: $LG) {
+  @media (max-height: 540px) {
+    .arrow {
+      display: none;
+    }
   }
 }
+
+@media (min-width: $MD) {
+  @media (max-height: 500px) {
+    .arrow {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: $MD) {
+  @media (max-height: 420px) {
+    .arrow {
+      display: none;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
 
 

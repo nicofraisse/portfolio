@@ -60,11 +60,11 @@ const Header = ({onClickity}) => {
   return (
     <div className="w-100" id="header">
       <div className="header-background"></div>
-      <div className="header-content container-md h-100 d-flex flex-column flex-md-row align-items-center justify-content-md-between">
+      <div className="header-content container-lg px-md-5 px-lg-2 h-100 d-flex flex-column flex-md-row align-items-center justify-content-md-between">
         <div id="header-logo">
           <Link
               activeClass="active-link"
-              className="mx-md-2 navlink clicky-effect box-shadow-3d"
+              className="mx-md-2"
               to="top"
               spy={true}
               smooth={true}
@@ -76,7 +76,7 @@ const Header = ({onClickity}) => {
         <div className="d-flex align-items-center" id="nav-links">
           <Link
             activeClass="active-link"
-            className="mx-md-2 navlink clicky-effect box-shadow-3d"
+            className="mx-md-2 navlink clicky-effect"
             id="codelink"
             to="code"
             spy={true}
@@ -91,7 +91,7 @@ const Header = ({onClickity}) => {
           >code</Link>
           <Link
               activeClass="active-link"
-              className="mx-md-1 navlink clicky-effect box-shadow-3d"
+              className="mx-md-1 navlink clicky-effect"
               id="photolink"
               to="photo"
               spy={true}
@@ -106,7 +106,7 @@ const Header = ({onClickity}) => {
           >photo</Link>
           <Link
               activeClass="active-link"
-              className="mx-md-1 navlink clicky-effect box-shadow-3d"
+              className="mx-md-1 navlink clicky-effect"
               id="aboutlink"
               to="about"
               spy={true}
@@ -122,7 +122,7 @@ const Header = ({onClickity}) => {
           >about</Link>
           <Link
               activeClass="active-link"
-              className="mx-md-1 navlink clicky-effect box-shadow-3d"
+              className="mx-md-1 navlink clicky-effect"
               id="contactlink"
               to="contact"
               spy={true}
