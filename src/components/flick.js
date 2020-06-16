@@ -15,9 +15,13 @@ const Flick = (props) => {
   window.addEventListener('resize', adjustImgHeight);
   return (
     <div>
-      <div className="flick" style={{ backgroundImage: `url(${props.source})`}} data-for="photo-tooltip" data-tip={props.description} data-delay-hide='1000'>
+      <div
+      className="flick"
+      style={{ backgroundImage: `url(${props.source})`}}
+      data-for={props.souce}
+      data-tip={props.description}
+      >
       </div>
-      <ReactTooltip id="photo-tooltip" effect="solid" place="bottom" backgroundColor="rgba(0, 0, 0, 0)" offset={{top: 8}}/>
     </div>
   )
 

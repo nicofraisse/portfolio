@@ -99,10 +99,9 @@ p, h3, i  {
   transition: 0.15s color;
 }
 
-.flick-container * {
-  color: ${props => props.theme.mode === 'dark' ? 'rgba(0, 0, 0, 0.08)' : 'rgba(255, 255, 255, 0.08)'} !important;
-  font-size: 15px;
-
+.photo-tooltip {
+  color: ${props => props.theme.mode === 'dark' ? 'rgba(0, 0, 0, 0.6)' : 'rgba(255, 255, 255, 0.6)'} !important;
+  font-size: 14px;
 }
 
 //
@@ -134,10 +133,17 @@ p, h3, i  {
   background-color: ${props => props.theme.mode === 'dark' ? dayCream : moonBlue};
   transition: 0.15s background-color;
 }
+
+.contact {
+  background-color: ${props => props.theme.mode === 'dark' ? dayCreamSecondary : moonBlueSecondary};
+  transition: 0.15s background-color;
+}
+
 #footer {
   background-color: ${props => props.theme.mode === 'dark' ? dayCream : moonBlue};
   transition: 0.15s background-color;
 }
+
 .separator {
   background: ${props => props.theme.mode === 'dark' ? `linear-gradient(135deg, ${gradedPink}, ${gradedOrange})` : `linear-gradient(135deg, ${gradedRed}, ${gradedBlue})`};
 }
@@ -191,6 +197,31 @@ p, h3, i  {
   font-size: 16px;
 }
 
+.flick:hover {
+  box-shadow: 0px -3px 20px ${props => props.theme.mode === 'dark' ? 'rgba(0, 0, 0, 0.2)' : 'rgba(255, 255, 255, 0.2)' };
+}
+
+.profile-card {
+  border: 1px solid ${props => props.theme.mode === 'dark' ? 'rgba(0, 0, 0, 0.12)' : moonBlue };
+  box-shadow: 10px 10px 0px ${props => props.theme.mode === 'dark' ? 'rgba(0, 0, 0, 0.12)' : moonBlue };
+  background-color: ${props => props.theme.mode === 'dark' ? 'rgba(255, 255, 255, 0.5)' : 'rgba(0, 0, 0, 0)' };
+  transition: 0.15s;
+}
+
+.profile-card:hover {
+  transform: translate(3px, 3px);
+  box-shadow: 7px 7px 0px ${props => props.theme.mode === 'dark' ? 'rgba(0, 0, 0, 0.14)' : moonBlue };
+}
+
+.profile-card:active {
+  transform: translate(8px, 8px);
+  box-shadow: 3px 3px 0px ${props => props.theme.mode === 'dark' ? 'rgba(0, 0, 0, 0.17)' : moonBlue };
+}
+
+.nicolas-pdp {
+  border: 1px solid ${props => props.theme.mode === 'dark' ? 'rgba(0, 0, 0, 0.12)' : 'rgba(0, 0, 0, 0)' };
+}
+
 //
 // FX
 //
@@ -218,6 +249,16 @@ p, h3, i  {
 .cube__face--bottom {
   background: linear-gradient(159deg, ${cubeOrange} 0%, ${cubePink} 100%);
   transition: 0.3s;
+}
+
+.social-icon {
+  padding: 1px;
+}
+
+.social-icon:hover {
+  background: ${props => props.theme.mode === 'dark' ?  `linear-gradient(135deg, ${gradedRed}, ${cubePink})` : `linear-gradient(135deg, ${gradedRed}, ${gradedOtherBlue})`};
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(0, 0, 0, 0);
 }
 
 `

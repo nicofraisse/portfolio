@@ -111,7 +111,7 @@ const Header = ({onClickity}) => {
               to="about"
               spy={true}
               smooth={true}
-              offset={-144}
+              offset={-100}
               duration= {500}
               onClick={() => {
                 setTimeout(() => {
@@ -127,7 +127,7 @@ const Header = ({onClickity}) => {
               to="contact"
               spy={true}
               smooth={true}
-              offset={-107}
+              offset={-100}
               duration= {500}
               onClick={() => {
                 setTimeout(() => {

@@ -1,5 +1,13 @@
 .social-icon {
   font-size: 40px;
+  text-align: center;
+}
+
+.icon-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 26px;
+  margin-left: 4px;
 }
 
 .icon-tooltip {
@@ -12,7 +20,6 @@
   box-shadow: 0 0 30px rgba(0,0,0,0.1);
   width: 100%;
 }
-
 
 .disabled-link, .disabled-link i {
   cursor: default;
@@ -32,13 +39,11 @@
 }
 
 .separator {
-
   z-index: 10;
   margin: 0 auto;
   height: 48px;
   transform: perspective(18px) rotateX(8deg);
   position: relative;
-
 }
 
 .date-section {
