@@ -25,7 +25,6 @@ const Header = ({onClickity}) => {
       if (viewportWidth > 768) {
         if (scrollPosition < 240) {
           header.style.height = `${184 - Math.round(window.scrollY / 3)}px`
-          logoImg.style.display = 'none'
           arrow.style.opacity = 1;
         } else {
           arrow.style.opacity = 0;
@@ -45,12 +44,13 @@ const Header = ({onClickity}) => {
           navLinks.classList.add('sticky-links')
         }
         else {
+          header.style.boxShadow = 'none'
+          headerBackground.style.opacity=0;
           navLinks.classList.remove('sticky-links')
         }
       }
     }
     const header = document.getElementById('header');
-    const logoImg = document.getElementById('logo-img');
     const arrow = document.querySelector('.arrow');
     const headerBackground = document.querySelector('.header-background')
     window.addEventListener('scroll', handleScroll);
@@ -60,84 +60,86 @@ const Header = ({onClickity}) => {
   return (
     <div className="w-100" id="header">
       <div className="header-background"></div>
-      <div className="header-content container-lg px-md-5 px-lg-2 h-100 d-flex flex-column flex-md-row align-items-center justify-content-md-between">
-        <div id="header-logo">
-          <Link
+      <div className="header-content-container">
+        <div className="header-content container-lg px-md-5 px-lg-2 d-sm-flex flex-column flex-sm-row align-items-center justify-content-sm-between">
+          <div id="header-logo">
+            <Link
+                activeClass="active-link"
+                className="mx-md-2"
+                to="top"
+                spy={true}
+                smooth={true}
+                offset={0}
+                duration={500}>
+              <Logo />
+            </Link>
+          </div>
+          <div className="d-flex align-items-center" id="nav-links">
+            <Link
               activeClass="active-link"
-              className="mx-md-2"
-              to="top"
-              spy={true}
-              smooth={true}
-              offset={0}
-              duration={500}>
-            <Logo />
-          </Link>
-        </div>
-        <div className="d-flex align-items-center" id="nav-links">
-          <Link
-            activeClass="active-link"
-            className="mx-md-2 navlink clicky-effect"
-            id="codelink"
-            to="code"
-            spy={true}
-            smooth={true}
-            offset={-100}
-            duration={500}
-            onClick={() => {
-              setTimeout(() => {
-                window.scrollBy(0, 2)
-              }, 550)
-            }}
-          >code</Link>
-          <Link
-              activeClass="active-link"
-              className="mx-md-1 navlink clicky-effect"
-              id="photolink"
-              to="photo"
+              className="mx-md-2 navlink clicky-effect"
+              id="codelink"
+              to="code"
               spy={true}
               smooth={true}
               offset={-100}
-              duration= {500}
+              duration={500}
               onClick={() => {
                 setTimeout(() => {
                   window.scrollBy(0, 2)
                 }, 550)
               }}
-          >photo</Link>
-          <Link
-              activeClass="active-link"
-              className="mx-md-1 navlink clicky-effect"
-              id="aboutlink"
-              to="about"
-              spy={true}
-              smooth={true}
-              offset={-100}
-              duration= {500}
-              onClick={() => {
-                setTimeout(() => {
-                  window.scrollBy(0, 2)
-                }, 550)
-              }}
+            >code</Link>
+            <Link
+                activeClass="active-link"
+                className="mx-md-1 navlink clicky-effect"
+                id="photolink"
+                to="photo"
+                spy={true}
+                smooth={true}
+                offset={-100}
+                duration= {500}
+                onClick={() => {
+                  setTimeout(() => {
+                    window.scrollBy(0, 2)
+                  }, 550)
+                }}
+            >photo</Link>
+            <Link
+                activeClass="active-link"
+                className="mx-md-1 navlink clicky-effect"
+                id="aboutlink"
+                to="about"
+                spy={true}
+                smooth={true}
+                offset={-100}
+                duration= {500}
+                onClick={() => {
+                  setTimeout(() => {
+                    window.scrollBy(0, 2)
+                  }, 550)
+                }}
 
-          >about</Link>
-          <Link
-              activeClass="active-link"
-              className="mx-md-1 navlink clicky-effect"
-              id="contactlink"
-              to="contact"
-              spy={true}
-              smooth={true}
-              offset={-100}
-              duration= {500}
-              onClick={() => {
-                setTimeout(() => {
-                  window.scrollBy(0, 2)
-                }, 550)
-              }}
-          >contact</Link>
-          <button id="dark-mode-icon" className="ml-4 ml-lg-5 d-none d-sm-inline-block" onClick={onClickity}>
-            <i className="fas fa-adjust" />
-          </button>
+            >about</Link>
+            <Link
+                activeClass="active-link"
+                className="mx-md-1 navlink clicky-effect"
+                id="contactlink"
+                to="contact"
+                spy={true}
+                smooth={true}
+                offset={-100}
+                duration= {500}
+                onClick={() => {
+                  setTimeout(() => {
+                    window.scrollBy(0, 2)
+                  }, 550)
+                }}
+            >contact</Link>
+            <button id="dark-mode-icon" className="ml-3 ml-md-4 ml-lg-5 d-sm-inline-block" onClick={onClickity}>
+              <i className="fas fa-adjust" />
+            </button>
+          </div>
         </div>
       </div>
     </div>

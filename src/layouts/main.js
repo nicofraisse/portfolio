@@ -185,7 +185,6 @@ p, h3, i  {
 }
 
 #dark-mode-icon {
-  transform-origin: 12px 12px;
   transform: ${props => props.theme.mode === 'dark' ? 'rotateZ(180deg)' : 'rotateZ(0deg)' };
   transition: 0.3s;
 }
