@@ -8,9 +8,26 @@ import { Transition, animated } from 'react-spring/renderprops'
 import "../styles/imports.scss"
 import Logo from "./logo.js"
 
-
-
 const Header = ({onClickity}) => {
+  function elementInViewport(el) {
+    var top = el.offsetTop;
+    var left = el.offsetLeft;
+    var width = el.offsetWidth;
+    var height = el.offsetHeight;
+
+    while(el.offsetParent) {
+      el = el.offsetParent;
+      top += el.offsetTop;
+      left += el.offsetLeft;
+    }
+
+    return (
+      top < (window.pageYOffset + window.innerHeight) &&
+      left < (window.pageXOffset + window.innerWidth) &&
+      (top + height) > window.pageYOffset &&
+      (left + width) > window.pageXOffset
+    );
+  }
   // for header shrinking on scroll
   const [headerBig, setHeaderBig] = useState(false);
   const initialViewHeight = window.innerHeight;
@@ -131,20 +148,25 @@ const Header = ({onClickity}) => {
         lastScrollTop = scrollPosition;
       }
     }
-
     var lastScrollTop = 0;
     var delta = 80;
     var navbarHeight = 100
+    const aboutDesktop = document.getElementById('aboutlink');
+    const aboutMobile = document.getElementById('aboutlink-mobile');
+    const contactDesktop = document.getElementById('contactlink');
+    const contactMobile = document.getElementById('contactlink-mobile');
 
     const separators = document.querySelectorAll('.separator');
-    console.log(separators)
     const headerDesktop = document.getElementById('header');
+    const footer = document.getElementById('footer');
     const headerMobile = document.getElementById('header-mobile');
     const headerDesktopContainer = document.querySelector('.header-content-container');
     const arrow = document.querySelector('.arrow');
     const headerBackground = document.querySelector('.header-background')
+
     window.addEventListener('scroll', handleScroll);
     window.addEventListener('resize', handleResize);
+
   }, [headerBig])
 
 
@@ -217,7 +239,7 @@ const Header = ({onClickity}) => {
                   activeClass="active-link"
                   className="mx-md-1 navlink clicky-effect"
                   id="contactlink"
-                  to="contact"
+                  to={ window.innerHeight < 740 ? "contact" : "invisibleScrollLocation"}
                   spy={true}
                   smooth={true}
                   offset={-100}
@@ -303,12 +325,13 @@ const Header = ({onClickity}) => {
                 to="contact"
                 spy={true}
                 smooth={true}
-                offset={-100}
+                offset={-200}
                 duration= {500}
                 onClick={() => {
                   setTimeout(() => {
                     window.scrollBy(0, 2)
                   }, 550)
+
                 }}
             >contact</Link>
             <button id="dark-mode-icon-mobile" onClick={onClickity}>
