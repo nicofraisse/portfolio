@@ -238,7 +238,7 @@ const Header = ({onClickity}) => {
                   activeClass="active-link"
                   className="mx-md-1 navlink clicky-effect"
                   id="contactlink"
-                  to={ window.innerHeight < 740 ? "contact" : "invisibleScrollLocation"}
+                  to="contact"
                   spy={true}
                   smooth={true}
                   offset={-100}
