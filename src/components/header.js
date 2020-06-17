@@ -30,7 +30,6 @@ const Header = ({onClickity}) => {
   }
   // for header shrinking on scroll
   const [headerBig, setHeaderBig] = useState(false);
-  const initialViewHeight = window.innerHeight;
   useEffect(() => {
     const navLinks = document.getElementById('nav-links');
     const handleScroll = () => {
