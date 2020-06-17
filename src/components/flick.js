@@ -1,20 +1,22 @@
-import React from "react"
+import React, { useState, useEffect } from 'react'
 import ReactTooltip from "react-tooltip";
 import '../styles/imports.scss'
 
 const Flick = (props) => {
-  const adjustImgHeight = () => {
-    var images = document.querySelectorAll('.flick')
-    for (let image of images) {
-      image.style.width = "100%"
-      var imgWidth = image.clientWidth
-      image.style.height = `${imgWidth}px`
+  useEffect(() => {
+    const adjustImgHeight = () => {
+      var images = document.querySelectorAll('.flick')
+      for (let image of images) {
+        image.style.width = "100%"
+        var imgWidth = image.clientWidth
+        image.style.height = `${imgWidth}px`
+      }
     }
-  }
-  setTimeout(() => {
-    adjustImgHeight()
-  }, 100)
-  window.addEventListener('resize', adjustImgHeight);
+    setTimeout(() => {
+      adjustImgHeight()
+    }, 100)
+    window.addEventListener('resize', adjustImgHeight);
+  })
   return (
     <div>
       <div
