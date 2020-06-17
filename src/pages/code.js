@@ -30,13 +30,13 @@ const Code = () => {
         <h2 className="mb-4 mt-0 pt-5 text-color-shadow">Toolkit</h2>
         <div id="sc1">
           <Separator
-            transform="perspective(48px) rotateX(18deg)"
             marginBottom="-16px"
+            transform="perspective(48px) rotateX(18deg) translate3d(0, 0, 8px)"
           />
         </div>
         <div className="row justify-content-center">
           <div className="col-md-4 col-sm-12 header-tooltip" data-for="toolkit-tooltip" data-tip="<h3 className='icon-tooltip'>Languages & Frameworks</h3>">
-          <ReactTooltip id="toolkit-tooltip" effect="solid" html={true} offset={{'top': -16, 'left': 0}}/>
+          <ReactTooltip id="toolkit-tooltip" effect="solid" html={true} offset={{'top': 0, 'left': 0}}/>
             <i
               className="toolkit-icon fas fa-code text-center w-100 mb-md-4 mb-2"
             />
@@ -80,7 +80,7 @@ const Code = () => {
         <h2 className="mb-4 pt-5 text-color-shadow title-smaller">Web Development Projects</h2>
         <div id="sc2">
           <Separator
-            transform="perspective(30px) rotateX(6deg)"
+            transform="perspective(30px) rotateX(6deg) translate3d(0, 0, 8px)"
           />
         </div>
         <div className="push-higher">
@@ -115,7 +115,7 @@ const Code = () => {
         title='Billy.Social'
         site='https://billy.social/'
         date='Dec 2019'
-        imgWidth='440px'
+        imgWidth='400px'
         description="Created static pages and implemented a payment system for Billy.Social, a Montreal based webmarketing agency, using Wordpress and custom CSS."
         icons={['wordpress.png', 'css.png', 'stripe.png']}
         />
@@ -131,7 +131,7 @@ const Code = () => {
 
           <Project
           img='journalinteret.png'
-          imgWidth='400px'
+          imgWidth='360px'
           title="Journal L'intéret, HEC Montréal"
           site='http://www.journalinteret.com/'
           date='Oct 2019'
@@ -142,7 +142,7 @@ const Code = () => {
 
           <Project
           img='rentmylife.png'
-          imgWidth='440px'
+          imgWidth='400px'
           title='Rent My Life'
           site='http://rentmylife.herokuapp.com/'
           source='https://github.com/nicofraisse/rentmylife'
@@ -157,7 +157,7 @@ const Code = () => {
           site='#'
           source='https://github.com/nicofraisse/nf'
           date='Jun 2020'
-          imgWidth='440px'
+          imgWidth='400px'
           description='I have designed and built my this --single page application--  portfolio website from scratch, using the Gatsby.js react framework. Animations and other dynamic elements were made thanks to react hooks as well as the react sping library.'
           icons={['react.png', 'gatsby.png']}
           reverse

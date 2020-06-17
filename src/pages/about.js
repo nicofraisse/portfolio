@@ -10,6 +10,7 @@ import ReactTooltip from "react-tooltip";
 export default () =>
 
 <div className="about pt-4 pl-lg-5 pr-lg-5 pl-sm-4 pr-sm-4 pl-2 pr-2 pb-5">
+  <div id="invisibleScrollLocation"></div>
   <div className="container-lg">
     <div className="row">
       <div className="col-md-7 pr-lg-5 pr-md-4">
@@ -48,7 +49,7 @@ export default () =>
         <p className="text-justify">Attended Le Wagon Montreal (Batch #281). 9-week intensive coding bootcamp learning HTML, CSS, Bootstrap, JavaScript ES2015,SQL, git, GitHub, Heroku and Ruby on Rails. Designed, implemented and shipped toproduction a clone of AirBnB and a Rails prototype of www.bandwizard.co.</p>
         <h3 className="mt-4">HEC Montréal<span className="date-section"> / 2017-2020</span></h3>
         <p className="text-justify">Bachelor's of Business Administration, major in business intelligence (BI). Mention ef excellence. Among other skills aquired during bachelor's degree, learned to use tools such as Jupyter Notebook, Tableau, MS SQL Manager, MS Power BI, SAP, SAS, SAS EM, and much more.</p>
-        <a href="#">Full CV by request</a>
+        <a href="#" id="cv">Full CV by request</a>
       </div>
     </div>
   </div>

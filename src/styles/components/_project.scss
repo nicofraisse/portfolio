@@ -1,6 +1,10 @@
+.project-description {
+}
+
 .project-img {
+  display: block;
   object-fit: cover;
-  height: 100%;
+  height: 100% !important;
   border-radius: 6px;
   box-shadow: 0px 0px 24px rgba(0, 0, 0, .1);
 
@@ -10,7 +14,13 @@
   }
 }
 
-
+@-moz-document url-prefix() {
+  .project-img {
+    max-width: 100% !important;
+    height: auto !important;
+    width: 60% !important;
+  }
+}
 
 .skill-icon img {
   height: 40px;
@@ -22,6 +32,9 @@
   flex-direction: row-reverse;
 }
 
+.ul-right {
+  text-align: right;
+}
 
 @media (min-width: $LG) {
   .project-img:hover {
@@ -50,6 +63,16 @@
     }
   }
   .project-img {
-    max-width: calc(100vw - 3em);
+    max-width: 50% !important;
+    height: auto !important;
+    width: 60% !important;
+  }
+
+  .project ul, .source-center-mobile {
+    text-align: center;
+  }
+
+  .text-justify-mobile {
+    text-align: justify;
   }
 }

@@ -3,17 +3,19 @@
   z-index: 10;
   margin: 0 auto;
   height: 48px;
-  transform: perspective(18px) rotateX(8deg);
+  -webkit-transform: perspective(18px) rotateX(8deg);
 }
 
 #sc1 > div {
-  width: 160px;
-  top: -64px;
+  width: 148px;
+  height: 42px;
+  top: -56px;
 }
 
 #sc2 > div {
-  width: 580px;
-  top: -64px;
+  width: 440px;
+  height: 42px;
+  top: -56px;
 }
 
 #sc3 > div {
@@ -47,7 +49,7 @@
   }
 
   #sc2 > div {
-    width: 540px;
+    width: 370px;
     top: -60px;
   }
 
@@ -83,7 +85,7 @@
   }
 
   #sc2 > div {
-    width: 460px;
+    width: 310px;
     top: -60px;
   }
 
@@ -112,9 +114,9 @@
   .separator {
   }
   #sc2 > div {
-    height: 80px;
-    top: -100px;
-    width: 90%
+    height: 64px;
+    top: -94px;
+    width: 232px;
   }
 }
 
@@ -123,7 +125,8 @@
     font-size: 24px;
   }
   #sc2 > div {
-    height: 64px;
+    height: 56px;
+    width: 200px;
     top: -86px;
   }
 }

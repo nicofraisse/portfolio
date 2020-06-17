@@ -2,6 +2,7 @@
   overflow: hidden;
   height: 184px;
   position: fixed;
+  transform: translate3d(0, 0, 1000px);
   top: 0;
   z-index: 1000;
   width:100%;
@@ -60,6 +61,7 @@
   background: 0;
   border-radius: 50%;
   border: 0;
+  transform-origin: 12px 12px !important;
   > i {
     font-size: 24px;
   }

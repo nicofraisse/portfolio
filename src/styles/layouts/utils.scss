@@ -32,14 +32,17 @@
 .text-color-shadow {
   position: relative;
   z-index: 100;
+  -webkit-transform: translate3d(0,0px,1000px);
   transition: 0.3s;
   &:hover {
     text-shadow: none;
-    transform: translate(0px, -6px);
+    -webkit-transform: translate3d(0,-6px,1000px);
+
   }
   cursor: default;
   letter-spacing: .05em;
   user-select: none;
+  cursor: default;
 
 }
 
