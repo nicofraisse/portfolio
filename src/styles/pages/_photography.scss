@@ -1,6 +1,13 @@
 .photography {
-  padding: 40px;
+  padding: 40px 40px 4px 40px;
   h2 {
     margin-bottom:: 72px;
+  }
+}
+
+@media (max-width: $MD) {
+  .photography {
+    padding-right: 0px;
+    padding-left: 0px;
   }
 }

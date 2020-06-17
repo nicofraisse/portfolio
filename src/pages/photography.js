@@ -17,18 +17,17 @@ export default () => {
   })
 
   const handleClickPhotos = () => {
-    console.log(morePhotos)
     setMorePhotos((morePhotos) => !morePhotos)
   }
   return(
   <div className="photography" id="photo">
     <h2 className="text-color-shadow">Photography</h2>
-    <Separator
-      width='288px'
-      marginBottom= '60px'
-      marginTop= '-110px'
-      transform= "perspective(48px) rotateX(18deg)"
-    />
+    <div id="sc3">
+      <Separator
+        marginBottom= '-44px'
+        transform= "perspective(48px) rotateX(18deg)"
+      />
+    </div>
     <Container>
       <div className="flick-container">
         <Flick source='photos/hk.jpg' description="Hong Kong"></Flick>

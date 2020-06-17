@@ -49,7 +49,7 @@ const GlobalStyle = createGlobalStyle`
   transition: 0.15s background-color, color;
 }
 
-#header i {
+#header i, #dark-mode-icon-mobile i {
   color: ${props => props.theme.mode === 'dark' ? lightText : darkText};
 }
 
@@ -72,7 +72,7 @@ p, h3, i  {
   color: ${props => props.theme.mode === 'dark' ? linkBlueLightHover : linkBlueDarkHover} !important;
 }
 
-#header .active-link {
+.active-link {
   background: ${props => props.theme.mode === 'dark' ?  `linear-gradient(135deg, ${gradedBlue}, ${gradedOtherBlue})` : `linear-gradient(135deg, ${gradedOtherBlue}, ${gradedBlue})`} !important;
   color: white !important;
   &:hover {
@@ -104,6 +104,14 @@ p, h3, i  {
   font-size: 14px;
 }
 
+@media (max-width: 992px) {
+  .photo-tooltip {
+    background-color: white !important;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+}
+
+
 //
 // BACKGROUND
 //
@@ -113,6 +121,11 @@ p, h3, i  {
   transition: 0.15s background-color;
 }
 
+#header-mobile {
+  background-color: ${props => props.theme.mode === 'dark' ? moonBlue : dayCream };
+  transition: 0.3s ease-in-out;
+}
+
 .background-css-animation {
   background-color: ${props => props.theme.mode === 'dark' ? moonBlue : dayCream};
   transition: 0.15s background-color;
@@ -120,7 +133,6 @@ p, h3, i  {
 
 .code-wrapper {
   background-color: ${props => props.theme.mode === 'dark' ? dayCream : moonBlue};
-  padding-bottom: 40px;
   transition: 0.15s background-color;
 }
 
@@ -184,8 +196,7 @@ p, h3, i  {
   box-shadow: 0px 2px 6px ${props => props.theme.mode === 'dark' ? 'rgba(0, 0, 0, 0.2)' : 'rgba(0, 0, 0, 0.6)' };
 }
 
-#dark-mode-icon {
-  transform-origin: 12px 12px;
+#dark-mode-icon-desktop, #dark-mode-icon-mobile {
   transform: ${props => props.theme.mode === 'dark' ? 'rotateZ(180deg)' : 'rotateZ(0deg)' };
   transition: 0.3s;
 }

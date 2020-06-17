@@ -1,13 +1,18 @@
 .code-wrapper {
   position: relative;
+  padding-bottom: 4px;
   .code {
     max-width: 960px;
     margin: 0 auto;
   }
 }
 
+.toolkit-icon {
+  font-size: 48px;
+}
+
 .btn-more {
-  margin: 72px auto;
+  margin: 64px auto;
   display: block;
   background: none;
   padding: 10px;
@@ -32,4 +37,14 @@
   transform: translateY(1px);
 }
 
-
+@media (max-width: $SM) {
+  .btn-more {
+    margin: 48px auto;
+    padding: 8px;
+    font-size: 15px;
+    width: 156px;
+  }
+  .toolkit-icon {
+    font-size: 40px
+  }
+}

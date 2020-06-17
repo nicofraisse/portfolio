@@ -3,7 +3,6 @@ import ReactTooltip from "react-tooltip";
 import '../styles/imports.scss'
 
 const Flick = (props) => {
-
   const adjustImgHeight = () => {
     var images = document.querySelectorAll('.flick')
     for (let image of images) {
@@ -12,6 +11,9 @@ const Flick = (props) => {
       image.style.height = `${imgWidth}px`
     }
   }
+  setTimeout(() => {
+    adjustImgHeight()
+  }, 100)
   window.addEventListener('resize', adjustImgHeight);
   return (
     <div>

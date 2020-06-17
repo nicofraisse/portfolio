@@ -29,7 +29,17 @@
   border-radius: 50%;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+@media (max-width: $XS) {
+  .profile-card {
+    padding: 18px 27px;
+  }
+
+  .nicolas-pdp {
+    width: 100px;
+    height: 100px;
+    margin-right: 16px;
+  }
+}
 
 
 .btn-3d-container {

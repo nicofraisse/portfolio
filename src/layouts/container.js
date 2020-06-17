@@ -3,7 +3,7 @@ import React from "react"
 import '../styles/imports.scss'
 
 const Container = (props) => (
-  <div className='container'>
+  <div className='my-container'>
     { props.children }
   </div>
 );

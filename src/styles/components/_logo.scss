@@ -32,3 +32,37 @@
 #logo-img {
   display: none;
 }
+
+
+@media (max-width: $MD) {
+  .logo {
+    font-size: 36px;
+    line-height: 80px;
+    position: relative;
+    // top: 0px;
+  }
+
+  .logo-description {
+    font-size: 13px;
+    position: absolute;
+    top: 30px;
+    left: 2px;
+    font-family: 'Avenir';
+  }
+}
+
+@media (max-width: $XS) {
+  .logo {
+    font-size: 32px;
+    line-height: 90px;
+    position: relative;
+  }
+
+  .logo-description {
+    font-size: 12px;
+    position: absolute;
+    top: 28px;
+    left: 2px;
+    font-family: 'Avenir'
+  }
+}
