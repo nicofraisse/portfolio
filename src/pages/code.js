@@ -85,7 +85,7 @@ const Code = () => {
         </div>
         <div className="push-higher">
           <Project
-          img='incorpus.png'
+          img='incorpus.jpg'
           title='inCORPUS'
           site='https://www.in-corpus.com/'
           source='https://github.com/amrschmitz/incorpus'
@@ -97,7 +97,7 @@ const Code = () => {
         </div>
 
         <Project
-        img='bandwizard.png'
+        img='bandwizard.jpg'
         title='BandWizard'
         site='http://bandwizard.co/'
         source='https://github.com/nicofraisse/bandwizard'
@@ -111,7 +111,7 @@ const Code = () => {
         />
 
         <Project
-        img='billy-social.png'
+        img='billy-social.jpg'
         title='Billy.Social'
         site='https://billy.social/'
         date='Dec 2019'
@@ -130,7 +130,7 @@ const Code = () => {
         <animated.div id="other-projects" className={moreCode ? 'd-block' : 'd-none'} style={animation}>
 
           <Project
-          img='journalinteret.png'
+          img='journalinteret.jpg'
           imgWidth='360px'
           title="Journal L'intéret, HEC Montréal"
           site='http://www.journalinteret.com/'
@@ -141,7 +141,7 @@ const Code = () => {
           />
 
           <Project
-          img='rentmylife.png'
+          img='rentmylife.jpg'
           imgWidth='400px'
           title='Rent My Life'
           site='http://rentmylife.herokuapp.com/'
@@ -152,7 +152,7 @@ const Code = () => {
           />
 
           <Project
-          img='incorpus.png'
+          img='incorpus.jpg'
           title='This website'
           site='#'
           source='https://github.com/nicofraisse/nf'
@@ -164,7 +164,7 @@ const Code = () => {
           />
 
           <Project
-          img='conseil-lgbt.png'
+          img='conseil-lgbt.jpg'
           title='Conseil LGBT'
           site='https://www.conseil-lgbt.ca/'
           date='Jul 2019'
