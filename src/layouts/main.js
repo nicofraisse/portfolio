@@ -58,7 +58,7 @@ h1, h2  {
   transition: 0.15s background-color, color;
 }
 
-p, h3, i  {
+p, h3, i, .email-link a {
   color: ${props => props.theme.mode === 'dark' ? darkTextSecondary : lightTextSecondary};
   transition: 0.15s background-color, color;
 }
@@ -84,7 +84,7 @@ p, h3, i  {
   color: ${props => props.theme.mode === 'dark' ? linkBlueDark  : linkBlueLight} !important;
 }
 
-.link:hover {
+.link:hover, .email-link a:hover {
   color: ${props => props.theme.mode === 'dark' ? linkBlueDarkHover : linkBlueLightHover} !important;
 }
 

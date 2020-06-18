@@ -47,12 +47,17 @@
 
 .navlink {
   padding: 4px 12px;
-  border-radius: 2px;
+  border-radius: 4px;
   transition: 0.2s;
   transition-property: background-color, color, box-shadow;
   &:hover {
     cursor: pointer;
   }
+  transition: none !important;
+}
+
+.active-link {
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.14);
 }
 
 #dark-mode-icon-desktop, #dark-mode-icon-mobile {
@@ -95,6 +100,7 @@
 
   .navlink {
     padding: 4px 8px;
+    margin-left: 4px;
   }
 
   .header-content {
@@ -133,6 +139,9 @@
   .header-content-container {
     width: 100vw;
   }
+  .nav-link {
+    margin-left: 0;
+  }
 
   #header-mobile {
     opacity: 0;
@@ -161,18 +170,11 @@
 @media (max-width: $XS) {
   #nav-links {
     justify-content: space-between !important;
-    font-size: 14px;
+    font-size: 14.5px;
   }
   #header-logo {
     margin-left: 6px;
   }
-  #dark-mode-icon-desktop, #dark-mode-icon-mobile {
-  transform-origin: 10px 10px !important;
-    i {
-      font-size: 20px;
-    }
-  }
-
 }
 
 

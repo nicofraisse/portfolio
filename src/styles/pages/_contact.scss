@@ -29,6 +29,10 @@
   border-radius: 50%;
 }
 
+.email-link {
+  text-decoration: underline;
+}
+
 @media (max-width: $XS) {
   .profile-card {
     padding: 18px 27px;
@@ -39,90 +43,4 @@
     height: 100px;
     margin-right: 16px;
   }
-}
-
-
-.btn-3d-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  text-align: center;
-  height: 320px;
-}
-
-.btn-3d {
-  margin: 0 auto;
-  position: relative;
-  transition: 0.1s;
-}
-
-.btn-front {
-  background-color: #304fff;
-  font-family: 'Roboto', 'sans-serif';
-  color: white;
-  text-decoration: none;
-  font-size: 20px;
-  font-style: "Arial";
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 178px;
-  height: 68px;
-  border-radius: 3px;
-  transition: all 0.13s;
-}
-
-.btn-3d:hover > .btn-front {
-  transform: translate(4px, 4px);
-}
-
-.btn-3d:active > .btn-front {
-  transform: translate(8px, 8px);
-}
-
-.btn-link {
-  color: white;
-  text-decoration: none;
-  font-size: 17px;
-}
-
-.btn-back {
-  background-color: rgba(149, 41, 184, 1);
-  width: 178px;
-  height: 68px;
-  border-radius: 3px;
-  position: absolute;
-  top:10px;
-  left:10px;
-  z-index: -1;
-}
-
-.btn-linker {
-  position: absolute;
-  background-color: rgba(149, 41, 184, 1);
-  height: 19px;
-  width: 15px;
-  transform: rotateZ(45deg);
-  z-index: -1;
-  transition: 0.13s;
-}
-
-.linker-bottom {
-  transform-origin: bottom right;
-  bottom: -9px;
-  left: -4px;
-}
-
-.linker-top {
-  transform-origin: top right;
-  top: 12px;
-  right: -10px;
-}
-
-.shrink {
-  transform: scale(0.6) rotateZ(45deg);
-}
-
-.shrink-more {
-  transform: scale(0.2) rotateZ(45deg);
 }

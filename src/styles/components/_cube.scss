@@ -115,7 +115,7 @@
 
 @media (min-width: $XS) {
   .scene {
-    transform: scale(1, 1) !important;
+    transform: scale(0.9, 0.9) !important;
   }
   @media (max-height: 500px) {
     .scene {
@@ -189,5 +189,20 @@
 @media (max-width: $SM) {
   .scene {
     transform: scale(0.83, 0.83);
+  }
+}
+
+@media (max-height: 560px) {
+  .cube {
+    top: 32px;
+  }
+}
+
+@media (max-height: 400px) {
+  .scene {
+    transform: scale(0.5, 0.5) !important;
+  }
+  .cube {
+    display: none;
   }
 }

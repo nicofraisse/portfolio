@@ -183,7 +183,7 @@ const Header = ({onClickity}) => {
                   spy={true}
                   smooth={true}
                   offset={0}
-                  duration={500}>
+                  duration={1000}>
                 <Logo />
               </Link>
             </div>
@@ -196,11 +196,11 @@ const Header = ({onClickity}) => {
                 spy={true}
                 smooth={true}
                 offset={-100}
-                duration={500}
+                duration={1000}
                 onClick={() => {
                   setTimeout(() => {
                     window.scrollBy(0, 2)
-                  }, 550)
+                  }, 1050)
                 }}
               >code</Link>
               <Link
@@ -211,11 +211,11 @@ const Header = ({onClickity}) => {
                   spy={true}
                   smooth={true}
                   offset={-100}
-                  duration= {500}
+                  duration= {1000}
                   onClick={() => {
                     setTimeout(() => {
                       window.scrollBy(0, 2)
-                    }, 550)
+                    }, 1050)
                   }}
               >photo</Link>
               <Link
@@ -226,11 +226,12 @@ const Header = ({onClickity}) => {
                   spy={true}
                   smooth={true}
                   offset={-100}
-                  duration= {500}
+                  duration= {1000}
                   onClick={() => {
                     setTimeout(() => {
+                      console.log('hki')
                       window.scrollBy(0, 2)
-                    }, 550)
+                    }, 1050)
                   }}
 
               >about</Link>
@@ -242,11 +243,11 @@ const Header = ({onClickity}) => {
                   spy={true}
                   smooth={true}
                   offset={-100}
-                  duration= {500}
+                  duration= {1000}
                   onClick={() => {
                     setTimeout(() => {
                       window.scrollBy(0, 2)
-                    }, 550)
+                    }, 1050)
                   }}
               >contact</Link>
               <button id="dark-mode-icon-desktop" className="ml-3 ml-md-4 ml-lg-5 d-sm-inline-block" onClick={onClickity}>
@@ -265,7 +266,7 @@ const Header = ({onClickity}) => {
               spy={true}
               smooth={true}
               offset={0}
-              duration={500}>
+              duration={1000}>
             <Logo />
           </Link>
         </div>
@@ -279,11 +280,11 @@ const Header = ({onClickity}) => {
               spy={true}
               smooth={true}
               offset={-100}
-              duration={500}
+              duration={1000}
               onClick={() => {
                 setTimeout(() => {
                   window.scrollBy(0, 2)
-                }, 550)
+                }, 1050)
               }}
             >code</Link>
             <Link
@@ -294,11 +295,11 @@ const Header = ({onClickity}) => {
                 spy={true}
                 smooth={true}
                 offset={-100}
-                duration= {500}
+                duration= {1000}
                 onClick={() => {
                   setTimeout(() => {
                     window.scrollBy(0, 2)
-                  }, 550)
+                  }, 1050)
                 }}
             >photo</Link>
             <Link
@@ -309,11 +310,11 @@ const Header = ({onClickity}) => {
                 spy={true}
                 smooth={true}
                 offset={-100}
-                duration= {500}
+                duration= {1000}
                 onClick={() => {
                   setTimeout(() => {
                     window.scrollBy(0, 2)
-                  }, 550)
+                  }, 1050)
                 }}
 
             >about</Link>
@@ -324,13 +325,12 @@ const Header = ({onClickity}) => {
                 to="contact"
                 spy={true}
                 smooth={true}
-                offset={-200}
-                duration= {500}
+                offset={-100}
+                duration= {1000}
                 onClick={() => {
                   setTimeout(() => {
                     window.scrollBy(0, 2)
-                  }, 550)
-
+                  }, 1050)
                 }}
             >contact</Link>
             <button id="dark-mode-icon-mobile" onClick={onClickity}>
