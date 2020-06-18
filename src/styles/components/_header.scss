@@ -49,6 +49,7 @@
   padding: 4px 12px;
   border-radius: 4px;
   transition: 0.2s;
+  user-select: none;
   transition-property: background-color, color, box-shadow;
   &:hover {
     cursor: pointer;
@@ -170,10 +171,16 @@
 @media (max-width: $XS) {
   #nav-links {
     justify-content: space-between !important;
-    font-size: 14.5px;
+    font-size: 15px;
   }
   #header-logo {
     margin-left: 6px;
+  }
+  #contactlink-mobile, #contactlink {
+    margin-right: 8px;
+  }
+  #dark-mode-icon-desktop, #dark-mode-icon-mobile {
+    margin-left: 4px !important;
   }
 }
 

@@ -2,6 +2,8 @@
   font-size: 40px;
   line-height: 108px;
   position: relative;
+  user-select: none;
+  cursor: pointer;
 }
 
 .logo-description {
@@ -53,15 +55,15 @@
 
 @media (max-width: $XS) {
   .logo {
-    font-size: 32px;
-    line-height: 90px;
+    font-size: 10vw;
+    line-height: 78px;
     position: relative;
   }
 
   .logo-description {
-    font-size: 12px;
+    font-size: 3.6vw;
     position: absolute;
-    top: 28px;
+    top: (8vw);
     left: 2px;
     font-family: 'Avenir'
   }

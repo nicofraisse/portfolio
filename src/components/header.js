@@ -39,8 +39,12 @@ const Header = ({onClickity}) => {
         if (scrollPosition < 240) {
           headerDesktopContainer.style.height = `${184 - Math.round(window.scrollY / 3)}px`
           arrow.style.opacity = 1;
+          headerDesktop.style.height = '184px'
+          invisibleHoverBox.style.height = '184px'
         } else {
           arrow.style.opacity = 0;
+          headerDesktop.style.height = '116px'
+          invisibleHoverBox.style.height = '116px'
           headerDesktopContainer.style.height = '104px'
           if (scrollPosition > (window.innerHeight - 104)) {
             headerBackground.style.opacity = 1;
@@ -56,8 +60,12 @@ const Header = ({onClickity}) => {
           headerDesktopContainer.style.height = `${148 - Math.round(window.scrollY / 6)}px`
           arrow.style.opacity = 1;
           headerBackground.style.opacity = 0;
+          headerDesktop.style.height = '184px'
+          invisibleHoverBox.style.height = '184px'
         } else {
           arrow.style.opacity = 0;
+          headerDesktop.style.height = '116px'
+          invisibleHoverBox.style.height = '116px'
           headerDesktopContainer.style.height = '104px'
           if (scrollPosition > (window.innerHeight - 104)) {
             headerBackground.style.opacity = 1;
@@ -74,11 +82,15 @@ const Header = ({onClickity}) => {
           headerMobile.style.opacity = 1;
           headerBackground.style.opacity = 1;
           arrow.style.opacity = 0;
+          headerDesktop.style.height = '72px'
+          invisibleHoverBox.style.height = '72px'
         }
         else {
           headerMobile.style.opacity = 0;
           headerBackground.style.opacity = 0;
           arrow.style.opacity = 1;
+          headerDesktop.style.height = '184px'
+          invisibleHoverBox.style.height = '184px'
 
         }
         if (Math.abs(lastScrollTop - scrollPosition) <= delta) {
@@ -148,20 +160,20 @@ const Header = ({onClickity}) => {
       }
     }
     var lastScrollTop = 0;
-    var delta = 80;
+    var delta = 100;
     var navbarHeight = 100
     const aboutDesktop = document.getElementById('aboutlink');
     const aboutMobile = document.getElementById('aboutlink-mobile');
     const contactDesktop = document.getElementById('contactlink');
     const contactMobile = document.getElementById('contactlink-mobile');
-
+    const invisibleHoverBox = document.querySelector('.invisible-hover-box');
     const separators = document.querySelectorAll('.separator');
     const headerDesktop = document.getElementById('header');
     const footer = document.getElementById('footer');
     const headerMobile = document.getElementById('header-mobile');
     const headerDesktopContainer = document.querySelector('.header-content-container');
     const arrow = document.querySelector('.arrow');
-    const headerBackground = document.querySelector('.header-background')
+    const headerBackground = document.querySelector('.header-background');
 
     window.addEventListener('scroll', handleScroll);
     window.addEventListener('resize', handleResize);

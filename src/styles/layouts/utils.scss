@@ -7,6 +7,14 @@
   text-align: center;
 }
 
+.link {
+  user-select: none;
+}
+
+.no-select, .header-tooltip {
+  user-select: none;
+}
+
 .icon-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;

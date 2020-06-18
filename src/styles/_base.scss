@@ -48,14 +48,18 @@ a {
   text-decoration: none;
 }
 
+img {
+  user-select: none;
+}
+
 .clicky-effect {
   display: inline-block;
   transition: 0.15s transform;
   &:hover {
-    transform: translate(0px, -2px) !important;
+    transform: translate(0px, -1px) !important;
   }
   &:active {
-    transform: translate(0px, 1px);
+    transform: translate(0px, 1px) !important;
   }
 }
 
