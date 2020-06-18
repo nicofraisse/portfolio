@@ -198,7 +198,11 @@ p, h3, i, .email-link a {
 
 #dark-mode-icon-desktop, #dark-mode-icon-mobile {
   transform: ${props => props.theme.mode === 'dark' ? 'rotateZ(180deg)' : 'rotateZ(0deg)' };
-  transition: 0.3s;
+  transition: transform 0.3s, text-shadow 0.15s;
+}
+
+#dark-mode-icon-desktop:hover, #dark-mode-icon-mobile:hover {
+  text-shadow: 0 0 10px ${props => props.theme.mode === 'dark' ? 'rgba(255, 255, 255, 0.6)' : 'rgba(255, 255, 255, 1)' };
 }
 
 .header-tooltip h3 {

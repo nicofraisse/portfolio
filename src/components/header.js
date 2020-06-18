@@ -1,7 +1,6 @@
 // ES6 Imports
 import * as Scroll from 'react-scroll';
 import { Link, Element , Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
-import { ThemeProvider, createGlobalStyle } from "styled-components"
 import React, { useState, useEffect } from 'react'
 import { Transition, animated } from 'react-spring/renderprops'
 // import { Link } from "gatsby"

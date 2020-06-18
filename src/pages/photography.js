@@ -43,7 +43,7 @@ export default () => {
       <button
         onClick={() => handleClickPhotos()}
         className="btn-more">
-        Show {morePhotos ? 'less' : 'more'}
+        View {morePhotos ? 'less' : 'more'}
       </button>
       <animated.div id="other-photos" className={morePhotos ? 'd-block' : 'd-none'} style={animation}>
         <div className="flick-container">

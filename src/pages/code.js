@@ -88,7 +88,6 @@ const Code = () => {
           img='incorpus.jpg'
           title='inCORPUS'
           site='https://www.in-corpus.com/'
-          source='https://github.com/amrschmitz/incorpus'
           date='Apr 2020'
           imgWidth='340px'
           description='Creation of webpages & animations for a French tech company developing a training app for professional athletes.'
@@ -118,14 +117,14 @@ const Code = () => {
         imgWidth='400px'
         description="Created static pages and implemented a payment system for Billy.Social, a Montreal based webmarketing agency, using Wordpress and custom CSS."
         icons={['wordpress.png', 'css.png', 'stripe.png']}
+        noborder
         />
 
         <button
           onClick={() => handleClick()}
           className="btn-more">
-          Show {moreCode ? 'less' : 'more'}
+          View {moreCode ? 'less' : 'more'}
         </button>
-
 
         <animated.div id="other-projects" className={moreCode ? 'd-block' : 'd-none'} style={animation}>
 
@@ -171,6 +170,7 @@ const Code = () => {
           imgWidth='440px'
           description='Designed and implemented UI/UX solutions for a complete redesign of Quebec’s Conseil LGBT website, as part of PrideHacks 2019, a hackathon to build solutions for nonprofit organizations serving the LGBT community.'
           icons={['figma.png', 'wordpress.png', 'html.png', 'css.png']}
+          noborder
           />
         </animated.div>
       </div>

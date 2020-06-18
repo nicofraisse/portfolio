@@ -55,7 +55,13 @@
     flex-direction: column !important;
     justify-content: center;
     align-items: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   }
+
+  .noborder {
+    border-bottom: none !important;
+  }
+
   .project-description {
     text-align: left !important;
     h3 {

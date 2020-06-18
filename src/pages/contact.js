@@ -15,7 +15,7 @@ const Contact = () => {
         transform= 'perspective(48px) rotateX(18deg)'
       />
     </div>
-    <div className="px-sm-5 px-3">
+    <div className="px-sm-5 px-3 pt-xl-2 pb-xl-1">
       <h3 className="text-center mt-5 text-large">Available for hire ✌️</h3>
       <h3 className="justify-max-xs text-center mb-md-4 mb-3 text-large">
         For any enquiries, please <span className="email-link clicky-effect"><a href="mailto:ni.fraisse@gmail.com" target="blanl">email me here</a></span>
@@ -36,6 +36,5 @@ const Contact = () => {
   </div>
   )
 }
-
 
 export default Contact;

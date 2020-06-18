@@ -15,17 +15,18 @@ const Project = (props) => {
     </li>
   );
   const reverse = props.reverse ? 'reverse' : ''
+  const noborder = props.noborder ? 'noborder' : ''
 
   return (
-    <div className={`project d-flex my-5 ${reverse}`}>
+    <div className={`project d-flex mt-5 mb-0 mt-md-5 mb-md-5 pb-4 pb-md-0 ${reverse} ${noborder}`}>
       <img
-      className='project-img mx-1 mx-xl-2'
+      className='project-img mx-1 mx-xl-2 mb-md-0 mb-3'
       src={"/projects/" + props.img}
       alt={props.img}
       style={{ width: props.imgWidth || '320px'}}
       onClick={() => window.open(props.site, "_blank")}
       />
-      <div className="project-description my-5 my-md-auto px-2 px-sm-4 px-xl-5" style={props.reverse ? {textAlign: 'right'} : {}}>
+      <div className="project-description mt-4 mb-3 mt-md-5 mb-md-5 my-md-auto px-2 px-sm-4 px-xl-5" style={props.reverse ? {textAlign: 'right'} : {}}>
         <h3>{props.title} <span className='date-section'>/ {props.date}</span></h3>
         {props.description.split('<br>').map(text => <p className="text-justify-mobile">{text}</p>)}
         <ul className={`list-inline mt-4 ${props.reverse ? "ul-right" : ""}`}>
