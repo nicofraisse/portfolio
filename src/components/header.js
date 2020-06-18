@@ -161,7 +161,7 @@ const Header = ({onClickity}) => {
 
 
     var lastScrollTop = 0;
-    var delta = 0;
+    var delta = 200;
     var navbarHeight = 100
 
 
