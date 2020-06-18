@@ -26,7 +26,7 @@ const Code = () => {
   return (
   <div className="code-wrapper">
     <div className="code pt-3">
-      <div className="container-md">
+      <div className="container-lg">
         <h2 className="mb-4 mt-0 pt-5 text-color-shadow">Toolkit</h2>
         <div id="sc1">
           <Separator
@@ -40,7 +40,7 @@ const Code = () => {
             <i
               className="toolkit-icon fas fa-code text-center w-100 mb-md-4 mb-2"
             />
-            <div className="toolkit mb-5 mb-md-0">
+            <div className="toolkit mb-4 mb-md-0">
               <div className="main-tools">
                 <p className="text-center">JavaScript・React.js・Rails</p>
               </div>
@@ -54,7 +54,7 @@ const Code = () => {
             <i
               className="toolkit-icon fas fa-magic text-center w-100 mb-md-4 mb-2"
             />
-            <div className="toolkit mb-5 mb-md-0">
+            <div className="toolkit mb-4 mb-md-0">
               <div className="main-tools">
                 <p className="text-center">HTML・CSS・Figma</p>
               </div>
@@ -77,7 +77,7 @@ const Code = () => {
             </div>
           </div>
         </div>
-        <h2 className="mb-4 pt-5 text-color-shadow title-smaller">Web Development Projects</h2>
+        <h2 className="mb-4 pt-md-5 pt-3 text-color-shadow title-smaller">Web Development Projects</h2>
         <div id="sc2">
           <Separator
             transform="perspective(30px) rotateX(6deg) translate3d(0, 0, 8px)"

@@ -2,10 +2,6 @@
   position: relative;
   transform: translate3d(0, 0, 1px);
   padding-bottom: 4px;
-  .code {
-    max-width: 960px;
-    margin: 0 auto;
-  }
 }
 
 .toolkit-icon {
@@ -50,3 +46,16 @@
     font-size: 40px
   }
 }
+
+@media (max-width: $LG) {
+  @media (min-width: $MD) {
+    .code {
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+  }
+}
+
+
+
+

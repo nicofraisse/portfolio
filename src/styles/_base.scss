@@ -41,7 +41,7 @@ h4 {
 
 p {
   margin: 8px 0;
-  font-size: 15px;
+  font-size: 16px;
 }
 
 a {
@@ -69,6 +69,12 @@ a:hover {
 
 .text-list li {
   margin-left: 40px;
+}
+
+@media (max-width: $LG) {
+  p {
+    font-size: 15px;
+  }
 }
 
 @media (max-width: $MD) {
