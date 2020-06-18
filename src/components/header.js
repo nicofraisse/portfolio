@@ -43,12 +43,12 @@ const Header = ({onClickity}) => {
           invisibleHoverBox.style.height = '184px'
         } else {
           arrow.style.opacity = 0;
-          headerDesktop.style.height = '116px'
-          invisibleHoverBox.style.height = '116px'
+          headerDesktop.style.height = '126px'
+          invisibleHoverBox.style.height = '126px'
           headerDesktopContainer.style.height = '104px'
           if (scrollPosition > (window.innerHeight - 104)) {
             headerBackground.style.opacity = 1;
-            headerDesktopContainer.style.boxShadow = '0 0 16px rgba(0, 0, 0, 0.3)'
+            headerDesktopContainer.style.boxShadow = '0 0 20px rgba(0, 0, 0, 0.35)'
           } else {
             headerBackground.style.opacity = 0;
             headerDesktopContainer.style.boxShadow = 'none'
@@ -64,12 +64,12 @@ const Header = ({onClickity}) => {
           invisibleHoverBox.style.height = '184px'
         } else {
           arrow.style.opacity = 0;
-          headerDesktop.style.height = '116px'
-          invisibleHoverBox.style.height = '116px'
+          headerDesktop.style.height = '126px'
+          invisibleHoverBox.style.height = '126px'
           headerDesktopContainer.style.height = '104px'
           if (scrollPosition > (window.innerHeight - 104)) {
             headerBackground.style.opacity = 1;
-            headerDesktopContainer.style.boxShadow = '0 0 16px rgba(0, 0, 0, 0.3)'
+            headerDesktopContainer.style.boxShadow = '0 0 20px rgba(0, 0, 0, 0.35)'
           } else {
             headerBackground.style.opacity = 0;
             headerDesktopContainer.style.boxShadow = 'none'
@@ -117,7 +117,7 @@ const Header = ({onClickity}) => {
           headerDesktopContainer.style.height = '104px'
           if (scrollPosition > (window.innerHeight - 104)) {
             headerBackground.style.opacity = 1;
-            headerDesktopContainer.style.boxShadow = '0 0 16px rgba(0, 0, 0, 0.3)'
+            headerDesktopContainer.style.boxShadow = '0 0 20px rgba(0, 0, 0, 0.35)'
           } else {
             headerBackground.style.opacity = 0;
             headerDesktopContainer.style.boxShadow = 'none'
@@ -133,7 +133,7 @@ const Header = ({onClickity}) => {
           headerDesktopContainer.style.height = '104px'
           if (scrollPosition > (window.innerHeight - 104)) {
             headerBackground.style.opacity = 1;
-            headerDesktopContainer.style.boxShadow = '0 0 16px rgba(0, 0, 0, 0.3)'
+            headerDesktopContainer.style.boxShadow = '0 0 20px rgba(0, 0, 0, 0.35)'
           } else {
             headerBackground.style.opacity = 0;
             headerDesktopContainer.style.boxShadow = 'none'
