@@ -162,7 +162,7 @@ const Header = ({onClickity}) => {
 
     var lastScrollTop = 0;
     var delta = 200;
-    var navbarHeight = 100
+    var navbarHeight = 84;
 
 
 
@@ -293,7 +293,7 @@ const Header = ({onClickity}) => {
         </div>
       </div>
       <div id="header-mobile" className="d-sm-none">
-        <div className="header-content container-lg flex-column align-items-center mt-4">
+        <div className="header-content container-lg flex-column align-items-center mt-1">
           <div className="header-link-container d-flex align-items-center" id="nav-links">
             <Link
               activeClass="active-link"
