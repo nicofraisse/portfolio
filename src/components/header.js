@@ -96,7 +96,7 @@ const Header = ({onClickity}) => {
           return;
         }
 
-        if (scrollPosition > lastScrollTop && scrollPosition > navbarHeight) {
+        else if (scrollPosition > lastScrollTop && scrollPosition > navbarHeight) {
           headerMobile.style.top = '-84px'
           headerLogo.style.opacity = 0;
         } else {
@@ -148,20 +148,10 @@ const Header = ({onClickity}) => {
         else {
           headerMobile.style.opacity = 0
         }
-        if (Math.abs(lastScrollTop - scrollPosition) <= delta) {
-          return;
-        }
-
-        if (scrollPosition > lastScrollTop && scrollPosition > navbarHeight) {
-          headerMobile.style.top = '-84px'
-        } else {
-          headerMobile.style.top = '0px'
-        }
-        lastScrollTop = scrollPosition;
       }
     }
     var lastScrollTop = 0;
-    var delta = 100;
+    var delta = 200;
     var navbarHeight = 100
     const aboutDesktop = document.getElementById('aboutlink');
     const aboutMobile = document.getElementById('aboutlink-mobile');
@@ -181,7 +171,7 @@ const Header = ({onClickity}) => {
     window.addEventListener('resize', handleResize);
     setTimeout(() => {
       document.body.classList.add('fade-in')
-    }, 150)
+    }, 300)
 
   }, [headerBig])
 
