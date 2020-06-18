@@ -35,7 +35,7 @@ const Code = () => {
           />
         </div>
         <div className="row justify-content-center">
-          <div className="col-md-4 col-sm-12 header-tooltip" data-for="toolkit-tooltip" data-tip="<h3 className='icon-tooltip'>Languages & Frameworks</h3>">
+          <div className="col-md-4 col-sm-12 header-tooltip" style={{transform: 'translate3d(0, 0, 1000px)'}} data-for="toolkit-tooltip" data-tip="<h3 className='icon-tooltip'>Languages & Frameworks</h3>">
           <ReactTooltip id="toolkit-tooltip" effect="solid" html={true} offset={{'top': 0, 'left': 0}}/>
             <i
               className="toolkit-icon fas fa-code text-center w-100 mb-md-4 mb-2"
