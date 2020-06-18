@@ -90,10 +90,21 @@ const Header = ({onClickity}) => {
           arrow.style.opacity = 1;
           headerDesktop.style.height = '184px'
           invisibleHoverBox.style.height = '184px'
-
         }
       }
+
+      if (Math.abs(lastScrollTop - scrollPosition) <= delta) {
+        return;
+      }
+
+      else if (scrollPosition > lastScrollTop && scrollPosition > navbarHeight) {
+        headerMobile.style.top = '-100px'
+      } else {
+        headerMobile.style.top = '0px'
+      }
+      lastScrollTop = scrollPosition;
     }
+
     const handleResize = () => {
       let viewportWidth = window.innerWidth || document.documentElement.clientWidth;
       const scrollPosition = window.scrollY;
@@ -138,6 +149,40 @@ const Header = ({onClickity}) => {
         }
       }
     }
+
+
+
+
+
+
+
+
+
+
+
+    var lastScrollTop = 0;
+    var delta = 0;
+    var navbarHeight = 100
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     const aboutDesktop = document.getElementById('aboutlink');
     const aboutMobile = document.getElementById('aboutlink-mobile');
     const contactDesktop = document.getElementById('contactlink');
@@ -248,7 +293,7 @@ const Header = ({onClickity}) => {
         </div>
       </div>
       <div id="header-mobile" className="d-sm-none">
-        <div className="header-content container-lg flex-column align-items-center mt-3">
+        <div className="header-content container-lg flex-column align-items-center mt-4">
           <div className="header-link-container d-flex align-items-center" id="nav-links">
             <Link
               activeClass="active-link"
