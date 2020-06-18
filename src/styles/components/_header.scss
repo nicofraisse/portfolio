@@ -1,6 +1,5 @@
 #header {
   overflow: hidden;
-  height: 184px;
   position: fixed;
   transform: translate3d(0, 0, 1000px);
   top: 0;
@@ -11,6 +10,10 @@
     opacity: 1 !important;
     z-index: 10000000000000 !important;
   }
+}
+
+.header-content-container {
+  height: 184px;
 }
 
 .invisible-hover-box {

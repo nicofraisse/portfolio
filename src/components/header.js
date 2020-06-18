@@ -189,7 +189,6 @@ const Header = ({onClickity}) => {
           <div className="header-content container-lg px-md-5 px-lg-2 d-sm-flex flex-column flex-sm-row align-items-center justify-content-sm-between">
             <div id="header-logo">
               <Link
-                  activeClass="active-link"
                   className="mx-md-2"
                   to="top"
                   spy={true}
@@ -272,7 +271,6 @@ const Header = ({onClickity}) => {
       <div id="header-mobile" className="d-sm-none">
         <div id="header-logo">
           <Link
-              activeClass="active-link"
               className="mx-md-2"
               to="top"
               spy={true}
