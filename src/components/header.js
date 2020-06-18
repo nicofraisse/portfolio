@@ -92,18 +92,6 @@ const Header = ({onClickity}) => {
           invisibleHoverBox.style.height = '184px'
 
         }
-        if (Math.abs(lastScrollTop - scrollPosition) <= delta) {
-          return;
-        }
-
-        else if (scrollPosition > lastScrollTop && scrollPosition > navbarHeight) {
-          headerMobile.style.top = '-84px'
-          headerLogo.style.opacity = 0;
-        } else {
-          headerMobile.style.top = '0px'
-          headerLogo.style.opacity = 1;
-        }
-        lastScrollTop = scrollPosition;
       }
     }
     const handleResize = () => {
@@ -150,9 +138,6 @@ const Header = ({onClickity}) => {
         }
       }
     }
-    var lastScrollTop = 0;
-    var delta = 200;
-    var navbarHeight = 100
     const aboutDesktop = document.getElementById('aboutlink');
     const aboutMobile = document.getElementById('aboutlink-mobile');
     const contactDesktop = document.getElementById('contactlink');
@@ -162,7 +147,6 @@ const Header = ({onClickity}) => {
     const headerDesktop = document.getElementById('header');
     const footer = document.getElementById('footer');
     const headerMobile = document.getElementById('header-mobile');
-    const headerLogo = document.querySelector('.d-none-downscroll');
     const headerDesktopContainer = document.querySelector('.header-content-container');
     const arrow = document.querySelector('.arrow');
     const headerBackground = document.querySelector('.header-background');
@@ -171,7 +155,7 @@ const Header = ({onClickity}) => {
     window.addEventListener('resize', handleResize);
     setTimeout(() => {
       document.body.classList.add('fade-in')
-    }, 300)
+    }, 150)
 
   }, [headerBig])
 
@@ -264,18 +248,7 @@ const Header = ({onClickity}) => {
         </div>
       </div>
       <div id="header-mobile" className="d-sm-none">
-        <div id="header-logo" className="d-none-downscroll">
-          <Link
-              className="mx-md-2 my-4 d-block"
-              to="top"
-              spy={true}
-              smooth={true}
-              offset={0}
-              duration={1000}>
-            <Logo />
-          </Link>
-        </div>
-        <div className="header-content container-lg flex-column align-items-center mt-2">
+        <div className="header-content container-lg flex-column align-items-center mt-3">
           <div className="header-link-container d-flex align-items-center" id="nav-links">
             <Link
               activeClass="active-link"
