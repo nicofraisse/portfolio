@@ -180,7 +180,7 @@ const Header = ({onClickity}) => {
     document.body.className += 'fade-out';
     setTimeout(() => {
       document.body.classList.remove('fade-out')
-    }, 200)
+    }, 2000)
 
   }, [headerBig])
 
