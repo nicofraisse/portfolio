@@ -179,7 +179,7 @@ const Header = ({onClickity}) => {
     window.addEventListener('resize', handleResize);
     setTimeout(() => {
       document.body.classList.add('fade-in')
-    }, 2000)
+    }, 150)
 
   }, [headerBig])
 
