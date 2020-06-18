@@ -100,7 +100,7 @@ p, h3, i, .email-link a {
 }
 
 .photo-tooltip {
-  color: ${props => props.theme.mode === 'dark' ? 'rgba(0, 0, 0, 0.6)' : 'rgba(255, 255, 255, 0.6)'} !important;
+  color: rgba(0, 0, 0, 0.6) !important;
   font-size: 14px;
 }
 
@@ -276,6 +276,9 @@ p, h3, i, .email-link a {
   -webkit-text-fill-color: rgba(0, 0, 0, 0);
 }
 
+.border-bottom-light {
+  border-bottom: 1px solid ${props => props.theme.mode === 'dark' ? 'rgba(0, 0, 0, 0.1)' : 'rgba(255, 255, 255, 0.1)' }
+}
 `
 
 const getInitialTheme = () => {

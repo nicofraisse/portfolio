@@ -15,10 +15,10 @@ const Project = (props) => {
     </li>
   );
   const reverse = props.reverse ? 'reverse' : ''
-  const noborder = props.noborder ? 'noborder' : ''
+  const borderBottomLight = props.borderBottomLight ? 'border-bottom-light' : ''
 
   return (
-    <div className={`project d-flex mt-5 mb-0 mt-md-5 mb-md-5 pb-4 pb-md-0 ${reverse} ${noborder}`}>
+    <div className={`project d-flex mt-5 mb-0 mt-md-5 mb-md-5 pb-4 pb-md-0 ${reverse} ${borderBottomLight}`}>
       <img
       className='project-img mx-1 mx-xl-2 mb-md-0 mb-3'
       src={"/projects/" + props.img}

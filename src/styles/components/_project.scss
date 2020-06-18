@@ -5,10 +5,10 @@
   display: block;
   object-fit: cover;
   height: 100% !important;
-  border-radius: 6px;
+  border-radius: 4px;
   box-shadow: 0px 0px 24px rgba(0, 0, 0, .1);
 
-  transition: 0.3s;
+  transition: 0.25s;
   &:hover {
     cursor: pointer;
   }
@@ -38,8 +38,8 @@
 
 @media (min-width: $LG) {
   .project-img:hover {
-    transform: scale(1.025);
-    opacity: 0.9;
+    transform: scale(1.015);
+    opacity: 0.93;
   }
 }
 
@@ -55,11 +55,6 @@
     flex-direction: column !important;
     justify-content: center;
     align-items: center;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  }
-
-  .noborder {
-    border-bottom: none !important;
   }
 
   .project-description {
