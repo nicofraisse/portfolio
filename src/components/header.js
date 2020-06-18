@@ -98,8 +98,10 @@ const Header = ({onClickity}) => {
 
         if (scrollPosition > lastScrollTop && scrollPosition > navbarHeight) {
           headerMobile.style.top = '-84px'
+          headerLogo.style.opacity = 0;
         } else {
           headerMobile.style.top = '0px'
+          headerLogo.style.opacity = 1;
         }
         lastScrollTop = scrollPosition;
       }
@@ -170,6 +172,7 @@ const Header = ({onClickity}) => {
     const headerDesktop = document.getElementById('header');
     const footer = document.getElementById('footer');
     const headerMobile = document.getElementById('header-mobile');
+    const headerLogo = document.querySelector('.d-none-downscroll');
     const headerDesktopContainer = document.querySelector('.header-content-container');
     const arrow = document.querySelector('.arrow');
     const headerBackground = document.querySelector('.header-background');
@@ -271,9 +274,9 @@ const Header = ({onClickity}) => {
         </div>
       </div>
       <div id="header-mobile" className="d-sm-none">
-        <div id="header-logo">
+        <div id="header-logo" className="d-none-downscroll">
           <Link
-              className="mx-md-2"
+              className="mx-md-2 my-4 d-block"
               to="top"
               spy={true}
               smooth={true}
@@ -283,7 +286,7 @@ const Header = ({onClickity}) => {
           </Link>
         </div>
         <div className="header-content container-lg flex-column align-items-center">
-          <div className="header-link-container d-flex align-items-center" id="nav-links">
+          <div className="header-link-container d-flex align-items-center mb-1" id="nav-links">
             <Link
               activeClass="active-link"
               className="mx-md-2 navlink clicky-effect"
