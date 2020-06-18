@@ -276,8 +276,10 @@ p, h3, i, .email-link a {
   -webkit-text-fill-color: rgba(0, 0, 0, 0);
 }
 
-.border-bottom-light {
-  border-bottom: 1px solid ${props => props.theme.mode === 'dark' ? 'rgba(0, 0, 0, 0.1)' : 'rgba(255, 255, 255, 0.1)' }
+@media (max-width: 768px) {
+  .border-bottom-light {
+    border-bottom: 1px solid ${props => props.theme.mode === 'dark' ? 'rgba(0, 0, 0, 0.1)' : 'rgba(255, 255, 255, 0.1)' }
+  }
 }
 `
 
