@@ -286,7 +286,7 @@ const Header = ({onClickity}) => {
           </Link>
         </div>
         <div className="header-content container-lg flex-column align-items-center">
-          <div className="header-link-container d-flex align-items-center mb-1" id="nav-links">
+          <div className="header-link-container d-flex align-items-center" id="nav-links">
             <Link
               activeClass="active-link"
               className="mx-md-2 navlink clicky-effect"
