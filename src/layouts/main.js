@@ -276,7 +276,7 @@ p, h3, i  {
 
 const getInitialTheme = () => {
   const savedTheme = storage.getItem('theme')
-  return savedTheme ? JSON.parse(savedTheme) : { mode : 'light' }
+  return savedTheme ? JSON.parse(savedTheme) : { mode : 'dark' }
 }
 
 const Main = ({ children }) => {
