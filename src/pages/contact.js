@@ -17,7 +17,10 @@ const Contact = () => {
     </div>
     <div className="px-sm-5 px-3">
       <h3 className="text-center mt-5 text-large">Available for hire ✌️</h3>
-      <h3 className="justify-max-xs text-center mb-md-4 mb-3 text-large">For any enquiries, please <span className="email-link clicky-effect"><a href="mailto:ni.fraisse@gmail.com">email me here</a></span>.</h3>
+      <h3 className="justify-max-xs text-center mb-md-4 mb-3 text-large">
+        For any enquiries, please <span className="email-link clicky-effect"><a href="mailto:ni.fraisse@gmail.com" target="blanl">email me here</a></span>
+        .
+      </h3>
     </div>
     <div className="profile-card-container">
       <div className="profile-card">
@@ -30,8 +33,6 @@ const Contact = () => {
         </div>
       </div>
     </div>
-
-
   </div>
   )
 }

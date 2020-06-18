@@ -5,7 +5,14 @@ import '../styles/imports.scss'
 
 const Project = (props) => {
   const projectIcons = props.icons.map((icon) =>
-    <li key={icon} data-for="bis" className='skill-icon list-inline-item' html={true} data-delay-hide='200' data-tip={`<span>${icon.split('.')[0]}</span>`}><img src={icon} alt=""/></li>
+    <li
+    key={icon} data-for="bis"
+    className='skill-icon list-inline-item'
+    html={true} data-delay-hide='200'
+    data-tip={`<span>${icon.split('.')[0]}</span>`}
+    >
+      <img src={"/skill_icons/" + icon} alt=""/>
+    </li>
   );
   const reverse = props.reverse ? 'reverse' : ''
 
@@ -13,7 +20,7 @@ const Project = (props) => {
     <div className={`project d-flex my-5 ${reverse}`}>
       <img
       className='project-img mx-1 mx-xl-2'
-      src={props.img}
+      src={"/projects/" + props.img}
       alt={props.img}
       style={{ width: props.imgWidth || '320px'}}
       onClick={() => window.open(props.site, "_blank")}

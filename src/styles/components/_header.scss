@@ -61,7 +61,7 @@
 }
 
 .active-link {
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.14);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.14);
 }
 
 #dark-mode-icon-desktop, #dark-mode-icon-mobile {
@@ -153,7 +153,7 @@
     z-index: 10000;
     left: 0;
     width: 100vw;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.35);
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.4);
     .logo {
       position: relative;
       left: 14px;
