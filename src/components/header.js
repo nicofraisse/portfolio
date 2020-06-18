@@ -177,9 +177,8 @@ const Header = ({onClickity}) => {
 
     window.addEventListener('scroll', handleScroll);
     window.addEventListener('resize', handleResize);
-    document.body.className += 'fade-out';
     setTimeout(() => {
-      document.body.classList.remove('fade-out')
+      document.body.classList.add('fade-in')
     }, 2000)
 
   }, [headerBig])

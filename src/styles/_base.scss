@@ -10,7 +10,7 @@ html, body {
 }
 
 body {
-  opacity: 1;
+  opacity: 0;
   transition: 1.5s opacity;
 }
 
@@ -18,8 +18,8 @@ html {
   background-color: rgba(50, 52, 65, 1.00);
 }
 
-body.fade-out {
-  opacity: 0;
+body.fade-in {
+  opacity: 1;
   transition: none;
 }
 
