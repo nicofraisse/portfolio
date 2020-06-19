@@ -27,8 +27,8 @@ const Contact = () => {
         <img src="nicolas-fraisse.jpg" class="nicolas-pdp" alt=""/>
         <div className="text-center icon-grid">
           <a href="https://github.com/nicofraisse" title="GitHub" target="_blank"><i className="fab fa-github social-icon"></i></a>
-          <a href="https://www.linkedin.com/in/nicolasfraisse/" title="LinkedIn" target="_blank"><i className="fab fa-linkedin-in social-icon"></i></a>
           <a href="https://www.instagram.com/nicofraisse/" title="Instagram" target="_blank"><i className="fab fa-instagram social-icon"></i></a>
+          <a href="https://www.linkedin.com/in/nicolasfraisse/" title="LinkedIn" target="_blank"><i className="fab fa-linkedin-in social-icon"></i></a>
           <a href="https://www.flickr.com/photos/129462013@N05/" title="Flickr" target="_blank"><i className="fab fa-flickr social-icon"></i></a>
         </div>
       </div>

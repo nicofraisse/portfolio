@@ -34,8 +34,10 @@ const Project = (props) => {
         </ul>
         <ReactTooltip id="bis" className="no-select" effect="solid" html={true} textColor={"rgba(251, 251, 251, 1.00)"} offset={{'top': -4, 'left': 0}}/>
         <div className="source-center-mobile">
-          <a href={props.site} class="p-0 clicky-effect link" target="_blank">View site</a>
-          <span className="text-grey no-select"> / </span>
+          <span className={props.noSite ? "d-none" : ""}>
+            <a href={props.site} class="p-0 clicky-effect link" target="_blank">View site</a>
+            <span className="text-grey no-select"> / </span>
+          </span>
           <a href={props.source} className={props.source ? "clicky-effect link" : "d-none"} target="_blank">View source</a>
           <span className={props.source ? "d-none" : "disabled-link no-select"} target="_blank">Source private</span>
         </div>

@@ -34,9 +34,9 @@ const Code = () => {
             transform="perspective(48px) rotateX(18deg) translate3d(0, 0, 8px)"
           />
         </div>
-        <div className="row justify-content-center">
-          <div className="col-md-4 col-sm-12 header-tooltip" style={{transform: 'translate3d(0, 0, 1000px)'}} data-for="toolkit-tooltip" data-tip="<h3 className='icon-tooltip'>Languages & Frameworks</h3>">
-          <ReactTooltip id="toolkit-tooltip" effect="solid" html={true} offset={{'top': 0, 'left': 0}}/>
+        <div className="row justify-content-center mt-1 mt-md-0">
+          <div className="col-md-4 col-sm-12 header-tooltip" data-for="toolkit-tooltip" data-tip="<h3 className='icon-tooltip'>Languages & Frameworks</h3>">
+          <ReactTooltip id="toolkit-tooltip" effect="solid" html={true}/>
             <i
               className="toolkit-icon fas fa-code text-center w-100 mb-md-4 mb-2"
             />
@@ -91,7 +91,7 @@ const Code = () => {
           date='Apr 2020'
           imgWidth='440px'
           description='Creation of webpages & animations for a French tech company developing a training app for professional athletes.'
-          icons={['gatsby.png', 'react.png', 'react-spring.png', 'javascript.png', 'html.png', 'css.png', 'sass.png']}
+          icons={['gatsby.png', 'react.png', 'react-spring.png', 'javascript.png', 'html2.png', 'css2.png', 'sass.png']}
           borderBottomLight
           />
         </div>
@@ -105,7 +105,7 @@ const Code = () => {
         description='Is your band looking for a musician, or are you a musician looking for a band? BandWizard is a web-application that matches musicians according to musical taste, geographical location, years of experience, and much more!
                     <br>
                     This MVP has been designed, implemented and shipped to production in 10 days, as the final project at Le Wagon coding bootcamp.'
-        icons={['rails.png', 'postgresql.png', 'heroku.png', 'javascript.png', 'figma.png', 'html.png', 'css.png', 'sass.png']}
+        icons={['rails.png', 'postgresql.png', 'heroku.png', 'javascript.png', 'figma.png', 'html2.png', 'css2.png', 'sass.png']}
         source='http://www.google.com'
         reverse
         borderBottomLight
@@ -118,7 +118,7 @@ const Code = () => {
         date='Dec 2019'
         imgWidth='400px'
         description="Created static pages and implemented a payment system for Billy.Social, a Montreal based webmarketing agency, using Wordpress and custom CSS."
-        icons={['wordpress.png', 'css.png', 'stripe.png']}
+        icons={['wordpress.png', 'css2.png', 'stripe.png']}
         />
 
         <button
@@ -136,7 +136,7 @@ const Code = () => {
           site='http://www.journalinteret.com/'
           date='Oct 2019'
           description='Redesigned HEC Montréal’s student newspaper using a new theme as well as a lot of custom CSS. Managed conflicts during theme change as well as PHP updates. Implemented back-end features such as an article rating system and an email feedback form. Used google analytics extensively through the year to give regular webtraffic reports.'
-          icons={['wordpress.png', 'css.png']}
+          icons={['wordpress.png', 'css2.png']}
           reverse
           borderBottomLight
           />
@@ -149,7 +149,7 @@ const Code = () => {
           source='https://github.com/nicofraisse/rentmylife'
           date='Jul 2019'
           description='"Does your life suck? Rent a new one and be someone else!"<br>- Rent My Life is a fun Airbnb clone that was designed, implemented and shipped to production in 5 days as part of the Le Wagon curriculum. It was built using Ruby On Rails and MVC architecture (model-view-controller).'
-          icons={['rails.png', 'postgresql.png', 'heroku.png', 'javascript.png', 'figma.png', 'html.png', 'css.png', 'sass.png']}
+          icons={['rails.png', 'postgresql.png', 'heroku.png', 'javascript.png', 'figma.png', 'html2.png', 'css2.png', 'sass.png']}
           borderBottomLight
           />
 
@@ -162,6 +162,7 @@ const Code = () => {
           imgWidth='400px'
           description='I have designed and built my this --single page application--  portfolio website from scratch, using the Gatsby.js react framework. Animations and other dynamic elements were made thanks to react hooks as well as the react sping library.'
           icons={['react.png', 'gatsby.png']}
+          noSite
           reverse
           borderBottomLight
           />
@@ -173,7 +174,7 @@ const Code = () => {
           date='Jul 2019'
           imgWidth='440px'
           description='Designed and implemented UI/UX solutions for a complete redesign of Quebec’s Conseil LGBT website, as part of PrideHacks 2019, a hackathon to build solutions for nonprofit organizations serving the LGBT community.'
-          icons={['figma.png', 'wordpress.png', 'html.png', 'css.png']}
+          icons={['figma.png', 'wordpress.png', 'html2.png', 'css2.png']}
           />
         </animated.div>
       </div>
