@@ -21,6 +21,7 @@ const Flick = (props) => {
     <div>
       <div
       className="flick"
+      data-sal="fade" data-sal-delay="0" data-sal-duration="600" data-sal-easing="ease"
       style={{ backgroundImage: `url(${props.source})`}}
       data-for={props.souce}
       data-tip={props.description}

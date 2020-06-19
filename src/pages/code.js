@@ -17,7 +17,6 @@ const Code = () => {
     to: {opacity: moreCode ? 1 : 0, transform: moreCode ? 'translateY(20px)'  : 'translateY(0px)'},
     from: {opacity: 0}
   })
-
   const handleClick = () => {
     console.log(moreCode)
     setMoreCode((moreCode) => !moreCode)
@@ -27,15 +26,31 @@ const Code = () => {
   <div className="code-wrapper">
     <div className="code pt-3">
       <div className="container-lg">
-        <h2 className="mb-4 mt-0 pt-5 text-color-shadow">Toolkit</h2>
-        <div id="sc1">
-          <Separator
-            marginBottom="-16px"
-            transform="perspective(48px) rotateX(18deg) translate3d(0, 0, 8px)"
-          />
+        <div data-sal="fade" data-sal-delay="0" data-sal-duration="1000" data-sal-easing="ease">
+          <h2 className="mb-4 mt-0 pt-5 text-color-shadow">
+            Toolkit
+          </h2>
+          <div
+          id="sc1"
+          >
+            <Separator
+              marginBottom="-16px"
+              transform="perspective(48px) rotateX(18deg) translate3d(0, 0, 8px)"
+            />
+          </div>
         </div>
-        <div className="row justify-content-center mt-1 mt-md-3">
-          <div className="col-md-4 col-sm-12 header-tooltip" data-for="toolkit-tooltip" data-tip="<h3 className='icon-tooltip'>Languages & Frameworks</h3>">
+        <div
+        className="row justify-content-center mt-1 mt-md-3"
+        data-sal="fade"
+        data-sal-delay="0"
+        data-sal-duration="1000"
+        data-sal-easing="ease"
+        >
+          <div
+          className="col-md-4 col-sm-12 header-tooltip"
+          data-for="toolkit-tooltip"
+          data-tip="<h3 className='icon-tooltip'>Languages & Frameworks</h3>"
+          >
           <ReactTooltip id="toolkit-tooltip" effect="solid" html={true}/>
             <i
               className="toolkit-icon fas fa-code text-center w-100 mb-md-4 mb-2"
@@ -72,21 +87,23 @@ const Code = () => {
                 <p className="text-center">GraphQL・PostgreSQL・Active Record</p>
               </div>
               <div className="misc-tools">
-                <p className="text-justify text--center">SQLite・Heroku・Netlify・Cloudinary・Mapbox・Stripe・GraphQL・Pandas・BeautifulSoup・Microsoft SQL Server</p>
+                <p className="text-justify text-center">SQLite・Heroku・Netlify・Cloudinary・Mapbox・Stripe・GraphQL・Pandas・BeautifulSoup・Microsoft SQL Server</p>
               </div>
             </div>
           </div>
         </div>
-        <h2 className="mb-4 pt-md-5 pt-3 text-color-shadow title-smaller">Web Development Projects</h2>
-        <div id="sc2">
-          <Separator
-            transform="perspective(30px) rotateX(6deg) translate3d(0, 0, 8px)"
-          />
+        <div data-sal="fade" data-sal-delay="0" data-sal-duration="1000" data-sal-easing="ease">
+          <h2 className="mb-4 pt-md-5 pt-3 text-color-shadow title-smaller">Web Development Projects</h2>
+          <div id="sc2">
+            <Separator
+              transform="perspective(30px) rotateX(6deg) translate3d(0, 0, 8px)"
+            />
+          </div>
         </div>
 
 
 
-        <div className="push-higher">
+        <div className="push-higher" data-sal="fade" data-sal-delay="0" data-sal-duration="600" data-sal-easing="ease">
           <Project
           img='incorpus.png'
           title='inCORPUS'
@@ -99,20 +116,23 @@ const Code = () => {
           />
         </div>
 
-        <Project
-        img='portfolio2.png'
-        title='This website'
-        site='#'
-        source='https://github.com/nicofraisse/nf'
-        date='Jun 2020'
-        imgWidth='400px'
-        description='I have designed and built my own portfolio as a single page application using the Gatsby.js react framework. Animations and other dynamic elements were made using CSS transformations, keyframes, react hooks as well as the react sping library.'
-        icons={['react.png', 'gatsby.png', 'javascript.png', 'html.png', 'css.png', 'sass.png', 'bootstrap.png', 'netlify.png']}
-        noSite
-        borderBottomLight
-        reverse
-        />
+        <div data-sal="fade" data-sal-delay="0" data-sal-duration="600" data-sal-easing="ease">
+          <Project
+          img='portfolio2.png'
+          title='This website'
+          site='#'
+          source='https://github.com/nicofraisse/nf'
+          date='Jun 2020'
+          imgWidth='400px'
+          description='I have designed and built my own portfolio as a single page application using the Gatsby.js react framework. Animations and other dynamic elements were made using CSS transformations, keyframes, react hooks as well as the react sping library.'
+          icons={['react.png', 'gatsby.png', 'javascript.png', 'html.png', 'css.png', 'sass.png', 'bootstrap.png', 'netlify.png']}
+          noSite
+          borderBottomLight
+          reverse
+          />
+        </div>
 
+        <div data-sal="fade" data-sal-delay="0" data-sal-duration="600" data-sal-easing="ease">
         <Project
         img='bandwizard.jpg'
         title='BandWizard'
@@ -125,6 +145,7 @@ const Code = () => {
         icons={['rails.png', 'postgresql.png', 'heroku.png', 'javascript.png', 'html.png', 'css.png', 'sass.png', 'bootstrap.png', 'figma.png']}
         source='http://www.google.com'
         />
+        </div>
 
         <button
           onClick={() => handleClick()}
@@ -133,17 +154,20 @@ const Code = () => {
         </button>
 
         <animated.div id="other-projects" className={moreCode ? 'd-block' : 'd-none'} style={animation}>
-          <Project
-          img='journalinteret.jpg'
-          imgWidth='360px'
-          title="Journal L'intéret, HEC Montréal"
-          site='http://www.journalinteret.com/'
-          date='Oct 2019'
-          description='Redesigned HEC Montréal’s student newspaper using a new theme as well as a lot of custom CSS. Managed conflicts during theme change as well as PHP updates. Implemented back-end features such as an article rating system and an email feedback form. Used google analytics extensively through the year to give regular webtraffic reports.'
-          icons={['wordpress.png', 'css.png']}
-          reverse
-          borderBottomLight
-          />
+          <div data-sal="fade" data-sal-delay="0" data-sal-duration="600" data-sal-easing="ease">
+            <Project
+            img='journalinteret.jpg'
+            imgWidth='360px'
+            title="Journal L'intéret, HEC Montréal"
+            site='http://www.journalinteret.com/'
+            date='Oct 2019'
+            description='Redesigned HEC Montréal’s student newspaper using a new theme as well as a lot of custom CSS. Managed conflicts during theme change as well as PHP updates. Implemented back-end features such as an article rating system and an email feedback form. Used google analytics extensively through the year to give regular webtraffic reports.'
+            icons={['wordpress.png', 'css.png']}
+            reverse
+            borderBottomLight
+            />
+          </div>
+          <div data-sal="fade" data-sal-delay="0" data-sal-duration="600" data-sal-easing="ease">
           <Project
           img='billy-social.jpg'
           title='Billy.Social'
@@ -154,29 +178,32 @@ const Code = () => {
           icons={['wordpress.png', 'css.png', 'stripe.png']}
           borderBottomLight
           />
-          <Project
-          img='conseil-lgbt.jpg'
-          title='Conseil LGBT'
-          site='https://www.conseil-lgbt.ca/'
-          date='Jul 2019'
-          imgWidth='440px'
-          description='Designed and implemented UI/UX solutions for a complete redesign of Quebec’s Conseil LGBT website, as part of PrideHacks 2019, a hackathon to build solutions for nonprofit organizations serving the LGBT community.'
-          icons={['figma.png', 'wordpress.png', 'html.png', 'css.png']}
-          borderBottomLight
-          reverse
-          />
-          <Project
-          img='rentmylife.jpg'
-          imgWidth='400px'
-          title='Rent My Life'
-          site='http://rentmylife.herokuapp.com/'
-          source='https://github.com/nicofraisse/rentmylife'
-          date='Jul 2019'
-          description='"Does your life suck? Rent a new one and be someone else!"<br>- Rent My Life is a fun Airbnb clone that was designed, implemented and shipped to production in 5 days as part of the Le Wagon curriculum. It was built using Ruby On Rails and MVC architecture (model-view-controller).'
-          icons={['rails.png', 'postgresql.png', 'heroku.png', 'javascript.png', 'html.png', 'css.png', 'sass.png', 'figma.png',]}
-
-          />
-
+          </div>
+          <div data-sal="fade" data-sal-delay="0" data-sal-duration="600" data-sal-easing="ease">
+            <Project
+            img='conseil-lgbt.jpg'
+            title='Conseil LGBT'
+            site='https://www.conseil-lgbt.ca/'
+            date='Jul 2019'
+            imgWidth='440px'
+            description='Designed and implemented UI/UX solutions for a complete redesign of Quebec’s Conseil LGBT website, as part of PrideHacks 2019, a hackathon to build solutions for nonprofit organizations serving the LGBT community.'
+            icons={['figma.png', 'wordpress.png', 'html.png', 'css.png']}
+            borderBottomLight
+            reverse
+            />
+          </div>
+          <div data-sal="fade" data-sal-delay="0" data-sal-duration="600" data-sal-easing="ease">
+            <Project
+            img='rentmylife.jpg'
+            imgWidth='400px'
+            title='Rent My Life'
+            site='http://rentmylife.herokuapp.com/'
+            source='https://github.com/nicofraisse/rentmylife'
+            date='Jul 2019'
+            description='"Does your life suck? Rent a new one and be someone else!"<br>- Rent My Life is a fun Airbnb clone that was designed, implemented and shipped to production in 5 days as part of the Le Wagon curriculum. It was built using Ruby On Rails and MVC architecture (model-view-controller).'
+            icons={['rails.png', 'postgresql.png', 'heroku.png', 'javascript.png', 'html.png', 'css.png', 'sass.png', 'figma.png',]}
+            />
+          </div>
 
         </animated.div>
       </div>
