@@ -41,31 +41,32 @@ const GlobalStyle = createGlobalStyle`
 
 .nicolas {
   color: ${props => props.theme.mode === 'dark' ? lightText : darkText};
-  transition: 0.15s background-color, color;
+  transition: 0.25s color;
 }
 
 .fraisse, .logo-description {
   color: ${props => props.theme.mode === 'dark' ? lightTextSecondary : darkTextSecondary};
-  transition: 0.15s background-color, color;
+  transition: 0.25s color;
 }
 
 #header i, #dark-mode-icon-mobile i {
   color: ${props => props.theme.mode === 'dark' ? lightText : darkText};
+  0.25s color;
 }
 
 h1, h2  {
   color: ${props => props.theme.mode === 'dark' ? darkText : lightText};
-  transition: 0.15s background-color, color;
+  transition: 0.25s color;
 }
 
 p, h3, i, .email-link a {
   color: ${props => props.theme.mode === 'dark' ? darkTextSecondary : lightTextSecondary};
-  transition: 0.15s background-color, color;
+  transition: 0.25s color;
 }
 
 .navlink {
   color: ${props => props.theme.mode === 'dark' ? linkBlueLight : linkBlueDark} !important;
-  transition: 0.15s;
+  transition: 0.25s;
 }
 
 .navlink:hover {
@@ -82,6 +83,7 @@ p, h3, i, .email-link a {
 
 .link {
   color: ${props => props.theme.mode === 'dark' ? linkBlueDark  : linkBlueLight} !important;
+  transition: 0.25s color;
 }
 
 .link:hover, .email-link a:hover {
@@ -91,16 +93,16 @@ p, h3, i, .email-link a {
 
 .date-section, .misc-tools > p, .text-grey {
   color: ${props => props.theme.mode === 'dark' ? lightTextThird : darkTextThird};
-  transition: 0.15s color;
+  transition: 0.25s color;
 }
 
 .disabled-link {
   color: ${props => props.theme.mode === 'dark' ? lightTextThird : darkTextThird};
-  transition: 0.15s color;
+  transition: 0.25s color;
 }
 
 .photo-tooltip {
-  color: rgba(0, 0, 0, 0.6) !important;
+  color: ${props => props.theme.mode === 'dark' ? 'rgba(0, 0, 0, 0.6)' : 'rgba(255, 255, 255, 0.6)'} !important;
   font-size: 14px;
 }
 
@@ -118,7 +120,7 @@ p, h3, i, .email-link a {
 
 .header-background {
   background-color: ${props => props.theme.mode === 'dark' ? moonBlue : dayCream };
-  transition: 0.15s background-color;
+  transition: 0.25s background-color;
 }
 
 #header-mobile {
@@ -128,32 +130,32 @@ p, h3, i, .email-link a {
 
 .background-css-animation {
   background-color: ${props => props.theme.mode === 'dark' ? moonBlue : dayCream};
-  transition: 0.15s background-color;
+  transition: 0.25s background-color;
 }
 
 .code-wrapper {
   background-color: ${props => props.theme.mode === 'dark' ? dayCream : moonBlue};
-  transition: 0.15s background-color;
+  transition: 0.25s background-color;
 }
 
 .photography {
   background-color: ${props => props.theme.mode === 'dark' ? dayCreamSecondary : moonBlueSecondary};
-  transition: 0.15s background-color;
+  transition: 0.25s background-color;
 }
 
 .about {
   background-color: ${props => props.theme.mode === 'dark' ? dayCream : moonBlue};
-  transition: 0.15s background-color;
+  transition: 0.25s background-color;
 }
 
 .contact {
   background-color: ${props => props.theme.mode === 'dark' ? dayCreamSecondary : moonBlueSecondary};
-  transition: 0.15s background-color;
+  transition: 0.25s background-color;
 }
 
 #footer {
   background-color: ${props => props.theme.mode === 'dark' ? dayCream : moonBlue};
-  transition: 0.15s background-color;
+  transition: 0.25s background-color;
 }
 
 .separator {
@@ -189,7 +191,7 @@ p, h3, i, .email-link a {
 }
 .btn-more:hover i{
   color: ${props => props.theme.mode === 'dark' ? lightTextThird : moonBlueSecondary } !important;
-  transition: 0.15s;
+  transition: 0.25s;
 }
 
 .btn-more:active {
@@ -198,7 +200,7 @@ p, h3, i, .email-link a {
 
 #dark-mode-icon-desktop, #dark-mode-icon-mobile {
   transform: ${props => props.theme.mode === 'dark' ? 'rotateZ(180deg)' : 'rotateZ(0deg)' };
-  transition: transform 0.3s, text-shadow 0.15s;
+  transition: transform 0.3s, text-shadow 0.25s;
 }
 
 #dark-mode-icon-desktop:hover, #dark-mode-icon-mobile:hover {

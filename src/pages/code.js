@@ -59,7 +59,7 @@ const Code = () => {
                 <p className="text-center">HTML・CSS・Figma</p>
               </div>
               <div className="misc-tools">
-                <p className="text-justify text--center">SCSS/SASS・Bootstrap・Animate.js・React Spring・Inkscape・Adobe Creative Suite</p>
+                <p className="text-justify text--center">SCSS/SASS・Bootstrap・anime.js・React Spring・Inkscape・Adobe Creative Suite</p>
               </div>
             </div>
           </div>
@@ -85,13 +85,13 @@ const Code = () => {
         </div>
         <div className="push-higher">
           <Project
-          img='incorpus.jpg'
+          img='incorpus.png'
           title='inCORPUS'
           site='https://www.in-corpus.com/'
           date='Apr 2020'
-          imgWidth='340px'
+          imgWidth='440px'
           description='Creation of webpages & animations for a French tech company developing a training app for professional athletes.'
-          icons={['gatsby.png', 'react.png', 'javascript.png', 'html.png', 'css.png', 'sass.png']}
+          icons={['gatsby.png', 'react.png', 'react-spring.png', 'javascript.png', 'html.png', 'css.png', 'sass.png']}
           borderBottomLight
           />
         </div>
@@ -154,7 +154,7 @@ const Code = () => {
           />
 
           <Project
-          img='incorpus.jpg'
+          img='incorpus.png'
           title='This website'
           site='#'
           source='https://github.com/nicofraisse/nf'

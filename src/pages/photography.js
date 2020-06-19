@@ -60,7 +60,7 @@ export default () => {
           <Flick source='photography/maurice10_nicolas.jpg' description="Ile Maurice"></Flick>
           <Flick source='photography/split2_nicolas.jpg' description="Split, Croatia"></Flick>
         </div>
-        <a href="https://www.flickr.com/photos/129462013@N05/" className="btn-more" target="blank">View all photos<i className="fas fa-external-link-alt"></i></a>
+        <a href="https://www.flickr.com/photos/129462013@N05/" className="btn-more" target="_blank">View all photos<i className="fas fa-external-link-alt"></i></a>
       </animated.div>
       <ReactTooltip  effect="solid" className="photo-tooltip" place="bottom" backgroundColor="rgba(0, 0, 0, 0)" offset={{top: 8}}/>
     </Container>

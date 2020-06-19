@@ -49,7 +49,7 @@ export default () =>
         <p className="text-justify">Attended Le Wagon Montreal (Batch #281). 9-week intensive coding bootcamp learning HTML, CSS, Bootstrap, JavaScript ES2015,SQL, git, GitHub, Heroku and Ruby on Rails. Designed, implemented and shipped toproduction a clone of AirBnB and a Rails prototype of www.bandwizard.co.</p>
         <h3 className="mt-4">HEC Montréal<span className="date-section"> / 2017-2020</span></h3>
         <p className="text-justify">Bachelor's of Business Administration, major in business intelligence (BI). Mention ef excellence. Among other skills aquired during bachelor's degree, learned to use tools such as Jupyter Notebook, Tableau, MS SQL Manager, MS Power BI, SAP, SAS, SAS EM, and much more.</p>
-        <a href="mailto:ni.fraisse@gmail.com" className="link clicky-effect">Full CV by request</a>
+        <a href="mailto:ni.fraisse@gmail.com" className="link clicky-effect" target="_blank">Full CV by request</a>
       </div>
     </div>
   </div>
