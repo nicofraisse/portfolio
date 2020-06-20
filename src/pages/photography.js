@@ -21,12 +21,14 @@ export default () => {
   }
   return(
   <div className="photography" id="photo">
-    <h2 className="text-color-shadow">Photography</h2>
-    <div id="sc3">
-      <Separator
-        marginBottom= '-44px'
-        transform= "perspective(48px) rotateX(18deg)"
-      />
+    <div data-sal="fade" data-sal-delay="0" data-sal-duration="1000" data-sal-easing="ease">
+      <h2 className="text-color-shadow">Photography</h2>
+      <div id="sc3">
+        <Separator
+          marginBottom= '-44px'
+          transform= "perspective(48px) rotateX(18deg)"
+        />
+      </div>
     </div>
     <Container>
       <div className="flick-container">
