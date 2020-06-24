@@ -222,7 +222,7 @@ const Header = ({onClickity}) => {
                     }, 1050)
                   }}
               >contact</Link>
-              <button id="dark-mode-icon-desktop" className="ml-3 ml-md-4 ml-lg-5 d-sm-inline-block" onClick={onClickity}>
+              <button name="toggle dark mode" id="dark-mode-icon-desktop" className="ml-3 ml-md-4 ml-lg-5 d-sm-inline-block" onClick={onClickity}>
                 <i className="fas fa-adjust" />
               </button>
             </div>
@@ -231,7 +231,7 @@ const Header = ({onClickity}) => {
       </div>
       <div id="header-mobile" className="d-sm-none">
         <div className="header-content container-lg flex-column align-items-center mt-1">
-          <div className="header-link-container d-flex align-items-center" id="nav-links">
+          <div className="header-link-container d-flex align-items-center" id="nav-links-mobile">
             <Link
               activeClass="active-link"
               className="mx-md-2 navlink clicky-effect"
@@ -293,7 +293,7 @@ const Header = ({onClickity}) => {
                   }, 1050)
                 }}
             >contact</Link>
-            <button id="dark-mode-icon-mobile" onClick={onClickity}>
+            <button name="toggle dark mode" id="dark-mode-icon-mobile" onClick={onClickity}>
               <i className="fas fa-adjust" />
             </button>
           </div>

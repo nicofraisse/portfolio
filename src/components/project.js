@@ -8,7 +8,7 @@ const Project = (props) => {
     <li
     key={icon.toString()}
     value={icon}
-    data-for="bis"
+    data-for="illegal-id"
     className='skill-icon list-inline-item'
     data-html={true} data-delay-hide='200'
     data-tip={`<span>${icon.split('.')[0]}</span>`}
@@ -36,7 +36,7 @@ const Project = (props) => {
         <ul className={`list-inline mt-4 ${props.reverse ? "ul-right" : ""}`}>
           {projectIcons}
         </ul>
-        <ReactTooltip id="bis" className="no-select" effect="solid" data-html={true} textColor={"rgba(251, 251, 251, 1.00)"} offset={{'top': -4, 'left': 0}}/>
+        <ReactTooltip id="illegal-id" className="no-select" effect="solid" data-html={true} textColor={"rgba(251, 251, 251, 1.00)"} offset={{'top': -4, 'left': 0}}/>
         <div className="source-center-mobile">
           <span className={props.noSite ? "d-none" : ""}>
             <a href={props.site} className="p-0 clicky-effect link" target="_blank" rel="noopener noreferrer">View site</a>
