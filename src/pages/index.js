@@ -19,7 +19,7 @@ const Index = () => {
       <Helmet>
         <meta charSet="utf-8" />
         <title>code by nicolas fraisse · creative freelance developer</title>
-        <link rel="canonical" href="https://nicolasfraisse.com"/>
+        <link rel="canonical" href="https://www.nicolasfraisse.com"/>
         <meta name="description"         content="web development portfolio by nicolas fraisse, a developer based in montreal · get in touch at info@nicolasfraisse.com" />
         <meta property="og:url"          content="https://www.nicolasfraisse.com" />
         <meta property="og:title"        content="nicolas fraisse · creative freelance developer" />

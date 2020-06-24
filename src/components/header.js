@@ -150,39 +150,9 @@ const Header = ({onClickity}) => {
       }
     }
 
-
-
-
-
-
-
-
-
-
-
     var lastScrollTop = 0;
     var delta = 200;
     var navbarHeight = 84;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     const aboutDesktop = document.getElementById('aboutlink');
     const aboutMobile = document.getElementById('aboutlink-mobile');
     const contactDesktop = document.getElementById('contactlink');
