@@ -10,7 +10,7 @@ import About from './about.js'
 import Contact from './contact.js'
 import ReactTooltip from "react-tooltip";
 import { Helmet } from "react-helmet";
-import logo from '../images/logo.png'
+// import logo from '../images/logo.png'
 
 const Index = () => {
   const baseUrl = typeof window !== 'undefined' ? window.location.origin : 'https://www.nicolasfraisse.com';
@@ -19,13 +19,13 @@ const Index = () => {
       <Helmet>
         <meta charSet="utf-8" />
         <title>code (Test) by nicolas fraisse · creative freelance developer</title>
-        <link rel="canonical" href="https://nicolasfraisse.com"/>
+        <link rel="canonical" href="http://nicolasfraisse.com"/>
         <meta name="description"         content="web TEST development portfolio by nicolas fraisse, a developer based in montreal · get in touch at info@nicolasfraisse.com" />
         <meta property="og:url"          content="https://nicolasfraisse.com" />
         <meta property="og:title"        content="nicolas fraisseFBTEST· creative freelance developer" />
         <meta property="og:description"  content="webby development portfolio by nicolas fraisse, a developer based in montreal · get in touch at info@nicolasfraisse.com" />
         <meta property="og:image"        content='https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Hexahedron.jpg/280px-Hexahedron.jpg?123”'  />
-        <meta property="og:image:type" content="image/jpeg" />
+        <meta property="og:image:type" content="image/jpg" />
         <meta property="og:image:width" content="400" />
         <meta property="og:image:height" content="300" />
         <meta name="twitter:title"       content="nicolas fraisse TEST · creative freelance developer" />
