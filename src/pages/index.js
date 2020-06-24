@@ -1,14 +1,11 @@
 import React from "react"
 import Main from "../layouts/main.js"
-import { Link } from "gatsby"
 import '../styles/imports.scss'
-import Project from "../components/project.js"
 import Intro from './intro.js'
 import Code from './code.js'
 import Photography from './photography.js'
 import About from './about.js'
 import Contact from './contact.js'
-import ReactTooltip from "react-tooltip";
 import { Helmet } from "react-helmet";
 import socialLogo from '../images/social-logo.png'
 

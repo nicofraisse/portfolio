@@ -1,7 +1,4 @@
 import React, { useState } from "react"
-import Main from "../layouts/main.js"
-import Container from "../layouts/container.js"
-import { Link } from "gatsby"
 import '../styles/imports.scss'
 import Project from "../components/project.js"
 import {useSpring, animated} from 'react-spring'
@@ -9,16 +6,13 @@ import Separator from "../components/separator.js"
 import ReactTooltip from "react-tooltip";
 
 
-
 const Code = () => {
   const [moreCode, setMoreCode] = useState(false);
-
   const animation = useSpring({
     to: {opacity: moreCode ? 1 : 0, transform: moreCode ? 'translateY(20px)'  : 'translateY(0px)'},
     from: {opacity: 0}
   })
   const handleClick = () => {
-    console.log(moreCode)
     setMoreCode((moreCode) => !moreCode)
   }
 
@@ -143,7 +137,6 @@ const Code = () => {
                     <br>
                     This MVP has been designed, implemented and shipped to production in 10 days, as the final project at Le Wagon coding bootcamp.'
         icons={['rails.png', 'postgresql.png', 'heroku.png', 'javascript.png', 'html.png', 'css.png', 'sass.png', 'bootstrap.png', 'figma.png']}
-        source='http://www.google.com'
         />
         </div>
 
@@ -192,7 +185,7 @@ const Code = () => {
             reverse
             />
           </div>
-          <div data-sal="fade" data-sal-delay="0" data-sal-duration="600" data-sal-easing="ease">
+          <div className="pb-4 pb-md-5" data-sal="fade" data-sal-delay="0" data-sal-duration="600" data-sal-easing="ease">
             <Project
             img='rentmylife.jpg'
             imgWidth='400px'

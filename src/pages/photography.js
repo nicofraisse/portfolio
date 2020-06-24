@@ -1,6 +1,4 @@
 import React, { useState } from "react"
-import Main from "../layouts/main.js"
-import Container from "../layouts/container.js"
 import Flick from "../components/flick.js"
 import Separator from "../components/separator.js"
 import ReactTooltip from "react-tooltip";
@@ -30,7 +28,7 @@ export default () => {
         />
       </div>
     </div>
-    <Container>
+    <div className="flick-container-wrap">
       <div className="flick-container">
         <Flick source='photography/hk_nicolas.jpg' description="Hong Kong"></Flick>
         <Flick source='photography/japan_nicolas.jpg' description="Hakone, Japan"></Flick>
@@ -62,10 +60,10 @@ export default () => {
           <Flick source='photography/maurice10_nicolas.jpg' description="Ile Maurice"></Flick>
           <Flick source='photography/split2_nicolas.jpg' description="Split, Croatia"></Flick>
         </div>
-        <a href="https://www.flickr.com/photos/129462013@N05/" className="btn-more" target="_blank">View all photos<i className="fas fa-external-link-alt"></i></a>
+        <a href="https://www.flickr.com/photos/129462013@N05/" className="btn-more" target="_blank" rel="noopener noreferrer">View all photos<i className="fas fa-external-link-alt"></i></a>
       </animated.div>
       <ReactTooltip  effect="solid" className="photo-tooltip" place="bottom" backgroundColor="rgba(0, 0, 0, 0)" offset={{top: 8}}/>
-    </Container>
+    </div>
 
   </div>
   )

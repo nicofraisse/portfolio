@@ -1,14 +1,8 @@
 import React from "react"
-import Main from "../layouts/main.js"
-import Container from "../layouts/container.js"
-
 import Separator from "../components/separator.js"
 import '../styles/imports.scss'
-import ReactTooltip from "react-tooltip";
-
 
 export default () =>
-
 <div className="about pt-4 pl-lg-5 pr-lg-5 pl-sm-4 pr-sm-4 pl-2 pr-2 pb-5">
   <div id="invisibleScrollLocation"></div>
   <div className="container-lg">
@@ -35,13 +29,13 @@ export default () =>
           <h3 className="mt-4">Private tutoring<span className="date-section"> / 2020</span></h3>
           <p className="text-justify">
           Gives interactive one-on-one programming classes to motivated students who want to discover or enhance their abilities in JavaScript, Python, HTML/CSS, Ruby, and much more. Material covered includes:
+          </p>
           <ul className="text-list">
             <li>Programming fundamentals</li>
             <li>Responsive web design</li>
             <li>Web scraping, interactions with APIs</li>
             <li>Data science with python (pandas library)</li>
           </ul>
-        </p>
         </div>
       </div>
       <div className="col-md-5">
@@ -61,7 +55,7 @@ export default () =>
         <div data-sal="fade" data-sal-delay="0" data-sal-duration="1000" data-sal-easing="ease">
           <h3 className="mt-4">HEC Montréal<span className="date-section"> / 2017-2020</span></h3>
           <p className="text-justify">Bachelor's of Business Administration, major in business intelligence (BI). Mention ef excellence. Among other skills aquired during bachelor's degree, learned to use tools such as Jupyter Notebook, Tableau, MS SQL Manager, MS Power BI, SAP, SAS, SAS EM, and much more.</p>
-          <a href="mailto:ni.fraisse@gmail.com" className="link clicky-effect" target="_blank">Full CV by request</a>
+          <a href="mailto:ni.fraisse@gmail.com" className="link clicky-effect" target="_blank" rel="noopener noreferrer">Full CV by request</a>
         </div>
       </div>
     </div>

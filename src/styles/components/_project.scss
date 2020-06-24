@@ -1,6 +1,3 @@
-.project-description {
-}
-
 .project-img {
   display: block;
   object-fit: cover;
@@ -67,6 +64,12 @@
     max-width: 50% !important;
     height: auto !important;
     width: 60% !important;
+    display: inline-block;
+  }
+
+  .project-img-link {
+    text-align: center;
+    padding: 0 auto;
   }
 
   .project ul, .source-center-mobile {
