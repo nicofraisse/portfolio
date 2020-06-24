@@ -1,6 +1,8 @@
 import React from "react"
 import ReactTooltip from "react-tooltip";
 import '../styles/imports.scss'
+import socialLogo from '../images/social-logo.png'
+
 
 
 const Project = (props) => {
@@ -19,6 +21,7 @@ const Project = (props) => {
 
   return (
     <div className={`project d-flex mt-5 mb-0 mt-md-5 mb-md-5 pb-4 pb-md-0 ${reverse} ${borderBottomLight}`}>
+      <img src={`${socialLogo}`} alt="SH" style={{width: '1px', opacity: 0}}/>
       <img
       className='project-img mx-1 mx-xl-2 mb-md-0 mb-3'
       src={"/projects/" + props.img}
