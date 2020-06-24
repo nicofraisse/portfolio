@@ -24,10 +24,10 @@ const Index = () => {
         <meta property="og:url"          content="https://www.nicolasfraisse.com" />
         <meta property="og:title"        content="nicolas fraisse · creative freelance developer" />
         <meta property="og:description"  content="web development portfolio by nicolas fraisse, a developer based in montreal · get in touch at info@nicolasfraisse.com" />
-        <meta property="og:image"        content={`${baseUrl}${logo}`}  />
+        <meta property="og:image"        content='https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Hexahedron.jpg/280px-Hexahedron.jpg'  />
         <meta name="twitter:title"       content="nicolas fraisse · creative freelance developer" />
         <meta name="twitter:description" content="web development portfolio by nicolas fraisse, a developer based in montreal · get in touch at info@nicolasfraisse.com" />
-        <meta name="twitter:image"       content={`${baseUrl}${logo}`} />
+        <meta name="twitter:image"       content='https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Hexahedron.jpg/280px-Hexahedron.jpg' />
         <meta name="twitter:card"        content="summary_large_image" />
       </Helmet>
       <Main>
