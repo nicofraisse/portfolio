@@ -207,7 +207,7 @@ const Header = ({onClickity}) => {
                     window.scrollBy(0, 2)
                   }, 1050)
                 }}
-              >code</Link>
+              >codes</Link>
               <Link
                   activeClass="active-link"
                   className="mx-md-1 navlink clicky-effect"
