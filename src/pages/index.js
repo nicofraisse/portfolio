@@ -10,12 +10,10 @@ import About from './about.js'
 import Contact from './contact.js'
 import ReactTooltip from "react-tooltip";
 import { Helmet } from "react-helmet";
-import { logo } from '../images/logo.png'
+import logo from '../images/logo.png'
 
 const Index = () => {
   const baseUrl = typeof window !== 'undefined' ? window.location.origin : 'https://www.nicolasfraisse.com';
-  console.log(logo)
-  console.log(baseUrl)
   return (
     <div>
       <Helmet>
