@@ -1,36 +1,11 @@
-// ES6 Imports
-import * as Scroll from 'react-scroll';
-import { Link, Element , Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
-import React, { useState, useEffect } from 'react'
-import { Transition, animated } from 'react-spring/renderprops'
-// import { Link } from "gatsby"
+import { Link } from 'react-scroll'
+import React, { useEffect } from 'react'
 import "../styles/imports.scss"
 import Logo from "./logo.js"
 
 const Header = ({onClickity}) => {
-  function elementInViewport(el) {
-    var top = el.offsetTop;
-    var left = el.offsetLeft;
-    var width = el.offsetWidth;
-    var height = el.offsetHeight;
-
-    while(el.offsetParent) {
-      el = el.offsetParent;
-      top += el.offsetTop;
-      left += el.offsetLeft;
-    }
-
-    return (
-      top < (window.pageYOffset + window.innerHeight) &&
-      left < (window.pageXOffset + window.innerWidth) &&
-      (top + height) > window.pageYOffset &&
-      (left + width) > window.pageXOffset
-    );
-  }
   // for header shrinking on scroll
-  const [headerBig, setHeaderBig] = useState(false);
   useEffect(() => {
-    const navLinks = document.getElementById('nav-links');
     const handleScroll = () => {
       let viewportWidth = window.innerWidth || document.documentElement.clientWidth;
       const scrollPosition = window.scrollY;
@@ -153,26 +128,18 @@ const Header = ({onClickity}) => {
     var lastScrollTop = 0;
     var delta = 200;
     var navbarHeight = 84;
-    const aboutDesktop = document.getElementById('aboutlink');
-    const aboutMobile = document.getElementById('aboutlink-mobile');
-    const contactDesktop = document.getElementById('contactlink');
-    const contactMobile = document.getElementById('contactlink-mobile');
     const invisibleHoverBox = document.querySelector('.invisible-hover-box');
-    const separators = document.querySelectorAll('.separator');
     const headerDesktop = document.getElementById('header');
-    const footer = document.getElementById('footer');
     const headerMobile = document.getElementById('header-mobile');
     const headerDesktopContainer = document.querySelector('.header-content-container');
     const arrow = document.querySelector('.arrow');
     const headerBackground = document.querySelector('.header-background');
-
     window.addEventListener('scroll', handleScroll);
     window.addEventListener('resize', handleResize);
     setTimeout(() => {
       document.body.classList.add('fade-in')
     }, 150)
-
-  }, [headerBig])
+  })
 
 
   return (

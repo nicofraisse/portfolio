@@ -1,6 +1,4 @@
 import React from "react"
-import Main from "../layouts/main.js"
-import Container from "../layouts/container.js"
 import Separator from "../components/separator.js"
 import '../styles/imports.scss'
 
@@ -19,20 +17,20 @@ const Contact = () => {
     </div>
 
     <div className="px-sm-5 px-3 pt-xl-2 pb-xl-1" data-sal="fade" data-sal-delay="0" data-sal-duration="1000" data-sal-easing="ease">
-      <h3 className="text-center mt-5 text-large">Available for hire ✌️</h3>
+      <h3 className="text-center mt-5 text-large">Available for hire <span role="img" aria-label="peace emoji">✌️</span></h3>
       <h3 className="justify-max-xs text-center mb-md-4 mb-3 text-large">
-        For any enquiries, please <span className="email-link clicky-effect"><a href="mailto:ni.fraisse@gmail.com" target="_blank">email me here</a></span>
+        For any enquiries, please <span className="email-link clicky-effect"><a href="mailto:ni.fraisse@gmail.com" target="_blank" rel="noopener noreferrer">email me here</a></span>
         .
       </h3>
     </div>
     <div className="profile-card-container" data-sal="fade" data-sal-delay="0" data-sal-duration="1000" data-sal-easing="ease">
       <div className="profile-card">
-        <img src="nicolas-fraisse.jpg" class="nicolas-pdp" alt=""/>
+        <img src="nicolas-fraisse.jpg" className="nicolas-pdp" alt=""/>
         <div className="text-center icon-grid">
-          <a href="https://github.com/nicofraisse" title="GitHub" target="_blank"><i className="fab fa-github social-icon"></i></a>
-          <a href="https://www.instagram.com/nicofraisse/" title="Instagram" target="_blank"><i className="fab fa-instagram social-icon"></i></a>
-          <a href="https://www.linkedin.com/in/nicolasfraisse/" title="LinkedIn" target="_blank"><i className="fab fa-linkedin-in social-icon"></i></a>
-          <a href="https://www.flickr.com/photos/129462013@N05/" title="Flickr" target="_blank"><i className="fab fa-flickr social-icon"></i></a>
+          <a href="https://github.com/nicofraisse" title="GitHub" target="_blank" rel="noopener noreferrer"><i className="fab fa-github social-icon"></i></a>
+          <a href="https://www.instagram.com/nicofraisse/" title="Instagram" target="_blank" rel="noopener noreferrer"><i className="fab fa-instagram social-icon"></i></a>
+          <a href="https://www.linkedin.com/in/nicolasfraisse/" title="LinkedIn" target="_blank" rel="noopener noreferrer"><i className="fab fa-linkedin-in social-icon"></i></a>
+          <a href="https://www.flickr.com/photos/129462013@N05/" title="Flickr" target="_blank" rel="noopener noreferrer"><i className="fab fa-flickr social-icon"></i></a>
         </div>
       </div>
     </div>

@@ -5,6 +5,12 @@
   }
 }
 
+.flick-container-wrap {
+  height: 100%;
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
 @media (max-width: $MD) {
   .photography {
     padding-right: 0px;

@@ -1,5 +1,4 @@
-import React, { useState, useEffect } from 'react'
-import ReactTooltip from "react-tooltip";
+import React, { useEffect } from 'react'
 import '../styles/imports.scss'
 
 const Flick = (props) => {
@@ -29,7 +28,6 @@ const Flick = (props) => {
       </div>
     </div>
   )
-
 };
 
 export default Flick;

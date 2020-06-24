@@ -59,7 +59,7 @@ h1, h2  {
   transition: 0.2s color;
 }
 
-p, h3, i, .email-link a {
+p, h3, i, .email-link a, .text-list {
   color: ${props => props.theme.mode === 'dark' ? darkTextSecondary : lightTextSecondary};
   transition: 0.2s color;
 }
@@ -109,6 +109,7 @@ p, h3, i, .email-link a {
 @media (max-width: 992px) {
   .photo-tooltip {
     background-color: white !important;
+    color: rgba(0, 0, 0, 0.6) !important;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   }
 }
