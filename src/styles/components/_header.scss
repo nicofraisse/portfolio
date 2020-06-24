@@ -129,7 +129,7 @@
   #header {
     position: absolute;
   }
-  #nav-links {
+  #nav-links-mobile {
     justify-content: space-between !important;
     font-size: 15px;
   }
@@ -173,10 +173,6 @@
 }
 
 @media (max-width: $XS) {
-  #nav-links {
-    justify-content: space-between !important;
-    font-size: 15px;
-  }
   #header-logo {
     margin-left: 6px;
   }
