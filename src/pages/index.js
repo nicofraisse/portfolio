@@ -34,6 +34,7 @@ const Index = () => {
       <Main>
         <span id='top'></span>
         <Intro />
+        <img src={`${socialLogo}`} alt="SH"/>
         <Code />
         <Photography />
         <About />
