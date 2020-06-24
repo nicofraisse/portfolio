@@ -19,7 +19,19 @@ const Index = () => {
       <Helmet>
         <meta charSet="utf-8" />
         <title>code by nicolas fraisse · creative freelance developer</title>
-
+        <link rel="canonical" href="https://nicolasfraisse.com"/>
+        <meta name="description"         content="web development portfolio by nicolas fraisse, a developer based in montreal · get in touch at info@nicolasfraisse.com" />
+        <meta property="og:url"          content="http://nicolasfraisse.com" />
+        <meta property="og:title"        content="nicolas fraisse · creative freelance developer" />
+        <meta property="og:description"  content="webby development portfolio by nicolas fraisse, a developer based in montreal · get in touch at info@nicolasfraisse.com" />
+        <meta property="og:image"        content='https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Hexahedron.jpg/280px-Hexahedron.jpg'  />
+        <meta property="og:image:type" content="image/jpeg" />
+        <meta property="og:image:width" content="400" />
+        <meta property="og:image:height" content="300" />
+        <meta name="twitter:title"       content="nicolas fraisse · creative freelance developer" />
+        <meta name="twitter:description" content="web development portfolio by nicolas fraisse, a developer based in montreal · get in touch at info@nicolasfraisse.com" />
+        <meta name="twitter:image"       content='https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Hexahedron.jpg/280px-Hexahedron.jpg' />
+        <meta name="twitter:card"        content="summary_large_image" />
       </Helmet>
       <Main>
         <span id='top'></span>
