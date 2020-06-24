@@ -22,8 +22,6 @@ module.exports = {
         name: "Nicolas Fraisse",
         short_name: "Nicolas Fraisse",
         description: `Web development portfolio for freelance work.`,
-        lang: `en`,
-        start_url: "/",
         background_color: "#f7f3eb",
         theme_color: "#323442",
         // Enables "Add to Homescreen" prompt and disables browser UI (including back button)
