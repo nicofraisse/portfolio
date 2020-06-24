@@ -21,7 +21,7 @@ const Index = () => {
         <meta name="description"         content="web development portfolio by nicolas fraisse, a developer based in montreal · get in touch at info@nicolasfraisse.com" />
         <meta property="og:url"          content="https://www.nicolasfraisse.com" />
         <meta property="og:type"         content="website" />
-        <meta property="og:title"        content="nicolas fraisse · creative freelance developer" />
+        <meta property="og:title"        content="nicolas fraisse 2· creative freelance developer" />
         <meta property="og:description"  content="web development portfolio by nicolas fraisse, a developer based in montreal · get in touch at info@nicolasfraisse.com" />
         <meta property="og:app_id"       content="195304371816649" />
         <meta name="twitter:title"       content="nicolas fraisse · creative freelance developer" />
