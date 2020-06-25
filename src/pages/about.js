@@ -50,7 +50,11 @@ export default () =>
         </div>
         <div data-sal="fade" data-sal-delay="0" data-sal-duration="1000" data-sal-easing="ease">
           <h3 className="mt-4">Le Wagon<span className="date-section"> / 2017-2020</span></h3>
-          <p className="" style={{textAlign: 'justify', textJustify: 'inter-word'}}>Attended Le Wagon Montreal (Batch #281). 9-week intensive coding bootcamp learning HTML, CSS, Bootstrap, JavaScript ES2015, SQL, git, GitHub, Heroku and Ruby on Rails. Designed, implemented and shipped to production a clone of AirBnB and a Rails prototype of <a className="link clicky-effect" href="http://bandwizard.co/" target="_blank">bandwizard.co.</a></p>
+          <p className="" style={{textAlign: 'justify', textJustify: 'inter-word'}}>
+            Attended Le Wagon Montreal (Batch #281). 9-week intensive coding bootcamp learning HTML, CSS, Bootstrap, JavaScript ES2015, SQL, git, GitHub, Heroku and Ruby on Rails. Designed, implemented and shipped to production a clone of AirBnB and a Rails prototype of <a className="link clicky-effect" href="http://bandwizard.co/" target="_blank" rel="noopener noreferrer">
+              bandwizard.co.
+            </a>
+          </p>
         </div>
         <div data-sal="fade" data-sal-delay="0" data-sal-duration="1000" data-sal-easing="ease">
           <h3 className="mt-4">HEC Montréal<span className="date-section"> / 2017-2020</span></h3>

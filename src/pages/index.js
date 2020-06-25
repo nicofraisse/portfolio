@@ -7,11 +7,8 @@ import Photography from './photography.js'
 import About from './about.js'
 import Contact from './contact.js'
 import { Helmet } from "react-helmet";
-import fbLogo from '../images/fb-thumbnail.jpg'
-import socialLogo from '../images/social-logo.png'
 
 const Index = () => {
-  const baseUrl = typeof window !== 'undefined' ? window.location.origin : 'https://nicolasfraisse.com';
   return (
     <div>
       <Helmet>
