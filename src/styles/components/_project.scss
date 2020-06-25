@@ -61,9 +61,9 @@
     }
   }
   .project-img {
-    max-width: 50% !important;
+    max-width: 50%;
     height: auto !important;
-    width: 60% !important;
+    width: 50% !important;
     display: inline-block;
   }
 
@@ -78,5 +78,19 @@
 
   .text-justify-mobile {
     text-align: justify;
+  }
+}
+
+@media (max-width: $SM) {
+  .project-img {
+    max-width: 55% !important;
+    width: auto !important;
+  }
+}
+
+@media (max-width: $XS) {
+  .project-img {
+    max-width: 60% !important;
+    width: auto !important;
   }
 }
