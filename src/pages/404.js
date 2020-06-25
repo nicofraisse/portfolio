@@ -15,10 +15,10 @@ const FourOFour = () => {
 
 
   return (
-    <div className="d-flex vh-100 align-items-center justify-content-center">
-      <div>
-        <h1>Page not found</h1>
-        <a href="/">Return to homepage</a>
+    <div className="err-layout d-flex vh-100 align-items-center justify-content-center">
+      <div className="err-card">
+        <h1>Page not found <span role="img" aria-label="sadface">😢</span></h1>
+        <a href="/" className="link clicky-effect">Back to homepage</a>
       </div>
     </div>
   )
