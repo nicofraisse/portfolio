@@ -7,6 +7,7 @@ import Photography from './photography.js'
 import About from './about.js'
 import Contact from './contact.js'
 import { Helmet } from "react-helmet";
+import fbLogo from '../images/fb-thumbnail.jpg'
 import socialLogo from '../images/social-logo.png'
 
 const Index = () => {
@@ -17,7 +18,7 @@ const Index = () => {
         <meta charSet="utf-8" />
         <title>code by @nicofraisse</title>
         <link rel="canonical" href="https://nicolasfraisse.com"/>
-        <meta property="og:image"        content={`${baseUrl}${socialLogo}`}  />
+        <meta property="og:image"        content={`${baseUrl}${fbLogo}`}  />
         <meta name="description"         content="web development portfolio · creative freelance developer based in montreal · get in touch at info@nicolasfraisse.com" />
         <meta property="og:url"          content="https://nicolasfraisse.com" />
         <meta property="og:type"         content="website" />
