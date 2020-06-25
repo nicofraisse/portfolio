@@ -97,7 +97,7 @@ const Code = () => {
         </div>
         <div className="push-higher" data-sal="fade" data-sal-delay="0" data-sal-duration="600" data-sal-easing="ease">
           <Project
-          img='incorpus.png'
+          img='incorpus.jpg'
           title='inCORPUS'
           site='https://www.in-corpus.com/'
           date='Apr 2020'
@@ -110,7 +110,7 @@ const Code = () => {
 
         <div data-sal="fade" data-sal-delay="0" data-sal-duration="600" data-sal-easing="ease">
           <Project
-          img='portfolio2.png'
+          img='portfolio2.jpg'
           title='This Website'
           site='#'
           source='https://github.com/nicofraisse/nf'
