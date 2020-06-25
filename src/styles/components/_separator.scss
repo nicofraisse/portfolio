@@ -9,7 +9,7 @@
 #sc1 > div {
   width: 148px;
   height: 42px;
-  top: -56px;
+  top: -58px;
 }
 
 #sc2 > div {
@@ -20,7 +20,8 @@
 
 #sc3 > div {
   width: 288px;
-  top: -110px;
+  top: -114px;
+  height: 50px;
 }
 
 #sc4 > div {
@@ -78,39 +79,47 @@
   .separator {
     height: 44px;
   }
+  .title-smaller {
+    font-size: 28px;
+  }
 
   #sc1 > div {
     width: 140px;
     top: -62px;
+    height: 39px;
   }
 
   #sc2 > div {
     width: 310px;
-    top: -60px;
+    top: -62px;
   }
 
   #sc3 > div {
     width: 240px;
-    top: -108px;
+    top: -114px;
+    height: 46px;
   }
 
   #sc4 > div {
     width: 190px;
-    top: -85px;
+    top: -92px;
+    height: 46px;
   }
 
   #sc5 > div {
     width: 180px;
-    top: -85px;
+    top: -91px;
+    height: 46px;
   }
 
   #sc6 > div {
     width: 160px;
-    top: -86px;
+    top: -91px;
+    height: 46px;
   }
 }
 
-@media (max-width: 492px) {
+@media (max-width: 461px) {
   .separator {
   }
   #sc2 > div {
@@ -127,6 +136,6 @@
   #sc2 > div {
     height: 56px;
     width: 200px;
-    top: -86px;
+    top: -85px;
   }
 }
