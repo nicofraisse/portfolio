@@ -10,18 +10,18 @@ import { Helmet } from "react-helmet";
 import socialLogo from '../images/social-logo.png'
 
 const Index = () => {
-  const baseUrl = typeof window !== 'undefined' ? window.location.origin : 'https://www.nicolasfraisse.com';
+  const baseUrl = typeof window !== 'undefined' ? window.location.origin : 'https://nicolasfraisse.com';
   return (
     <div>
       <Helmet>
         <meta charSet="utf-8" />
         <title>code by nicolas fraisse · creative freelance developer</title>
-        <link rel="canonical" href="https://www.nicolasfraisse.com"/>
+        <link rel="canonical" href="https://nicolasfraisse.com"/>
         <meta property="og:image"        content={`${baseUrl}${socialLogo}`}  />
         <meta name="description"         content="web development portfolio by nicolas fraisse, a developer based in montreal · get in touch at info@nicolasfraisse.com" />
-        <meta property="og:url"          content="https://www.nicolasfraisse.com" />
+        <meta property="og:url"          content="https://nicolasfraisse.com" />
         <meta property="og:type"         content="website" />
-        <meta property="og:title"        content="nicolas fraisse 2· creative freelance developer" />
+        <meta property="og:title"        content="nicolas fraisse 3· creative freelance developer" />
         <meta property="og:description"  content="web development portfolio by nicolas fraisse, a developer based in montreal · get in touch at info@nicolasfraisse.com" />
         <meta property="og:app_id"       content="195304371816649" />
         <meta name="twitter:title"       content="nicolas fraisse · creative freelance developer" />
