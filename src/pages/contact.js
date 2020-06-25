@@ -19,7 +19,7 @@ const Contact = () => {
     <div className="px-sm-5 px-3 pt-xl-2 pb-xl-1" data-sal="fade" data-sal-delay="0" data-sal-duration="1000" data-sal-easing="ease">
       <h3 className="text-center mt-5 text-large">Available for hire <span role="img" aria-label="peace emoji">✌️</span></h3>
       <h3 className="justify-max-xs text-center mb-md-4 mb-3 text-large">
-        For any enquiries, please <span className="email-link clicky-effect"><a href="mailto:ni.fraisse@gmail.com" target="_blank" rel="noopener noreferrer">email me here</a></span>
+        For any inquiries, please <span className="email-link clicky-effect"><a href="mailto:ni.fraisse@gmail.com" target="_blank" rel="noopener noreferrer">email me here</a></span>
         .
       </h3>
     </div>
