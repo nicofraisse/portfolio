@@ -133,7 +133,7 @@ const Code = () => {
         source='https://github.com/nicofraisse/bandwizard'
         date='Sep 2019'
         description='Is your band looking for a musician, or are you a musician looking for a band? BandWizard is a web application that matches musicians according to musical taste, geographical location, years of experience, and much more!
-                    <br><a class="link clicky-effect" href="https://youtu.be/gxGbLhHBCto?t=1292" target="_blank">View demo here</a>
+                    <br><a class="link clicky-effect" href="https://youtu.be/gxGbLhHBCto?t=1292" target="_blank" rel="noopener noreferrer">View demo here</a>
                     <br>
                     This MVP has been designed, implemented and shipped to production in 10 days, using Ruby On Rails and MVC architecture (model, view, controller), as my final project for Le Wagon coding bootcamp.'
         icons={['rails.png', 'postgresql.png', 'heroku.png', 'javascript.png', 'html.png', 'css.png', 'sass.png', 'bootstrap.png', 'figma.png']}
