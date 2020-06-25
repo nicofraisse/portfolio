@@ -19,9 +19,9 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: "nicolas fraisse · creative freelance developer",
-        short_name: "all things code",
-        description: `web development portfolio by nicolas fraisse, a creative freelance developer based in montreal · get in touch at info@nicolasfraisse.com" />`,
+        name: "code by @nicofraisse",
+        short_name: "code by @nicofraisse",
+        description: `web development portfolio · creative freelance web developer based in montreal · get in touch at info@nicolasfraisse.com`,
         background_color: "#f7f3eb",
         theme_color: "#323442",
         lang: `en`,
