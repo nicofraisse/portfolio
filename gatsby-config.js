@@ -21,7 +21,7 @@ module.exports = {
       options: {
         name: "code by @nicofraisse",
         short_name: "code by @nicofraisse",
-        description: `web development portfolio · creative freelance web developer based in montreal · get in touch at info@nicolasfraisse.com`,
+        description: `web development portfolio · creative freelance developer based in montreal · get in touch at info@nicolasfraisse.com`,
         background_color: "#f7f3eb",
         theme_color: "#323442",
         lang: `en`,
