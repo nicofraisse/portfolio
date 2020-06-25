@@ -45,7 +45,7 @@ const Code = () => {
           data-for="toolkit-tooltip"
           data-tip="<h3 className='icon-tooltip'>Languages & Frameworks</h3>"
           >
-          <ReactTooltip id="toolkit-tooltip" effect="solid" html={true}/>
+            <ReactTooltip id="toolkit-tooltip" effect="solid" html={true}/>
             <i
               className="toolkit-icon fas fa-code text-center w-100 mb-md-4 mb-2"
             />
@@ -54,7 +54,7 @@ const Code = () => {
                 <p className="text-center">JavaScript・React.js・Rails</p>
               </div>
               <div className="misc-tools">
-                <p className="text-justify text--center">Gatsby.js・Wordpress・JQuery・Vanilla JS・AJAX・regex・bash shell・git・npm・yarn・Python</p>
+                <p className="text-justify">Gatsby.js・Wordpress・JQuery・Vanilla JS・AJAX・regex・bash shell・git・npm・yarn・Python</p>
               </div>
             </div>
           </div>
@@ -65,10 +65,10 @@ const Code = () => {
             />
             <div className="toolkit mb-4 mb-md-0">
               <div className="main-tools">
-                <p className="text-center">HTML・CSS・Figma</p>
+                <p className="text-center">HTML・CSS・Bootstrap</p>
               </div>
               <div className="misc-tools">
-                <p className="text-justify text--center">SCSS/SASS・React Spring・Bootstrap・Gimp・Inkscape・Adobe Creative Suite</p>
+                <p className="text-justify">SCSS/SASS・Figma・React Spring・Sip・Gimp・Inkscape・Adobe Photoshop CC・Adobe Lightroom CC</p>
               </div>
             </div>
           </div>
@@ -78,14 +78,15 @@ const Code = () => {
             />
             <div className="toolkit mb-5 mb-md-0">
               <div className="main-tools">
-                <p className="text-center">GraphQL・PostgreSQL・Active Record</p>
+                <p className="text-center">PostgreSQL・Active Record・Redis</p>
               </div>
               <div className="misc-tools">
-                <p className="text-justify text-center">SQLite・Heroku・Netlify・Cloudinary・Mapbox・Stripe・GraphQL・Pandas・BeautifulSoup・Microsoft SQL Server</p>
+                <p className="text-justify">MS SQL Server・Pandas・bs4・Heroku・Netlify・Cloudinary・Mapbox・Stripe</p>
               </div>
             </div>
           </div>
         </div>
+
         <div data-sal="fade" data-sal-delay="0" data-sal-duration="1000" data-sal-easing="ease">
           <h2 className="mb-4 pt-md-5 pt-3 text-color-shadow title-smaller">Web Development Projects</h2>
           <div id="sc2">
@@ -94,9 +95,6 @@ const Code = () => {
             />
           </div>
         </div>
-
-
-
         <div className="push-higher" data-sal="fade" data-sal-delay="0" data-sal-duration="600" data-sal-easing="ease">
           <Project
           img='incorpus.png'
@@ -113,12 +111,13 @@ const Code = () => {
         <div data-sal="fade" data-sal-delay="0" data-sal-duration="600" data-sal-easing="ease">
           <Project
           img='portfolio2.png'
-          title='This website'
+          title='This Website'
           site='#'
           source='https://github.com/nicofraisse/nf'
           date='Jun 2020'
           imgWidth='400px'
-          description='I have designed and built my own portfolio as a single page application using the Gatsby.js react framework. Animations and other dynamic elements were made using CSS transformations, keyframes, react hooks as well as the react sping library.'
+          description='I have designed and built my own portfolio as a single page application using the Gatsby.js react framework. Animations and other dynamic elements were implemented thanks to CSS transformations, CSS keyframes, react hooks, as well as the react sping library.
+                      <br>Tip: click the circle icon at the right of the navbar to toggle dark mode!'
           icons={['react.png', 'gatsby.png', 'javascript.png', 'html.png', 'css.png', 'sass.png', 'bootstrap.png', 'netlify.png']}
           noSite
           borderBottomLight
@@ -133,9 +132,10 @@ const Code = () => {
         site='http://bandwizard.co/'
         source='https://github.com/nicofraisse/bandwizard'
         date='Sep 2019'
-        description='Is your band looking for a musician, or are you a musician looking for a band? BandWizard is a web-application that matches musicians according to musical taste, geographical location, years of experience, and much more!
+        description='Is your band looking for a musician, or are you a musician looking for a band? BandWizard is a web application that matches musicians according to musical taste, geographical location, years of experience, and much more!
+                    <br><a class="link clicky-effect" href="https://youtu.be/gxGbLhHBCto?t=1292" target="_blank">View demo here</a>
                     <br>
-                    This MVP has been designed, implemented and shipped to production in 10 days, as the final project at Le Wagon coding bootcamp.'
+                    This MVP has been designed, implemented and shipped to production in 10 days, using Ruby On Rails and MVC architecture (model, view, controller), as my final project for Le Wagon coding bootcamp.'
         icons={['rails.png', 'postgresql.png', 'heroku.png', 'javascript.png', 'html.png', 'css.png', 'sass.png', 'bootstrap.png', 'figma.png']}
         />
         </div>
@@ -154,7 +154,7 @@ const Code = () => {
             title="Journal L'intéret, HEC Montréal"
             site='http://www.journalinteret.com/'
             date='Oct 2019'
-            description='Redesigned HEC Montréal’s student newspaper using a new theme as well as a lot of custom CSS. Managed conflicts during theme change as well as PHP updates. Implemented back-end features such as an article rating system and an email feedback form. Used google analytics extensively through the year to give regular webtraffic reports.'
+            description='Redesigned HEC Montréal’s student newspaper using a Wordpress and custom CSS. Managed PHP updates as well as conflicts during theme and plugin installations. Implemented back-end features such as an article rating system and an email feedback form. Used google analytics extensively through the year to make webtraffic reports.'
             icons={['wordpress.png', 'css.png']}
             reverse
             borderBottomLight
@@ -179,7 +179,7 @@ const Code = () => {
             site='https://www.conseil-lgbt.ca/'
             date='Jul 2019'
             imgWidth='440px'
-            description='Designed and implemented UI/UX solutions for a complete redesign of Quebec’s Conseil LGBT website, as part of PrideHacks 2019, a hackathon to build solutions for nonprofit organizations serving the LGBT community.'
+            description='Designed and implemented UI/UX solutions for a complete redesign of Quebec’s Conseil LGBT website, as part of PrideHacks 2019, a hackathon to build digital products for nonprofit organizations serving the LGBT community.'
             icons={['figma.png', 'wordpress.png', 'html.png', 'css.png']}
             borderBottomLight
             reverse
@@ -193,7 +193,7 @@ const Code = () => {
             site='http://rentmylife.herokuapp.com/'
             source='https://github.com/nicofraisse/rentmylife'
             date='Jul 2019'
-            description='"Does your life suck? Rent a new one and be someone else!"<br>- Rent My Life is a fun Airbnb clone that was designed, implemented and shipped to production in 5 days as part of the Le Wagon curriculum. It was built using Ruby On Rails and MVC architecture (model-view-controller).'
+            description='"Does your life suck? Rent a new one and be someone else!"<br>Rent My Life is a parodical Airbnb clone that was designed, implemented and shipped to production in 5 days as part of the Le Wagon curriculum. It was built using Ruby On Rails and MVC architecture (model, view, controller).'
             icons={['rails.png', 'postgresql.png', 'heroku.png', 'javascript.png', 'html.png', 'css.png', 'sass.png', 'figma.png',]}
             />
           </div>

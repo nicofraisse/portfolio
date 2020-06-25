@@ -32,7 +32,7 @@ const Project = (props) => {
       </a>
       <div className="project-description mt-4 mb-3 mt-md-5 mb-md-5 my-md-auto px-2 px-sm-4 px-xl-5" style={props.reverse ? {textAlign: 'right'} : {}}>
         <h3>{props.title} <span className='date-section'>/ {props.date}</span></h3>
-        {props.description.split('<br>').map(text => <p className="text-justify-mobile" key={text}>{text}</p>)}
+        {props.description.split('<br>').map(text => <p className="text-justify-mobile" key={text} dangerouslySetInnerHTML={{__html: text}} />)}
         <ul className={`list-inline mt-4 ${props.reverse ? "ul-right" : ""}`}>
           {projectIcons}
         </ul>

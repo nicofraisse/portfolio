@@ -18,14 +18,14 @@ const Index = () => {
         <title>code by nicolas fraisse · creative freelance developer</title>
         <link rel="canonical" href="https://nicolasfraisse.com"/>
         <meta property="og:image"        content={`${baseUrl}${socialLogo}`}  />
-        <meta name="description"         content="web development portfolio by nicolas fraisse, a developer based in montreal · get in touch at info@nicolasfraisse.com" />
+        <meta name="description"         content="web development portfolio by nicolas fraisse, a creative freelance developer based in montreal · get in touch at info@nicolasfraisse.com" />
         <meta property="og:url"          content="https://nicolasfraisse.com" />
         <meta property="og:type"         content="website" />
-        <meta property="og:title"        content="nicolas fraisse 3· creative freelance developer" />
-        <meta property="og:description"  content="web development portfolio by nicolas fraisse, a developer based in montreal · get in touch at info@nicolasfraisse.com" />
-        <meta property="og:app_id"       content="195304371816649" />
-        <meta name="twitter:title"       content="nicolas fraisse · creative freelance developer" />
-        <meta name="twitter:description" content="web development portfolio by nicolas fraisse, a developer based in montreal · get in touch at info@nicolasfraisse.com" />
+        <meta property="og:title"        content="all things code" />
+        <meta property="og:description"  content="web development portfolio by nicolas fraisse, a creative freelance developer based in montreal · get in touch at info@nicolasfraisse.com" />
+        <meta property="fb:app_id"       content="195304371816649" />
+        <meta name="twitter:title"       content="all things code" />
+        <meta name="twitter:description" content="web development portfolio by nicolas fraisse, a creative freelance developer based in montreal · get in touch at info@nicolasfraisse.com" />
         <meta name="twitter:image"       content={`${baseUrl}${socialLogo}`} />
         <meta name="twitter:card"        content="summary_large_image" />
       </Helmet>
