@@ -11,7 +11,6 @@ const Logo = () => (
       <h1 className="d-none">Nicolas Fraisse | Fullstack Web Developer</h1>
     </div>
   </div>
-
 );
 
 export default Logo;
