@@ -12,7 +12,7 @@ const Project = (props) => {
     data-html={true} data-delay-hide='200'
     data-tip={`<span>${icon.split('.')[0]}</span>`}
     >
-      <img src={"/skill_icons/" + icon} alt={icon} />
+      <img src={"/skill_icons/" + icon} alt={icon.split('.')[0]} />
     </li>
   );
   const reverse = props.reverse ? 'reverse' : ''
@@ -24,7 +24,7 @@ const Project = (props) => {
         <img
         className='project-img mx-1 mx-xl-2 mb-md-0 mb-3'
         src={"/projects/" + props.img}
-        alt={props.img}
+        alt={`screenshot of ${props.img.split('.')[0]} website`}
         style={{ width: props.imgWidth || '320px'}}
         />
       </a>

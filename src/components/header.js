@@ -143,7 +143,7 @@ const Header = ({onClickity}) => {
 
 
   return (
-    <div>
+    <header>
       <div className="w-100" id="header">
         <div className="header-background"></div>
         <div className="header-content-container">
@@ -299,7 +299,7 @@ const Header = ({onClickity}) => {
           </div>
         </div>
       </div>
-    </div>
+    </header>
   )
 };
 

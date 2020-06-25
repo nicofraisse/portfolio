@@ -11,7 +11,7 @@ import { Helmet } from "react-helmet";
 const Index = () => {
   return (
     <div>
-      <Helmet>
+      <Helmet htmlAttributes={{ lang : 'en' }}>
         <meta charSet="utf-8" />
         <title>code by @nicofraisse</title>
         <link rel="canonical" href="https://nicolasfraisse.com"/>
