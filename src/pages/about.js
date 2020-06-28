@@ -18,15 +18,15 @@ export default () =>
           </div>
         </div>
         <div data-sal="fade" data-sal-delay="0" data-sal-duration="1000" data-sal-easing="ease">
-          <h3 className="mt-4">Freelance developer <span className="date-section"> / 2020</span></h3>
+          <h3 className="mt-4">Freelance developer <span className="date-section"></span></h3>
           <p className="text-justify">Designs and implements dynamic and responsive web applications using React.js, Ruby On Rails, or Wordpress, depending on the needs of the client and the project.</p>
         </div>
         <div data-sal="fade" data-sal-delay="0" data-sal-duration="1000" data-sal-easing="ease">
-          <h3 className="mt-4">Programming teacher<span className="date-section"> / 2020</span></h3>
+          <h3 className="mt-4">Programming teacher<span className="date-section"></span></h3>
           <p className="text-justify">Programming teacher at Le Wagon Montreal. Gives HTML, CSS and JS classes; accompanies students in carrying out their projects using Ruby On Rails, JavaScript, AJAX, SQL, APIs and more.</p>
         </div>
         <div data-sal="fade" data-sal-delay="0" data-sal-duration="1000" data-sal-easing="ease">
-          <h3 className="mt-4">Private tutoring<span className="date-section"> / 2020</span></h3>
+          <h3 className="mt-4">Private tutoring<span className="date-section"></span></h3>
           <p className="text-justify">
           Gives interactive one-on-one programming classes to motivated students who want to discover or enhance their abilities in JavaScript, Python, HTML/CSS... Material covered includes:
           </p>
@@ -49,7 +49,7 @@ export default () =>
           </div>
         </div>
         <div data-sal="fade" data-sal-delay="0" data-sal-duration="1000" data-sal-easing="ease">
-          <h3 className="mt-4">Le Wagon<span className="date-section"> / 2017-2020</span></h3>
+          <h3 className="mt-4">Le Wagon<span className="date-section"> / 2019</span></h3>
           <p className="text-justify">
             Attended Le Wagon Montreal (Batch #281). 9-week intensive coding bootcamp learning HTML, CSS, Bootstrap, JavaScript ES2015, SQL, git, GitHub, Heroku and Ruby on Rails. Designed, implemented and shipped to production a clone of AirBnB and a Rails prototype of <a className="link clicky-effect" href="http://bandwizard.co/" target="_blank" rel="noopener noreferrer">
               bandwizard.co.
