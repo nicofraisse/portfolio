@@ -1,5 +1,5 @@
 .logo {
-  font-size: 40px;
+  font-size: 44px;
   line-height: 108px;
   position: relative;
   user-select: none;
@@ -7,7 +7,7 @@
 }
 
 .logo-description {
-  font-size: 14px;
+  font-size: 16px;
   position: absolute;
   top: 32px;
   left: 2px;
@@ -35,17 +35,15 @@
   display: none;
 }
 
-
 @media (max-width: $MD) {
   .logo {
-    font-size: 36px;
+    font-size: 40px;
     line-height: 80px;
     position: relative;
-    // top: 0px;
   }
 
   .logo-description {
-    font-size: 14px;
+    font-size: 15px;
     position: absolute;
     top: 30px;
     left: 2px;
@@ -61,7 +59,7 @@
   }
 
   .logo-description {
-    font-size: 3.6vw;
+    font-size: 4vw;
     position: absolute;
     top: (8vw);
     left: 2px;
