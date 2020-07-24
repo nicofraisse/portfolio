@@ -58,7 +58,7 @@ export default () =>
         </div>
         <div data-sal="fade" data-sal-delay="0" data-sal-duration="1000" data-sal-easing="ease">
           <h3 className="mt-4">HEC Montréal<span className="date-section"> / 2017-2020</span></h3>
-          <p className="text-justify">Bachelor's of Business Administration, major in business intelligence (BI). Student exchange at Hong Kong Polytechnic University. Among other skills aquired during a bachelor's degree, learned to use tools such as GitLab, Jupyter Notebook, Tableau, MS SQL Server, MS Power BI, DAX, SAP, SAS, and SAS EM.</p>
+          <p className="text-justify">Bachelor's of Business Administration, major in business intelligence (BI). Student exchange at Hong Kong Polytechnic University. Among other skills acquired during a bachelor's degree, learned to use tools such as GitLab, Jupyter Notebook, Tableau, MS SQL Server, MS Power BI, DAX, SAP, SAS, and SAS EM.</p>
           <a href="mailto:ni.fraisse@gmail.com" className="link clicky-effect" target="_blank" rel="noopener noreferrer">Full CV by request</a>
         </div>
       </div>
