@@ -14,7 +14,7 @@ const Index = () => {
       <Helmet htmlAttributes={{ lang : 'en' }}>
         <meta charSet="utf-8" />
         <title>code by @nicofraisse</title>
-        <link rel="canonical" href="https://nicolasfraisse.com"/>
+        <link rel="canonical" href="https://www.nicolasfraisse.com"/>
         <meta property="og:image"        content='https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/v384-ning-07b-gradientbg_2.jpg?w=800&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=e7c1136bf8c780d34b25e02c9d99defc'  />
         <meta name="description"         content="web development portfolio · creative freelance developer based in montreal · get in touch at info@nicolasfraisse.com" />
         <meta property="og:title"        content="code by @nicofraisse" />
