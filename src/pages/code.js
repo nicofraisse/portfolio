@@ -54,7 +54,7 @@ const Code = () => {
                 <p className="text-center">JavaScript・React.js・Rails</p>
               </div>
               <div className="misc-tools">
-                <p className="text-justify">Gatsby.js・Wordpress・JQuery・Vanilla JS・AJAX・regex・bash shell・git・npm・yarn・Python</p>
+                <p className="text-center">Gatsby.js・Wordpress・JQuery・Vanilla JS・AJAX・regex・bash shell・git・npm・yarn・Python</p>
               </div>
             </div>
           </div>
@@ -68,7 +68,7 @@ const Code = () => {
                 <p className="text-center">HTML・CSS・Bootstrap</p>
               </div>
               <div className="misc-tools">
-                <p className="text-justify">SCSS/SASS・Figma・React Spring・Sip・Gimp・Inkscape・Adobe Photoshop CC・Adobe Lightroom CC</p>
+                <p className="text-center">SCSS/SASS・Figma・React Spring・Sip・Gimp・Inkscape・Adobe Photoshop CC・Adobe Lightroom CC</p>
               </div>
             </div>
           </div>
@@ -81,7 +81,7 @@ const Code = () => {
                 <p className="text-center">PostgreSQL・Active Record・Redis</p>
               </div>
               <div className="misc-tools">
-                <p className="text-justify">MS SQL Server・Pandas・bs4・Heroku・Netlify・Cloudinary・Mapbox・Stripe</p>
+                <p className="text-center">MS SQL Server・Pandas・bs4・Heroku・Netlify・Cloudinary・Mapbox・Stripe</p>
               </div>
             </div>
           </div>
