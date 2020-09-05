@@ -21,7 +21,6 @@ const Flick = (props) => {
 
   const toggleFullSize = () => {
     setShowPhoto((showPhoto) => !showPhoto)
-
   }
 
   return (
@@ -32,14 +31,17 @@ const Flick = (props) => {
       style={{ backgroundImage: `url(${props.source})`}}
       data-for={props.souce}
       data-tip={props.description}
+      data-event="touchstart"
+      data-event-off="touchend"
       >
       </div>
-      {showPhoto ?
+      {
+        showPhoto ?
         <div className="fullwidth-flick-container">
           <img src={props.source}/>
-
         </div>
-        : null}
+        : null
+      }
     </div>
   )
 };

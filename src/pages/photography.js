@@ -68,7 +68,7 @@ export default () => {
         </div>
         <a href="https://www.flickr.com/photos/129462013@N05/" className="btn-more" target="_blank" rel="noopener noreferrer">View all photos<i className="fas fa-external-link-alt"></i></a>
       </animated.div>
-      <ReactTooltip  effect="solid" className="photo-tooltip" place="bottom" backgroundColor="rgba(0, 0, 0, 0)" offset={{top: 8}}/>
+      <ReactTooltip  effect="solid" event='touchstart' eventOff='touchend' className="photo-tooltip" place="bottom" backgroundColor="rgba(0, 0, 0, 0)" offset={{top: 8}}/>
     </div>
 
   </div>
