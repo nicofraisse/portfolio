@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
 import Flick from "../components/flick.js"
 import Separator from "../components/separator.js"
 import ReactTooltip from "react-tooltip";
@@ -8,15 +8,21 @@ import '../styles/imports.scss'
 
 export default () => {
   const [morePhotos, setMorePhotos] = useState(false);
+  const [transformNone, setTransformNone] = useState(false);
 
   const animation = useSpring({
-    to: {opacity: morePhotos ? 1 : 0, transform: morePhotos ? 'translateY(20px)'  : 'translateY(0px)'},
+    to: {
+      opacity: morePhotos ? 1 : 0,
+    },
     from: {opacity: 0}
   })
 
-  const handleClickPhotos = () => {
+
+  const handleMorePhotos = () => {
     setMorePhotos((morePhotos) => !morePhotos)
+    // morePhotos ? setTransformNone((transfomNone) => true) : null
   }
+
   return(
   <div className="photography" id="photo">
     <div data-sal="fade" data-sal-delay="0" data-sal-duration="1000" data-sal-easing="ease">
@@ -41,11 +47,11 @@ export default () => {
         <Flick source='photography/jellyfish_nicolas.jpg' description="Toronto, Canada, 2018"></Flick>
       </div>
       <button
-        onClick={() => handleClickPhotos()}
+        onClick={() => handleMorePhotos()}
         className="btn-more">
         View {morePhotos ? 'less' : 'more'}
       </button>
-      <animated.div id="other-photos" className={morePhotos ? 'd-block' : 'd-none'} style={animation}>
+      <animated.div id="other-photos" className={morePhotos ? 'd-inset' : 'd-none'} style={animation}>
         <div className="flick-container">
           <Flick source='photography/split_nicolas.jpg' description="Split, Croatia"></Flick>
           <Flick source='photography/ardennes10_nicolas.jpg' description="Saint Julien Chapteuil, Auvergne, France, 2014"></Flick>
