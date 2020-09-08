@@ -108,6 +108,7 @@ const Code = () => {
           />
         </div>
 
+
         <div data-sal="fade" data-sal-delay="0" data-sal-duration="600" data-sal-easing="ease">
           <Project
           img='portfolio2.jpg'
@@ -127,6 +128,21 @@ const Code = () => {
 
         <div data-sal="fade" data-sal-delay="0" data-sal-duration="600" data-sal-easing="ease">
         <Project
+        img='reaction2.png'
+        title='Reflex Tester'
+        imgWidth='400px'
+        site='https://reflex-game-41594.web.app/'
+        source='https://github.com/nicofraisse/react-reflex-tester'
+        date='July 2020'
+        description="Test your reflexes! Click on the square as soon as it becomes red. It will randomly change color every 1 to 10 seconds, and the test lasts for 1 minute. After playing, view the leaderboard to see how you compare!
+                    <br>
+                    The app's mechanics built with react, and the player score historical data is posted and fetched using Firebase."
+        icons={['react.png', 'javascript.png', 'html.png', 'css.png', 'firebase.png']}
+        />
+        </div>
+
+        <div data-sal="fade" data-sal-delay="0" data-sal-duration="600" data-sal-easing="ease">
+        <Project
         img='bandwizard.jpg'
         title='BandWizard'
         site='http://bandwizard.co/'
@@ -137,6 +153,7 @@ const Code = () => {
                     <br>
                     This MVP has been designed, implemented and shipped to production in 10 days, using Ruby On Rails and MVC architecture (model, view, controller), as my final project for Le Wagon coding bootcamp.'
         icons={['rails.png', 'postgresql.png', 'heroku.png', 'javascript.png', 'html.png', 'css.png', 'sass.png', 'bootstrap.png', 'figma.png']}
+        reverse
         />
         </div>
 
@@ -156,7 +173,6 @@ const Code = () => {
             date='Oct 2019'
             description='Redesigned HEC Montréal’s student newspaper using a Wordpress and custom CSS. Managed PHP updates as well as conflicts during theme and plugin installations. Implemented back-end features such as an article rating system and an email feedback form. Used google analytics extensively through the year to make webtraffic reports.'
             icons={['wordpress.png', 'css.png']}
-            reverse
             borderBottomLight
             />
           </div>
@@ -170,6 +186,7 @@ const Code = () => {
           description="Created static pages and implemented a payment system for Billy.Social, a Montreal based webmarketing agency, using Wordpress and custom CSS."
           icons={['wordpress.png', 'css.png', 'stripe.png']}
           borderBottomLight
+          reverse
           />
           </div>
           <div data-sal="fade" data-sal-delay="0" data-sal-duration="600" data-sal-easing="ease">
@@ -182,7 +199,6 @@ const Code = () => {
             description='Designed and implemented UI/UX solutions for a complete redesign of Quebec’s Conseil LGBT website, as part of PrideHacks 2019, a hackathon to build digital products for nonprofit organizations serving the LGBT community.'
             icons={['figma.png', 'wordpress.png', 'html.png', 'css.png']}
             borderBottomLight
-            reverse
             />
           </div>
           <div className="pb-4 pb-md-5" data-sal="fade" data-sal-delay="0" data-sal-duration="600" data-sal-easing="ease">
@@ -195,6 +211,7 @@ const Code = () => {
             date='Jul 2019'
             description='"Does your life suck? Rent a new one and be someone else!"<br>Rent My Life is a parodical Airbnb clone that was designed, implemented and shipped to production in 5 days as part of the Le Wagon curriculum. It was built using Ruby On Rails and MVC architecture (model, view, controller).'
             icons={['rails.png', 'postgresql.png', 'heroku.png', 'javascript.png', 'html.png', 'css.png', 'sass.png', 'figma.png',]}
+            reverse
             />
           </div>
 

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react"
+import React, { useState } from "react"
 import Flick from "../components/flick.js"
 import Separator from "../components/separator.js"
 import ReactTooltip from "react-tooltip";
@@ -8,19 +8,14 @@ import '../styles/imports.scss'
 
 export default () => {
   const [morePhotos, setMorePhotos] = useState(false);
-  const [transformNone, setTransformNone] = useState(false);
 
   const animation = useSpring({
-    to: {
-      opacity: morePhotos ? 1 : 0,
-    },
+    to: {opacity: morePhotos ? 1 : 0},
     from: {opacity: 0}
   })
 
-
   const handleMorePhotos = () => {
     setMorePhotos((morePhotos) => !morePhotos)
-    // morePhotos ? setTransformNone((transfomNone) => true) : null
   }
 
   return(
