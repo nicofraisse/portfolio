@@ -33,6 +33,12 @@ module.exports = {
         // Any invalid keyword or empty string defaults to `anonymous`
 
       }
-    }
+    },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "test",
+      },
+    },
   ],
 }
