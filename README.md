@@ -8,7 +8,7 @@
 
 ## Technologies used
 
-- [React](https://reactjs.org/)
-- [React Spring](https://www.react-spring.io/)
-- [Gatsby](https://www.gatsbyjs.com/)
-- [Netlify](https://www.netlify.com/)
+- [React](https://reactjs.org/) for custom dynamic components
+- [Gatsby](https://www.gatsbyjs.com/) framework
+- [React Spring](https://www.react-spring.io/) for some animations
+- [Netlify](https://www.netlify.com/) for hosting
