@@ -1,6 +1,6 @@
 # My web development portfolio
 
-👉 [Live demo](https://www.nicolasfraisse.com)
+👉 [nicolasfraisse.com](https://www.nicolasfraisse.com)
 
 ## About this project
 
