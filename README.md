@@ -4,7 +4,7 @@
 
 ## About this project
 
-100% custom website, designed and built to showcase my projects, technical skills, education, photography, and more.
+Gatsby.js app designed and built to showcase my projects, technical skills, education, photography, and more.
 
 ## Technologies used
 
