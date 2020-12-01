@@ -1,27 +1,31 @@
 import React, { useEffect } from "react"
-import '../styles/imports.scss'
-
+import "../styles/imports.scss"
 
 const FourOFour = () => {
   useEffect(() => {
-    console.log('yo')
+    console.log("yo")
     setTimeout(() => {
-      console.log('yo')
+      console.log("yo")
       document.body.style.opacity = 1
-      document.body.classList.add('fade-in')
+      document.body.classList.add("fade-in")
     }, 150)
-  });
-
-
+  })
 
   return (
     <div className="err-layout d-flex vh-100 align-items-center justify-content-center">
       <div className="err-card">
-        <h1>Page not found <span role="img" aria-label="sadface">😢</span></h1>
-        <a href="/" className="link clicky-effect">Back to homepage</a>
+        <h1>
+          Page not found{" "}
+          <span role="img" aria-label="sadface">
+            😢
+          </span>
+        </h1>
+        <a href="/" className="link clicky-effect">
+          Back to homepage
+        </a>
       </div>
     </div>
   )
 }
 
-export default FourOFour;
+export default FourOFour

@@ -1,8 +1,8 @@
-import React from 'react'
-import '../styles/imports.scss'
+import React from "react"
+import "../styles/imports.scss"
 
-const Bokeh = () =>  {
-  return(
+const Bokeh = () => {
+  return (
     <div className="background-css-animation">
       <span></span>
       <span></span>
@@ -82,4 +82,4 @@ const Bokeh = () =>  {
   )
 }
 
-export default Bokeh;
+export default Bokeh

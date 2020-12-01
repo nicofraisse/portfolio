@@ -1,10 +1,8 @@
-import React from 'react'
-import '../styles/imports.scss'
+import React from "react"
+import "../styles/imports.scss"
 
-const Cube = () =>  {
-
-
-  return(
+const Cube = () => {
+  return (
     <div>
       <div className="scene">
         <div className="cube">
@@ -20,4 +18,4 @@ const Cube = () =>  {
   )
 }
 
-export default Cube;
+export default Cube
