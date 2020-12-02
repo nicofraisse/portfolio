@@ -224,6 +224,30 @@ const Code = () => {
             data-sal-easing="ease"
           >
             <Project
+              img="piano-quiz.png"
+              title="Piano Quiz"
+              imgWidth="400px"
+              site="https://piano-quiz-39c0d.web.app/"
+              source="hhttps://github.com/nicofraisse/piano-quiz"
+              date="2020"
+              description="An interactive quiz app to test and train a musician's relative pitch. Play the existing games, or create your own awesome quizzes to share with friends! "
+              icons={[
+                "react.png",
+                "javascript.png",
+                "html.png",
+                "css.png",
+                "firebase.png",
+              ]}
+            />
+          </div>
+
+          <div
+            data-sal="fade"
+            data-sal-delay="0"
+            data-sal-duration="600"
+            data-sal-easing="ease"
+          >
+            <Project
               img="bandwizard.jpg"
               title="BandWizard"
               site="http://bandwizard.co/"
@@ -244,6 +268,7 @@ const Code = () => {
                 "bootstrap.png",
                 "figma.png",
               ]}
+              reverse
             />
           </div>
 
@@ -271,7 +296,6 @@ const Code = () => {
                 description="Redesigned HEC Montréal’s student newspaper using a Wordpress and custom CSS. Managed PHP updates as well as conflicts during theme and plugin installations. Implemented back-end features such as an article rating system and an email feedback form. Used google analytics extensively through the year to make webtraffic reports."
                 icons={["wordpress.png", "css.png"]}
                 borderBottomLight
-                reverse
               />
             </div>
             <div
@@ -289,6 +313,7 @@ const Code = () => {
                 description="Created static pages and implemented a payment system for Billy.Social, a Montreal based webmarketing agency, using Wordpress and custom CSS."
                 icons={["wordpress.png", "css.png", "stripe.png"]}
                 borderBottomLight
+                reverse
               />
             </div>
             <div
@@ -306,7 +331,6 @@ const Code = () => {
                 description="Designed and implemented UI/UX solutions for a complete redesign of Quebec’s Conseil LGBT website, as part of 2019, a hackathon to build digital products for nonprofit organizations serving the LGBT community."
                 icons={["figma.png", "wordpress.png", "html.png", "css.png"]}
                 borderBottomLight
-                reverse
               />
             </div>
             <div
@@ -334,6 +358,7 @@ const Code = () => {
                   "sass.png",
                   "figma.png",
                 ]}
+                reverse
               />
             </div>
           </animated.div>
