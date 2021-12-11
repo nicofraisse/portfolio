@@ -29,12 +29,26 @@ export default () => (
             data-sal-easing="ease"
           >
             <h3 className="mt-4">
-              Freelance developer <span className="date-section"></span>
+              Fullstack Web Development <span className="date-section"></span>
             </h3>
             <p className="text-justify">
-              Designs and implements dynamic and responsive web applications
-              using React.js, Node.js/Express.js, Ruby On Rails, or Wordpress,
-              depending on the needs of the client and the project.
+              Develops web-based applications using React.JS in the front-end
+              and Ruby On Rails or Node.JS in the backend. Day-to-day work
+              includes:
+              <ul className="text-list">
+                <li>Building & maintaining user-facing features in React</li>
+                <li>
+                  Building & maintaining backend code including GraphQL
+                  endpoints
+                </li>
+                <li>
+                  Writing automated tests (Jest, RSpec) Conducting code reviews
+                </li>
+                <li>
+                  Communicating with development, UI/UX, QA & CS teams to
+                  deliver the best possible product
+                </li>
+              </ul>
             </p>
           </div>
           <div
@@ -44,36 +58,34 @@ export default () => (
             data-sal-easing="ease"
           >
             <h3 className="mt-4">
-              Programming teacher<span className="date-section"></span>
+              Teaching & tutoring<span className="date-section"></span>
             </h3>
             <p className="text-justify">
-              Programming teacher at Le Wagon Montreal. Gives HTML, CSS and JS
-              classes; accompanies students in carrying out their projects using
-              Ruby On Rails, JavaScript, AJAX, SQL, APIs and more.
+              Programming teacher at Le Wagon Montreal:
             </p>
-          </div>
-          <div
-            data-sal="fade"
-            data-sal-delay="0"
-            data-sal-duration="1000"
-            data-sal-easing="ease"
-          >
-            <h3 className="mt-4">
-              Private tutoring<span className="date-section"></span>
-            </h3>
-            <p className="text-justify">
-              Gives interactive one-on-one programming classes to motivated
-              students who want to discover or enhance their abilities in
-              JavaScript, Python, HTML/CSS... Material covered includes:
-            </p>
+
             <ul className="text-list">
-              <li>Programming fundamentals</li>
-              <li>Responsive web design</li>
-              <li>Web scraping, interactions with APIs</li>
-              <li>Data science with python (pandas library)</li>
+              <li>
+                Gives lectures on JavaScript, Python, Ruby, HTML, CSS, and
+                related technologies
+              </li>
+
+              <li>
+                Leads teams to carry out their own projects using Ruby On Rails.
+                Gives feedback on the teams' products regarding their user
+                stories, value proposition, pitches, and UI/UX
+              </li>
+
+              <li>
+                Conducts technical interviews for prospective Data Science
+                students
+              </li>
+
+              <li>Ran coding workshops</li>
             </ul>
           </div>
         </div>
+
         <div className="col-md-5">
           <div
             data-sal="fade"
@@ -99,10 +111,11 @@ export default () => (
               Le Wagon<span className="date-section"> / 2019</span>
             </h3>
             <p className="text-justify">
-              Attended Le Wagon Montreal (Batch #281). 9-week intensive coding
-              bootcamp learning HTML, CSS, Bootstrap, JavaScript ES2015, SQL,
-              git, GitHub, Heroku and Ruby on Rails. Designed, implemented and
-              shipped to production a clone of AirBnB and a Rails prototype of{" "}
+              Attended Le Wagon coding bootcamp (Batch #281). 9-week intensive
+              coding bootcamp learning HTML, CSS, Bootstrap, JavaScript ES6,
+              SQL, git, GitHub, Heroku and Ruby on Rails. Designed, implemented
+              and shipped to production a clone of AirBnB and a Rails prototype
+              of{" "}
               <a
                 className="link clicky-effect"
                 href="http://bandwizard.co/"
@@ -123,11 +136,12 @@ export default () => (
               HEC Montréal<span className="date-section"> / 2017-2020</span>
             </h3>
             <p className="text-justify">
-              Bachelor's of Business Administration, major in business
-              intelligence (BI). Student exchange at Hong Kong Polytechnic
-              University. Among other skills acquired during a bachelor's
-              degree, learned to use tools such as GitLab, Jupyter Notebook,
-              Tableau, MS SQL Server, MS Power BI, DAX, SAP, SAS, and SAS EM.
+              Bachelor's of Business Administration, major in Business
+              Intelligence (BI). Selected for student exchange at Hong Kong
+              Polytechnic University. Various academic work using tools such as
+              Tableau, MS SQL Server, MS Power BI, DAX language, SAS language,
+              SAS Enterprise Miner, SAP, Pandas pyton library, GitLab, and
+              Jupyter Notebook.
             </p>
             <a
               href="mailto:ni.fraisse@gmail.com"

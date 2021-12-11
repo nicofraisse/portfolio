@@ -46,19 +46,18 @@ const Code = () => {
             <div
               className="col-md-4 col-sm-12 header-tooltip"
               data-for="toolkit-tooltip"
-              data-tip="<h3 className='icon-tooltip'>Languages & Frameworks</h3>"
+              data-tip="<h3 className='icon-tooltip'>Front-end tools</h3>"
             >
               <ReactTooltip id="toolkit-tooltip" effect="solid" html={true} />
-              <i className="toolkit-icon fas fa-code text-center w-100 mb-md-4 mb-2" />
+              <i className="toolkit-icon fas fa-magic text-center w-100 mb-md-4 mb-2" />
               <div className="toolkit mb-4 mb-md-0">
                 <div className="main-tools">
-                  <p className="text-center">MERN・Ruby On Rails・Wordpress</p>
+                  <p className="text-center">React.js・Next.js・Gatsby.js</p>
                 </div>
                 <div className="misc-tools">
                   <p className="text-center">
-                    HTML・Vanilla
-                    JS・Python・Ruby・Gatsby.js・JQuery・AJAX・regex・bash
-                    shell・git・npm・yarn
+                    HTML・CSS・SCSS/SASS・CSS
+                    Modules・JavaScript・Tailwind・Bootstrap・Figma
                   </p>
                 </div>
               </div>
@@ -67,17 +66,16 @@ const Code = () => {
             <div
               className="col-md-4 col-sm-5 header-tooltip"
               data-for="toolkit-tooltip"
-              data-tip="<h3 className='icon-tooltip'>Front-end tools</h3>"
+              data-tip="<h3 className='icon-tooltip'>Back-end tools</h3>"
             >
-              <i className="toolkit-icon fas fa-magic text-center w-100 mb-md-4 mb-2" />
+              <i className="toolkit-icon fas fa-database text-center w-100 mb-md-4 mb-2" />
               <div className="toolkit mb-4 mb-md-0">
                 <div className="main-tools">
-                  <p className="text-center">React.js・CSS・Bootstrap</p>
+                  <p className="text-center">Ruby On Rails・GraphQL・Prisma</p>
                 </div>
                 <div className="misc-tools">
                   <p className="text-center">
-                    SCSS/SASS・Figma・React Spring・Sip・Gimp・Inkscape・Adobe
-                    Photoshop CC・Adobe Lightroom CC
+                    MongoDB・SQL・PostgreSQL・Express.JS・JWT・Stripe
                   </p>
                 </div>
               </div>
@@ -85,16 +83,16 @@ const Code = () => {
             <div
               className="col-md-4 col-sm-5 header-tooltip"
               data-for="toolkit-tooltip"
-              data-tip="<h3 className='icon-tooltip'>Back-end tools</h3>"
+              data-tip="<h3 className='icon-tooltip'>Devops & workflow</h3>"
             >
-              <i className="toolkit-icon fas fa-database text-center w-100 mb-md-4 mb-2" />
+              <i className="toolkit-icon fas fa-project-diagram text-center w-100 mb-md-4 mb-2" />
               <div className="toolkit mb-5 mb-md-0">
                 <div className="main-tools">
-                  <p className="text-center">Node.js・Express.js・Rails</p>
+                  <p className="text-center">Git・Docker・AWS</p>
                 </div>
                 <div className="misc-tools">
                   <p className="text-center">
-                    MongoDB・SQL・Pandas・bs4・Heroku・Firebase・Netlify・Cloudinary・Mapbox・Stripe
+                    Heroku・Netlify・Firebase・Cloudinary・Npm・Yarn・Jest・RSpec・Bash・Shell・Jira
                   </p>
                 </div>
               </div>

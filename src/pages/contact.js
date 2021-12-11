@@ -19,7 +19,6 @@ const Contact = () => {
           />
         </div>
       </div>
-
       <div
         className="px-sm-5 px-3 pt-xl-2 pb-xl-1"
         data-sal="fade"
@@ -27,13 +26,7 @@ const Contact = () => {
         data-sal-duration="1000"
         data-sal-easing="ease"
       >
-        <h3 className="text-center mt-5 text-large">
-          Available for hire{" "}
-          <span role="img" aria-label="peace emoji">
-            ✌️
-          </span>
-        </h3>
-        <h3 className="justify-max-xs text-center mb-md-4 mb-3 text-large">
+        <h3 className="justify-max-xs text-center  mt-5 text-large">
           For any inquiries, please{" "}
           <span className="email-link clicky-effect">
             <a
@@ -43,10 +36,13 @@ const Contact = () => {
             >
               email me here
             </a>
+          </span>{" "}
+          <span role="img" aria-label="peace emoji">
+            ✌️
           </span>
-          .
         </h3>
       </div>
+
       <div
         className="profile-card-container"
         data-sal="fade"
