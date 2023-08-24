@@ -4,7 +4,7 @@
 
 ## About this project
 
-Gatsby.js app designed and built to showcase cv, projects, technical skills, and more.
+Website designed and built from ground up to showcase cv, projects, technical skills, and more.
 
 ## Technologies used
 
