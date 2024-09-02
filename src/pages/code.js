@@ -44,20 +44,21 @@ const Code = () => {
             data-sal-easing="ease"
           >
             <div
-              className="col-md-4 col-sm-12 header-tooltip"
+              className="col-md-4 col-sm-5 header-tooltip"
               data-for="toolkit-tooltip"
-              data-tip="<h3 className='icon-tooltip'>Front-end tools</h3>"
+              data-tip="<h3 className='icon-tooltip'>Frameworks & Libraries</h3>"
             >
               <ReactTooltip id="toolkit-tooltip" effect="solid" html={true} />
-              <i className="toolkit-icon fas fa-magic text-center w-100 mb-md-4 mb-2" />
+
+              <i className="toolkit-icon fas fa-layer-group text-center w-100 mb-md-4 mb-2" />
               <div className="toolkit mb-4 mb-md-0">
                 <div className="main-tools">
-                  <p className="text-center">React.js・Next.js・Gatsby.js</p>
+                  <p className="text-center">React.js・Node.js・Express</p>
                 </div>
                 <div className="misc-tools">
                   <p className="text-center">
-                    HTML・CSS・SCSS/SASS・CSS
-                    Modules・JavaScript・Tailwind・Bootstrap・Figma
+                    Redux・Next.js・Redux・GraphQL・Tailwind CSS・Styled
+                    Components・Ruby on Rails
                   </p>
                 </div>
               </div>
@@ -66,33 +67,37 @@ const Code = () => {
             <div
               className="col-md-4 col-sm-5 header-tooltip"
               data-for="toolkit-tooltip"
-              data-tip="<h3 className='icon-tooltip'>Back-end tools</h3>"
+              data-tip="<h3 className='icon-tooltip'>Languages & Technologies</h3>"
             >
-              <i className="toolkit-icon fas fa-database text-center w-100 mb-md-4 mb-2" />
+              <i className="toolkit-icon fas fa-code text-center w-100 mb-md-4 mb-2" />
               <div className="toolkit mb-4 mb-md-0">
                 <div className="main-tools">
-                  <p className="text-center">Ruby On Rails・GraphQL・Prisma</p>
+                  <p className="text-center">JavaScript・TypeScript・Ruby</p>
                 </div>
                 <div className="misc-tools">
                   <p className="text-center">
-                    MongoDB・SQL・PostgreSQL・Express.JS・JWT・Stripe
+                    HTML・CSS・SASS・SQL・GraphQL・REST
+                    APIs・Git・PostgreSQL・MongoDB
                   </p>
                 </div>
               </div>
             </div>
+
             <div
               className="col-md-4 col-sm-5 header-tooltip"
               data-for="toolkit-tooltip"
-              data-tip="<h3 className='icon-tooltip'>Devops & workflow</h3>"
+              data-tip="<h3 className='icon-tooltip'>Product Leadership & Soft Skills</h3>"
             >
-              <i className="toolkit-icon fas fa-project-diagram text-center w-100 mb-md-4 mb-2" />
+              <i className="toolkit-icon fas fa-users text-center w-100 mb-md-4 mb-2" />
               <div className="toolkit mb-5 mb-md-0">
                 <div className="main-tools">
-                  <p className="text-center">Git・Docker・AWS</p>
+                  <p className="text-center">
+                    Mentoring・Team Leadership・Agile
+                  </p>
                 </div>
                 <div className="misc-tools">
                   <p className="text-center">
-                    Heroku・Netlify・Firebase・Cloudinary・Npm・Yarn・Jest・RSpec・Bash・Shell・Jira
+                    Project Management・UI design Wireframing・Web Accessibility
                   </p>
                 </div>
               </div>
@@ -291,7 +296,7 @@ const Code = () => {
                 title="Journal L'intéret, HEC Montréal"
                 site="http://www.journalinteret.com/"
                 date="2019"
-                description="Redesigned HEC Montréal’s student newspaper using a Wordpress and custom CSS. Managed PHP updates as well as conflicts during theme and plugin installations. Implemented back-end features such as an article rating system and an email feedback form. Used google analytics extensively through the year to make webtraffic reports."
+                description="Redesigned HEC Montréal’s student newspaper from the ground up using Wordpress and custom CSS. Managed PHP updates as well as conflicts during theme and plugin installations. Implemented back-end features such as an article rating system and an email feedback form. Used google analytics extensively through the year to make webtraffic reports."
                 icons={["wordpress.png", "css.png"]}
                 borderBottomLight
               />

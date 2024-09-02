@@ -3,9 +3,7 @@ import "../styles/imports.scss"
 
 const FourOFour = () => {
   useEffect(() => {
-    console.log("yo")
     setTimeout(() => {
-      console.log("yo")
       document.body.style.opacity = 1
       document.body.classList.add("fade-in")
     }, 150)
