@@ -1,14 +1,14 @@
-# My web development portfolio
+# Web Development Portfolio
 
-👉 [nicolasfraisse.com](https://www.nicolasfraisse.com)
+[Visit nicolasfraisse.com](https://www.nicolasfraisse.com)
 
-## About this project
+## About
 
-Website designed and built from the ground up to showcase my projects, technical skills, and more.
+A website designed and built from scratch to showcase my projects, technical skills, and other interests.
 
-## Technologies used
+## Technologies
 
-- [React](https://reactjs.org/) for custom dynamic components
-- [Gatsby](https://www.gatsbyjs.com/) framework
-- [React Spring](https://www.react-spring.io/) for some animations
-- [Netlify](https://www.netlify.com/) for hosting
+- [React](https://reactjs.org/) - Custom dynamic components
+- [Gatsby](https://www.gatsbyjs.com/) - Static site generator
+- [React Spring](https://www.react-spring.io/) - Animations
+- [Netlify](https://www.netlify.com/) - Hosting
