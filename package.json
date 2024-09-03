@@ -1,9 +1,12 @@
 {
   "name": "Nicolas-Fraisse-web-development-portfolio",
   "private": true,
-  "description": "web development portfolio · creative freelance developer based in montreal · get in touch at info@nicolasfraisse.com",
+  "description": "web development portfolio · fullstack engineer based in montreal · get in touch at info@nicolasfraisse.com",
   "version": "0.1.0",
   "license": "MIT",
+    "engines": {
+    "node": "14.x"
+  },
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
