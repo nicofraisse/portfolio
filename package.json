@@ -4,9 +4,6 @@
   "description": "web development portfolio · fullstack engineer based in montreal · get in touch at info@nicolasfraisse.com",
   "version": "0.1.0",
   "license": "MIT",
-    "engines": {
-    "node": "14.x"
-  },
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
