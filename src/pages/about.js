@@ -3,11 +3,11 @@ import Separator from "../components/separator.js"
 import "../styles/imports.scss"
 
 export default () => (
-  <div className="about pt-4 pl-lg-5 pr-lg-5 pl-sm-4 pr-sm-4 pl-2 pr-2 pb-5">
+  <div className="about pt-4 px-2 px-sm-4 px-lg-5 pb-5">
     <div id="invisibleScrollLocation"></div>
     <div className="container-lg">
       <div className="row">
-        <div className="col-md-12 pr-lg-5 pr-md-4">
+        <div className="col-md-12 pr-md-4 pr-lg-5">
           <div
             data-sal="fade"
             data-sal-delay="0"
@@ -29,50 +29,29 @@ export default () => (
             data-sal-easing="ease"
           >
             <p className="text-justify">
-              As a full-stack web developer with a focus on frontend
-              development, I bring ideas to life through code. My day-to-day
-              activities involve:
+              As a full-stack web developer with a passion for product creation,
+              I bring ideas to life through code and design. My work involves:
             </p>
             <ul className="text-list">
               <li>
-                Architecting and implementing user-facing features using modern
-                JavaScript frameworks, primarily React
+                Transforming concepts into user-friendly web applications using
+                modern JavaScript frameworks, primarily React
               </li>
               <li>
-                Designing and developing RESTful and GraphQL APIs to support
-                frontend functionality
+                Designing and implementing both frontend interfaces and backend
+                APIs to create cohesive, functional products
+              </li>
+              <li>
+                Collaborating with designers and stakeholders to craft intuitive
+                user experiences and visually appealing interfaces
               </li>
               <li>
                 Optimizing application performance and ensuring cross-browser
                 compatibility
               </li>
               <li>
-                Collaborating with UI/UX designers to transform wireframes and
-                mockups into responsive, interactive interfaces
-              </li>
-              <li>
-                Implementing state management solutions to handle complex
-                application logic
-              </li>
-              <li>
-                Writing clean, maintainable, and well-documented code adhering
-                to best practices and coding standards
-              </li>
-              <li>
-                Conducting code reviews and mentoring junior developers to
-                elevate team skills and code quality
-              </li>
-              <li>
-                Integrating third-party services and APIs to extend application
-                functionality
-              </li>
-              <li>
-                Implementing automated testing strategies to ensure application
-                reliability and reduce bugs
-              </li>
-              <li>
-                Participating in agile development processes, including sprint
-                planning and retrospectives
+                Writing clean, maintainable code and conducting code reviews to
+                elevate team skills and product quality
               </li>
             </ul>
           </div>
@@ -83,29 +62,31 @@ export default () => (
             data-sal-easing="ease"
           >
             <p className="text-justify mt-4">
-              Beyond my core responsibilities, I'm passionate about:
+              Beyond just coding, I'm passionate about:
             </p>
             <ul className="text-list">
               <li>
-                Exploring emerging web technologies and their potential
-                applications in real-world scenarios
+                Creating products focusing on both technical implementation and
+                user-centered design
               </li>
               <li>
-                Optimizing development workflows and tooling to increase team
-                productivity
+                Understanding user emotions and needs to deliver empathetic,
+                impactful digital experiences
               </li>
               <li>
-                Advocating for accessibility and inclusive design in web
-                applications
+                Exploring emerging technologies and their potential to solve
+                real-world problems
               </li>
               <li>
-                Continuously refining my skills in full-stack development, with
-                a particular interest in serverless architectures and
-                microservices
+                Optimizing development workflows to increase team productivity
               </li>
               <li>
-                Contributing to open-source projects and staying engaged with
-                the developer community
+                Advocating for accessibility and inclusive design in all
+                projects
+              </li>
+              <li>
+                Continuously expanding my skills in both technical development
+                and product strategy
               </li>
             </ul>
           </div>
