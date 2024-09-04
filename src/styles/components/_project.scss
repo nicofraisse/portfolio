@@ -2,7 +2,7 @@
   display: block;
   object-fit: cover;
   border-radius: 4px;
-  box-shadow: 0px 0px 24px rgba(0, 0, 0, .1);
+  box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.1);
 
   transition: 0.25s;
   &:hover {
@@ -19,7 +19,8 @@
 }
 
 .skill-icon img {
-  height: 40px;
+  max-height: 40px;
+  max-width: 50px;
   margin: 4px;
   filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.08));
 }
@@ -42,7 +43,7 @@
 @media (max-width: $LG) {
   .project-img {
     max-width: 36vw;
-    margin: 8px 1.5em 0 .5em;
+    margin: 8px 1.5em 0 0.5em;
   }
 }
 
@@ -71,7 +72,8 @@
     padding: 0 auto;
   }
 
-  .project ul, .source-center-mobile {
+  .project ul,
+  .source-center-mobile {
     text-align: center;
   }
 

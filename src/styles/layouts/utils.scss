@@ -1,5 +1,5 @@
 .push-higher {
-  margin-top: -50px;
+  margin-top: -30px;
 }
 
 .social-icon {
@@ -15,7 +15,8 @@
   user-select: none;
 }
 
-.no-select, .header-tooltip {
+.no-select,
+.header-tooltip {
   user-select: none;
 }
 
@@ -33,29 +34,28 @@
 }
 
 .profile-picture {
-  box-shadow: 0 0 30px rgba(0,0,0,0.1);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
   width: 100%;
 }
 
-.disabled-link, .disabled-link i {
+.disabled-link,
+.disabled-link i {
   cursor: default;
 }
 
 .text-color-shadow {
   position: relative;
   z-index: 100;
-  -webkit-transform: translate3d(0,0px,1000px);
+  -webkit-transform: translate3d(0, 0px, 1000px);
   transition: 0.3s;
   &:hover {
     text-shadow: none;
-    -webkit-transform: translate3d(0,-6px,1000px);
-
+    -webkit-transform: translate3d(0, -6px, 1000px);
   }
   cursor: default;
-  letter-spacing: .05em;
+  letter-spacing: 0.05em;
   user-select: none;
   cursor: default;
-
 }
 
 .date-section {
@@ -67,10 +67,10 @@
 }
 
 .err-layout {
-   background-color: #323442;
-   h1{
+  background-color: #323442;
+  h1 {
     margin: 0;
-   }
+  }
 }
 .err-card {
   background: rgb(252, 251, 247);
@@ -84,7 +84,6 @@
     }
   }
 }
-
 
 @media (max-width: $MD) {
   .profile-picture {
@@ -129,4 +128,3 @@
     display: block;
   }
 }
-

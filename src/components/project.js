@@ -16,12 +16,13 @@ const Project = props => {
       <img src={"/skill_icons/" + icon} alt={icon.split(".")[0]} />
     </li>
   ))
-  const reverse = props.reverse ? "reverse" : ""
   const borderBottomLight = props.borderBottomLight ? "border-bottom-light" : ""
 
   return (
     <div
-      className={`project d-flex mt-5 mb-0 mt-md-5 mb-md-5 pb-4 pb-md-0 ${reverse} ${borderBottomLight}`}
+      className={`project d-flex mt-5 mb-0 mt-md-5 mb-md-5 pb-4 pb-md-0 ${
+        props.reverse ? "reverse" : ""
+      } ${borderBottomLight}`}
     >
       <a
         href={props.site}

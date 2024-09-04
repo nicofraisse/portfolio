@@ -117,6 +117,7 @@ const Code = () => {
               <Separator transform="perspective(30px) rotateX(6deg) translate3d(0, 0, 8px)" />
             </div>
           </div>
+
           <div
             className="push-higher"
             data-sal="fade"
@@ -125,158 +126,32 @@ const Code = () => {
             data-sal-easing="ease"
           >
             <Project
-              img="incorpus.jpg"
-              title="inCORPUS"
-              site="https://www.in-corpus.com/"
-              date="2020"
+              img="poutinemania.png"
+              title="poutinemania.ca"
+              site="https://poutinemania.ca"
+              source="https://github.com/nicofraisse/poutine-mania"
+              date="2023"
               imgWidth="440px"
-              description="Creation of webpages & animations for a French tech company developing a training app for professional athletes."
-              icons={[
-                "gatsby.png",
-                "react.png",
-                "javascript.png",
-                "react-spring.png",
-                "html.png",
-                "css.png",
-                "sass.png",
-              ]}
-              borderBottomLight
-            />
-          </div>
-
-          <div
-            data-sal="fade"
-            data-sal-delay="0"
-            data-sal-duration="600"
-            data-sal-easing="ease"
-          >
-            <Project
-              img="portfolio2.jpg"
-              title="This Website"
-              site="#"
-              source="https://github.com/nicofraisse/nf"
-              date="2020"
-              imgWidth="400px"
-              description="I have designed and built my own portfolio as a single page application using the Gatsby.js react framework. Animations and other dynamic elements were implemented thanks to CSS transformations, CSS keyframes, react hooks, as well as the react sping library.
-                      <br>Tip: click the circle icon at the right of the navbar to toggle dark mode!"
+              description="A social platform for poutine lovers to discover, review, and share their poutine experiences. Features an interactive map for finding nearby dishes with useful filtering options. Join us now to make your own top 10 and show off your poutine connoisseurship!"
               icons={[
                 "react.png",
-                "gatsby.png",
+                "nodejs.png",
+                "mongodb.svg",
                 "javascript.png",
                 "html.png",
                 "css.png",
-                "sass.png",
-                "bootstrap.png",
-                "netlify.png",
+                "tailwind.png",
+                "jwt.png",
+                "oauth.png",
+                "vercel.svg",
               ]}
-              noSite
               borderBottomLight
               reverse
             />
           </div>
 
-          <div
-            data-sal="fade"
-            data-sal-delay="0"
-            data-sal-duration="600"
-            data-sal-easing="ease"
-          >
-            <Project
-              img="snake.png"
-              title="Drunk snake"
-              imgWidth="400px"
-              site="https://snek-70f00.web.app/"
-              source="https://github.com/nicofraisse/snek"
-              date="2020"
-              description="A snake game with a twist. Desktop only 🖥"
-              icons={["javascript.png", "html.png", "css.png", "firebase.png"]}
-            />
-          </div>
-
-          <div
-            data-sal="fade"
-            data-sal-delay="0"
-            data-sal-duration="600"
-            data-sal-easing="ease"
-          >
-            <Project
-              img="reaction2.png"
-              title="Reflex Tester"
-              imgWidth="400px"
-              site="https://reflex-game-41594.web.app/"
-              source="https://github.com/nicofraisse/react-reflex-tester"
-              date="2020"
-              description="Test your reflexes! Click on the square as soon as it becomes red. It will randomly change color every 1 to 10 seconds, and the test lasts for 1 minute. After playing, view the leaderboard to see how you compare!
-                    <br>
-                    The app's mechanics built with react, and the player score historical data is posted and fetched using Firebase."
-              icons={[
-                "react.png",
-                "javascript.png",
-                "html.png",
-                "css.png",
-                "firebase.png",
-              ]}
-              reverse
-            />
-          </div>
-
-          <div
-            data-sal="fade"
-            data-sal-delay="0"
-            data-sal-duration="600"
-            data-sal-easing="ease"
-          >
-            <Project
-              img="piano-quiz.png"
-              title="Piano Quiz"
-              imgWidth="400px"
-              site="https://piano-quiz-39c0d.web.app/"
-              source="hhttps://github.com/nicofraisse/piano-quiz"
-              date="2020"
-              description="An interactive quiz app to test and train a musician's relative pitch. Play the existing games, or create your own awesome quizzes to share with friends! "
-              icons={[
-                "react.png",
-                "javascript.png",
-                "html.png",
-                "css.png",
-                "firebase.png",
-              ]}
-            />
-          </div>
-
-          <div
-            data-sal="fade"
-            data-sal-delay="0"
-            data-sal-duration="600"
-            data-sal-easing="ease"
-          >
-            <Project
-              img="bandwizard.jpg"
-              title="BandWizard"
-              site="http://bandwizard.co/"
-              source="https://github.com/nicofraisse/bandwizard"
-              date="2019"
-              description='Is your band looking for a musician, or are you a musician looking for a band? BandWizard is a web application that matches musicians according to musical taste, geographical location, years of experience, and much more!
-                    <br><a class="link clicky-effect" href="https://youtu.be/gxGbLhHBCto?t=1292" target="_blank" rel="noopener noreferrer">View demo here</a>
-                    <br>
-                    This MVP has been designed, implemented and shipped to production in 10 days, using Ruby On Rails and MVC architecture (model, view, controller), as my final project for Le Wagon coding bootcamp.'
-              icons={[
-                "rails.png",
-                "postgresql.png",
-                "heroku.png",
-                "javascript.png",
-                "html.png",
-                "css.png",
-                "sass.png",
-                "bootstrap.png",
-                "figma.png",
-              ]}
-              reverse
-            />
-          </div>
-
-          <button onClick={() => handleClick()} className="btn-more">
-            View {moreCode ? "less" : "more"}
+          <button onClick={handleClick} className="btn-more">
+            View {moreCode ? "less" : "10 more"}
           </button>
 
           <animated.div
@@ -284,6 +159,168 @@ const Code = () => {
             className={moreCode ? "d-block" : "d-none"}
             style={animation}
           >
+            <div
+              data-sal="fade"
+              data-sal-delay="0"
+              data-sal-duration="600"
+              data-sal-easing="ease"
+            >
+              <Project
+                img="incorpus.jpg"
+                title="inCORPUS"
+                site="https://www.in-corpus.com/"
+                date="2020"
+                imgWidth="440px"
+                description="Creation of webpages & animations for a French tech company developing a training app for professional athletes."
+                icons={[
+                  "gatsby.png",
+                  "react.png",
+                  "javascript.png",
+                  "react-spring.png",
+                  "html.png",
+                  "css.png",
+                  "sass.png",
+                ]}
+                borderBottomLight
+              />
+            </div>
+
+            <div
+              data-sal="fade"
+              data-sal-delay="0"
+              data-sal-duration="600"
+              data-sal-easing="ease"
+            >
+              <Project
+                img="snake.png"
+                title="Drunk snake"
+                imgWidth="400px"
+                site="https://snek-70f00.web.app/"
+                source="https://github.com/nicofraisse/snek"
+                date="2020"
+                description="A snake game with a twist. Desktop only 🖥"
+                icons={[
+                  "javascript.png",
+                  "html.png",
+                  "css.png",
+                  "firebase.png",
+                ]}
+                reverse
+              />
+            </div>
+
+            <div
+              data-sal="fade"
+              data-sal-delay="0"
+              data-sal-duration="600"
+              data-sal-easing="ease"
+            >
+              <Project
+                img="reaction2.png"
+                title="Reflex Tester"
+                imgWidth="400px"
+                site="https://reflex-game-41594.web.app/"
+                source="https://github.com/nicofraisse/react-reflex-tester"
+                date="2020"
+                description="Test your reflexes! Click on the square as soon as it becomes red. It will randomly change color every 1 to 10 seconds, and the test lasts for 1 minute. After playing, view the leaderboard to see how you compare!
+                    <br>
+                    The app's mechanics built with react, and the player score historical data is posted and fetched using Firebase."
+                icons={[
+                  "react.png",
+                  "javascript.png",
+                  "html.png",
+                  "css.png",
+                  "firebase.png",
+                ]}
+              />
+            </div>
+
+            <div
+              data-sal="fade"
+              data-sal-delay="0"
+              data-sal-duration="600"
+              data-sal-easing="ease"
+            >
+              <Project
+                img="piano-quiz.png"
+                title="Piano Quiz"
+                imgWidth="400px"
+                site="https://piano-quiz-39c0d.web.app/"
+                source="hhttps://github.com/nicofraisse/piano-quiz"
+                date="2020"
+                description="An interactive quiz app to test and train a musician's relative pitch. Play the existing games, or create your own awesome quizzes to share with friends! "
+                icons={[
+                  "react.png",
+                  "javascript.png",
+                  "html.png",
+                  "css.png",
+                  "firebase.png",
+                ]}
+                reverse
+              />
+            </div>
+
+            <div
+              data-sal="fade"
+              data-sal-delay="0"
+              data-sal-duration="600"
+              data-sal-easing="ease"
+            >
+              <Project
+                img="portfolio2.jpg"
+                title="This Website"
+                site="#"
+                source="https://github.com/nicofraisse/nf"
+                date="2020"
+                imgWidth="400px"
+                description="I have designed and built my own portfolio as a single page application using the Gatsby.js react framework. Animations and other dynamic elements were implemented thanks to CSS transformations, CSS keyframes, react hooks, as well as the react sping library.
+                      <br>Tip: click the circle icon at the right of the navbar to toggle dark mode!"
+                icons={[
+                  "react.png",
+                  "gatsby.png",
+                  "javascript.png",
+                  "html.png",
+                  "css.png",
+                  "sass.png",
+                  "bootstrap.png",
+                  "netlify.png",
+                ]}
+                noSite
+                borderBottomLight
+              />
+            </div>
+
+            <div
+              data-sal="fade"
+              data-sal-delay="0"
+              data-sal-duration="600"
+              data-sal-easing="ease"
+            >
+              <Project
+                img="bandwizard.jpg"
+                title="BandWizard"
+                site="http://bandwizard.co/"
+                source="https://github.com/nicofraisse/bandwizard"
+                date="2019"
+                description='Is your band looking for a musician, or are you a musician looking for a band? BandWizard is a web application that matches musicians according to musical taste, geographical location, years of experience, and much more!
+                    <br><a class="link clicky-effect" href="https://youtu.be/gxGbLhHBCto?t=1292" target="_blank" rel="noopener noreferrer">View demo here</a>
+                    <br>
+                    This MVP has been designed, implemented and shipped to production in 10 days, using Ruby On Rails and MVC architecture (model, view, controller), as my final project for Le Wagon coding bootcamp.'
+                icons={[
+                  "rails.png",
+                  "postgresql.png",
+                  "heroku.png",
+                  "javascript.png",
+                  "html.png",
+                  "css.png",
+                  "sass.png",
+                  "bootstrap.png",
+                  "figma.png",
+                ]}
+                reverse
+              />
+            </div>
+
             <div
               data-sal="fade"
               data-sal-delay="0"

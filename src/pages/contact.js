@@ -30,7 +30,7 @@ const Contact = () => {
           For any inquiries, please{" "}
           <span className="email-link clicky-effect">
             <a
-              href="mailto:info@nicolasfraisse.com"
+              href="mailto:ni.fraisse@gmail.com"
               target="_blank"
               rel="noopener noreferrer"
             >

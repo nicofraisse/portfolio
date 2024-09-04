@@ -21,20 +21,20 @@ const Index = () => {
         />
         <meta
           name="description"
-          content="web development portfolio · creative freelance developer based in montreal · get in touch at info@nicolasfraisse.com"
+          content="web development portfolio · creative full-stack engineer based in montreal · get in touch at ni.fraisse@gmail.com"
         />
         <meta property="og:title" content="code by @nicofraisse" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://nicolasfraisse.com" />
         <meta
           property="og:description"
-          content="web development portfolio · creative freelance developer based in montreal · get in touch at info@nicolasfraisse.com"
+          content="web development portfolio · creative full-stack engineer based in montreal · get in touch at ni.fraisse@gmail.com"
         />
         <meta property="fb:app_id" content="195304371816649" />
         <meta name="twitter:title" content="code by @nicofraisse" />
         <meta
           name="twitter:description"
-          content="web development portfolio · creative freelance developer based in montreal · get in touch at info@nicolasfraisse.com"
+          content="web development portfolio · creative full-stack engineer based in montreal · get in touch at ni.fraisse@gmail.com"
         />
         <meta
           name="twitter:image"
