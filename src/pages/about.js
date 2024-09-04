@@ -62,7 +62,7 @@ export default () => (
             data-sal-easing="ease"
           >
             <p className="text-justify mt-4">
-              Beyond just coding, I'm passionate about:
+              Beyond simply coding, I'm passionate about:
             </p>
             <ul className="text-list">
               <li>

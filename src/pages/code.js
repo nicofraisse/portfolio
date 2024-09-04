@@ -134,16 +134,14 @@ const Code = () => {
               imgWidth="440px"
               description="A social platform for poutine lovers to discover, review, and share their poutine experiences. Features an interactive map for finding nearby dishes with useful filtering options. Join us now to make your own top 10 and show off your poutine connoisseurship!"
               icons={[
+                "html-css-javascript.png",
                 "react.png",
-                "nodejs.png",
-                "mongodb.svg",
-                "javascript.png",
-                "html.png",
-                "css.png",
                 "tailwind.png",
+                "nodejs.png",
+                "mongodb.png",
+                "vercel.png",
                 "jwt.png",
                 "oauth.png",
-                "vercel.svg",
               ]}
               borderBottomLight
               reverse
@@ -173,12 +171,10 @@ const Code = () => {
                 imgWidth="440px"
                 description="Creation of webpages & animations for a French tech company developing a training app for professional athletes."
                 icons={[
+                  "html-css-javascript.png",
                   "gatsby.png",
                   "react.png",
-                  "javascript.png",
                   "react-spring.png",
-                  "html.png",
-                  "css.png",
                   "sass.png",
                 ]}
                 borderBottomLight
@@ -199,12 +195,7 @@ const Code = () => {
                 source="https://github.com/nicofraisse/snek"
                 date="2020"
                 description="A snake game with a twist. Desktop only 🖥"
-                icons={[
-                  "javascript.png",
-                  "html.png",
-                  "css.png",
-                  "firebase.png",
-                ]}
+                icons={["html-css-javascript.png", "firebase.png"]}
                 reverse
               />
             </div>
@@ -225,13 +216,7 @@ const Code = () => {
                 description="Test your reflexes! Click on the square as soon as it becomes red. It will randomly change color every 1 to 10 seconds, and the test lasts for 1 minute. After playing, view the leaderboard to see how you compare!
                     <br>
                     The app's mechanics built with react, and the player score historical data is posted and fetched using Firebase."
-                icons={[
-                  "react.png",
-                  "javascript.png",
-                  "html.png",
-                  "css.png",
-                  "firebase.png",
-                ]}
+                icons={["html-css-javascript.png", "react.png", "firebase.png"]}
               />
             </div>
 
@@ -249,13 +234,7 @@ const Code = () => {
                 source="hhttps://github.com/nicofraisse/piano-quiz"
                 date="2020"
                 description="An interactive quiz app to test and train a musician's relative pitch. Play the existing games, or create your own awesome quizzes to share with friends! "
-                icons={[
-                  "react.png",
-                  "javascript.png",
-                  "html.png",
-                  "css.png",
-                  "firebase.png",
-                ]}
+                icons={["html-css-javascript.png", "react.png", "firebase.png"]}
                 reverse
               />
             </div>
@@ -276,11 +255,9 @@ const Code = () => {
                 description="I have designed and built my own portfolio as a single page application using the Gatsby.js react framework. Animations and other dynamic elements were implemented thanks to CSS transformations, CSS keyframes, react hooks, as well as the react sping library.
                       <br>Tip: click the circle icon at the right of the navbar to toggle dark mode!"
                 icons={[
+                  "html-css-javascript.png",
                   "react.png",
                   "gatsby.png",
-                  "javascript.png",
-                  "html.png",
-                  "css.png",
                   "sass.png",
                   "bootstrap.png",
                   "netlify.png",
@@ -307,12 +284,10 @@ const Code = () => {
                     <br>
                     This MVP has been designed, implemented and shipped to production in 10 days, using Ruby On Rails and MVC architecture (model, view, controller), as my final project for Le Wagon coding bootcamp.'
                 icons={[
+                  "html-css-javascript.png",
                   "rails.png",
                   "postgresql.png",
                   "heroku.png",
-                  "javascript.png",
-                  "html.png",
-                  "css.png",
                   "sass.png",
                   "bootstrap.png",
                   "figma.png",
@@ -389,12 +364,10 @@ const Code = () => {
                 date="2019"
                 description='"Does your life suck? Rent a new one and be someone else!"<br>Rent My Life is a parodical Airbnb clone that was designed, implemented and shipped to production in 5 days as part of the Le Wagon curriculum. It was built using Ruby On Rails and MVC architecture (model, view, controller).'
                 icons={[
+                  "html-css-javascript.png",
                   "rails.png",
                   "postgresql.png",
                   "heroku.png",
-                  "javascript.png",
-                  "html.png",
-                  "css.png",
                   "sass.png",
                   "figma.png",
                 ]}
