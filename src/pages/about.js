@@ -33,10 +33,10 @@ export default () => (
               <span className="value-header">
                 Big Picture Focus in Every Detail.
               </span>{" "}
-              Even in the smallest tasks, I always stay connected to the broader
-              goal of delivering a great product. This mindset drives motivation
-              and ensures that every piece contributes meaningfully to the final
-              result.
+              Even the smallest tasks should be connected with the broader goal
+              of delivering a great product. Having this mindset drives
+              motivation and ensures that every piece of work contributes
+              meaningfully to the product's vision.
             </p>
           </div>
 
@@ -50,10 +50,9 @@ export default () => (
               <span className="value-header">
                 UI/UX as an Engineering Challenge.
               </span>{" "}
-              I see UI and UX as technical problems, not just creative
-              endeavors. Organizing complex information and features in a
-              simple, intuitive way for the user is more about science than art,
-              requiring both precision and strategy.
+              I tackle UI and UX as technical problems, not artistic ones.
+              Organizing complex information and features in an intuitive way
+              requires being rooted in user-centered design principles.
             </p>
           </div>
 
@@ -64,11 +63,10 @@ export default () => (
             data-sal-easing="ease"
           >
             <p>
-              <span className="value-header">Empathy-Driven Design.</span>{" "}
-              Designing with empathy for the user is essential. I strive to see
-              products through the user’s eyes, understanding their behavior,
-              needs, and first impressions, while creating a personalized
-              experience that goes beyond the generic.
+              <span className="value-header">Empathy-Driven Design.</span> By
+              seeing products through the user’s eyes, understanding their
+              behavior, needs, emotions, and first impressions, we can create a
+              personalized experience that goes beyond the generic.
             </p>
           </div>
           <div
@@ -83,24 +81,8 @@ export default () => (
               </span>{" "}
               The quality of a project starts with clear decision-making. It’s
               not about doing more but making sure the right things are done
-              well. Effective solutions come from prioritizing impactful work,
-              not just output.
-            </p>
-          </div>
-          <div
-            data-sal="fade"
-            data-sal-delay="0"
-            data-sal-duration="1000"
-            data-sal-easing="ease"
-          >
-            <p>
-              <span className="value-header">
-                Balancing Creativity and Functionality.
-              </span>{" "}
-              While I appreciate the beauty in creative solutions, I believe
-              functionality should always take precedence. My goal is to blend
-              technical excellence with thoughtful design that serves the user
-              and the product’s purpose.
+              well. Success comes from prioritizing impactful work, not just
+              output.
             </p>
           </div>
 
@@ -114,10 +96,10 @@ export default () => (
               <span className="value-header">
                 Patience in Mentorship & Teaching.
               </span>{" "}
-              Teaching others not only helps them grow but challenges and
-              strengthens my own understanding. I believe that by explaining
-              complex concepts simply, I improve my own skills and cultivate
-              continuous learning.
+              Teaching others not only helps them grow, but it also strengthens
+              our own understanding. By setting aside a little time each day to
+              help someone out, we create an environment of continuous learning
+              where both sides benefit and see the effects compound over time.
             </p>
           </div>
 
