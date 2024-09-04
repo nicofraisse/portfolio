@@ -33,10 +33,10 @@ export default () => (
               <span className="value-header">
                 Big Picture Focus in Every Detail.
               </span>{" "}
-              Even the smallest tasks should be connected with the broader goal
-              of delivering a great product. Having this mindset drives
-              motivation and ensures that every piece of work contributes
-              meaningfully to the product's vision.
+              Even the smallest tasks should be approached with the broader goal
+              of realizing the product's vision. I believe this mindset drives
+              motivation and ensures that every piece of work leads to a
+              meaningful outcome.
             </p>
           </div>
 
@@ -94,12 +94,12 @@ export default () => (
           >
             <p>
               <span className="value-header">
-                Patience in Mentorship & Teaching.
+                Code as a Means, Not the Goal.
               </span>{" "}
-              Teaching others not only helps them grow, but it also strengthens
-              our own understanding. By setting aside a little time each day to
-              help someone out, we create an environment of continuous learning
-              where both sides benefit and see the effects compound over time.
+              Code is one of many tools to build a product, which only matters
+              insofar as it delivers value to people. Therefore, I'm open to
+              using any tool or method - AI, open-source, or custom code - that
+              best serves the project's goals.
             </p>
           </div>
 
@@ -111,12 +111,12 @@ export default () => (
           >
             <p>
               <span className="value-header">
-                Code as a Means, Not the Goal.
+                Patience in Mentorship & Teaching.
               </span>{" "}
-              Code is one of many tools to build a product, which only matters
-              insofar as it delivers value to people. Therefore, I'm open to
-              using any tool or method - AI, open-source, or custom code - that
-              best serves the product vision.
+              Teaching others not only helps them grow, but it also strengthens
+              our own understanding. By setting aside a little time each day to
+              help someone out, we create an environment of continuous learning
+              where both sides benefit and see the effects compound over time.
             </p>
           </div>
         </div>
