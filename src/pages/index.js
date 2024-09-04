@@ -45,9 +45,9 @@ const Index = () => {
       <Main>
         <span id="top"></span>
         <Intro />
+        <About />
         <Code />
         <Photography />
-        <About />
         <Contact />
       </Main>
     </div>

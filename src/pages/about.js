@@ -90,6 +90,15 @@ export default () => (
               </li>
             </ul>
           </div>
+
+          <a
+            href="mailto:ni.fraisse@gmail.com"
+            className="link clicky-effect"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Full CV by request
+          </a>
         </div>
       </div>
     </div>

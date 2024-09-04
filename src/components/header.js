@@ -169,6 +169,24 @@ const Header = ({ onClickity }) => {
             <div className="d-flex align-items-center" id="nav-links">
               <Link
                 activeClass="active-link"
+                className="mx-md-1 navlink clicky-effect"
+                id="aboutlink"
+                to="about"
+                spy={true}
+                smooth={true}
+                offset={-100}
+                duration={1000}
+                onClick={() => {
+                  setTimeout(() => {
+                    console.log("hki")
+                    window.scrollBy(0, 2)
+                  }, 1050)
+                }}
+              >
+                about
+              </Link>
+              <Link
+                activeClass="active-link"
                 className="mx-md-2 navlink clicky-effect"
                 id="codelink"
                 to="code"
@@ -201,24 +219,7 @@ const Header = ({ onClickity }) => {
               >
                 photo
               </Link>
-              <Link
-                activeClass="active-link"
-                className="mx-md-1 navlink clicky-effect"
-                id="aboutlink"
-                to="about"
-                spy={true}
-                smooth={true}
-                offset={-100}
-                duration={1000}
-                onClick={() => {
-                  setTimeout(() => {
-                    console.log("hki")
-                    window.scrollBy(0, 2)
-                  }, 1050)
-                }}
-              >
-                about
-              </Link>
+
               <Link
                 activeClass="active-link"
                 className="mx-md-1 navlink clicky-effect"
@@ -256,6 +257,23 @@ const Header = ({ onClickity }) => {
           >
             <Link
               activeClass="active-link"
+              className="mx-md-1 navlink clicky-effect"
+              id="aboutlink-mobile"
+              to="about"
+              spy={true}
+              smooth={true}
+              offset={-100}
+              duration={1000}
+              onClick={() => {
+                setTimeout(() => {
+                  window.scrollBy(0, 2)
+                }, 1050)
+              }}
+            >
+              about
+            </Link>
+            <Link
+              activeClass="active-link"
               className="mx-md-2 navlink clicky-effect"
               id="codelink-mobile"
               to="code"
@@ -288,23 +306,7 @@ const Header = ({ onClickity }) => {
             >
               photo
             </Link>
-            <Link
-              activeClass="active-link"
-              className="mx-md-1 navlink clicky-effect"
-              id="aboutlink-mobile"
-              to="about"
-              spy={true}
-              smooth={true}
-              offset={-100}
-              duration={1000}
-              onClick={() => {
-                setTimeout(() => {
-                  window.scrollBy(0, 2)
-                }, 1050)
-              }}
-            >
-              about
-            </Link>
+
             <Link
               activeClass="active-link"
               className="mx-md-1 navlink clicky-effect"
