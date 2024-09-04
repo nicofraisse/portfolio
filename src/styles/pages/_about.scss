@@ -1,0 +1,29 @@
+.about p {
+  line-height: 1.5;
+  margin-bottom: 20px;
+  text-align: justify;
+  text-justify: inter-word;
+  word-spacing: normal;
+  hyphens: auto;
+}
+
+.value-header {
+  font-size: 24px;
+  font-weight: normal;
+  font-weight: bold;
+  margin-right: 4px;
+  @media (max-width: $MD) {
+    display: block;
+    font-size: 22px;
+  }
+}
+.cv-link {
+  margin-top: 2em;
+}
+
+@media (max-width: $MD) {
+  .cv-link {
+    margin-top: -0.5em;
+    margin-bottom: 2.5em;
+  }
+}

@@ -183,7 +183,7 @@ const Header = ({ onClickity }) => {
                   }, 1050)
                 }}
               >
-                about
+                values
               </Link>
               <Link
                 activeClass="active-link"
@@ -270,7 +270,7 @@ const Header = ({ onClickity }) => {
                 }, 1050)
               }}
             >
-              about
+              values
             </Link>
             <Link
               activeClass="active-link"

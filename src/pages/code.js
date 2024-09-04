@@ -104,6 +104,17 @@ const Code = () => {
             </div>
           </div>
 
+          <div className="d-flex justify-content-center cv-link">
+            <a
+              href="mailto:ni.fraisse@gmail.com"
+              className="link clicky-effect"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Full CV by request
+            </a>
+          </div>
+
           <div
             data-sal="fade"
             data-sal-delay="0"

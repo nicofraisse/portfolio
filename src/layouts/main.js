@@ -163,6 +163,9 @@ p, h3, i, .email-link a, .text-list {
   padding-bottom: 10px;
   transform: translate3d(0, 0, 1px);
   padding-bottom: 4px;
+  p {
+    margin-bottom: 20px;
+  }
 }
 
 .code-wrapper {
