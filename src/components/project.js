@@ -11,7 +11,7 @@ const Project = props => {
       className="skill-icon list-inline-item"
       data-html={true}
       data-delay-hide="200"
-      data-tip={`<span>${icon.split(".")[0].replaceAll("-", ", ")}</span>`}
+      data-tip={`<span>${icon.split(".")[0].replace(/-/g, ", ")}</span>`}
     >
       <img src={"/skill_icons/" + icon} alt={icon.split(".")[0]} />
     </li>
