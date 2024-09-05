@@ -13,7 +13,7 @@ const Footer = () => (
       data-sal-duration="500"
       data-sal-easing="ease"
     >
-      © Nicolas Fraisse | {new Date().getFullYear()}
+      Nicolas Fraisse © 2020–{new Date().getFullYear()}
     </p>
   </footer>
 )

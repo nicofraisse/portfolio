@@ -38,7 +38,7 @@ const Contact = () => {
             </a>
           </span>{" "}
           <span role="img" aria-label="peace emoji">
-            ✌️
+            ✨
           </span>
         </h3>
       </div>
@@ -62,12 +62,12 @@ const Contact = () => {
               <i className="fab fa-github social-icon"></i>
             </a>
             <a
-              href="https://www.instagram.com/nicofraisse/"
-              title="Instagram"
+              href="https://www.flickr.com/photos/129462013@N05/"
+              title="Flickr"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <i className="fab fa-instagram social-icon"></i>
+              <i className="fab fa-flickr social-icon"></i>
             </a>
             <a
               href="https://www.linkedin.com/in/nicolasfraisse/"
@@ -77,13 +77,14 @@ const Contact = () => {
             >
               <i className="fab fa-linkedin-in social-icon"></i>
             </a>
+
             <a
-              href="https://www.flickr.com/photos/129462013@N05/"
-              title="Flickr"
+              href="https://www.youtube.com/@nicofraisse"
+              title="Youtube"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <i className="fab fa-flickr social-icon"></i>
+              <i className="fab fa-youtube social-icon"></i>
             </a>
           </div>
         </div>

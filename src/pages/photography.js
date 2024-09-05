@@ -74,7 +74,7 @@ export default () => {
           />
         </div>
         <button onClick={() => handleMorePhotos()} className="btn-more">
-          View {morePhotos ? "less" : "more"}
+          Show {morePhotos ? "less" : "more"}
         </button>
         <animated.div
           id="other-photos"

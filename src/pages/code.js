@@ -160,7 +160,7 @@ const Code = () => {
           </div>
 
           <button onClick={handleClick} className="btn-more">
-            View {moreCode ? "less" : "10 more"}
+            Show {moreCode ? "less" : "10 more"}
           </button>
 
           <animated.div

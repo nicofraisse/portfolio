@@ -157,7 +157,7 @@ p, h3, i, .email-link a, .text-list {
 
 .about {
   background-color: ${props =>
-    props.theme.mode === "dark" ? dayCream : moonBlue};
+    props.theme.mode === "dark" ? dayCream : moonBlueSecondary};
   transition: 0.2s background-color;
   position: relative;
   padding-bottom: 10px;
@@ -182,13 +182,13 @@ p, h3, i, .email-link a, .text-list {
 
 .contact {
   background-color: ${props =>
-    props.theme.mode === "dark" ? dayCreamSecondary : moonBlueSecondary};
+    props.theme.mode === "dark" ? dayCreamSecondary : moonBlue};
   transition: 0.2s background-color;
 }
 
 #footer {
   background-color: ${props =>
-    props.theme.mode === "dark" ? dayCream : moonBlue};
+    props.theme.mode === "dark" ? dayCream : moonBlueSecondary};
   transition: 0.2s background-color;
 }
 
@@ -278,9 +278,9 @@ p, h3, i, .email-link a, .text-list {
 
 .profile-card {
   border: 1px solid ${props =>
-    props.theme.mode === "dark" ? "rgba(0, 0, 0, 0.12)" : moonBlue};
+    props.theme.mode === "dark" ? "rgba(0, 0, 0, 0.12)" : moonBlueSecondary};
   box-shadow: 10px 10px 0px ${props =>
-    props.theme.mode === "dark" ? "rgba(0, 0, 0, 0.12)" : moonBlue};
+    props.theme.mode === "dark" ? "rgba(0, 0, 0, 0.12)" : moonBlueSecondary};
   background-color: ${props =>
     props.theme.mode === "dark"
       ? "rgba(255, 255, 255, 0.5)"
