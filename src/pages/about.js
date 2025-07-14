@@ -14,7 +14,7 @@ export default () => (
             data-sal-duration="1000"
             data-sal-easing="ease"
           >
-            <h2 className="my-5 text-color-shadow">Mindset</h2>
+            <h2 className="my-5 text-color-shadow">Values</h2>
             <div id="sc4">
               <Separator
                 marginBottom="-56px"
