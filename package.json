@@ -26,7 +26,7 @@
     "gatsby-plugin-layout": "^1.2.3",
     "gatsby-plugin-manifest": "^2.4.13",
     "gatsby-plugin-react-helmet": "^3.3.5",
-    "gatsby-plugin-sass": "^2.2.1",
+    "gatsby-plugin-sass": "^3.0.0",
     "gatsby-plugin-scroll-reveal": "^0.0.7",
     "gatsby-plugin-transitions": "^2.1.6",
     "local-storage": "^2.0.0",
