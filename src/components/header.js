@@ -183,7 +183,7 @@ const Header = ({ onClickity }) => {
                   }, 1050)
                 }}
               >
-                values
+                mindset
               </Link>
               <Link
                 activeClass="active-link"
@@ -270,7 +270,7 @@ const Header = ({ onClickity }) => {
                 }, 1050)
               }}
             >
-              values
+              mindset
             </Link>
             <Link
               activeClass="active-link"

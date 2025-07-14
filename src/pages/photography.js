@@ -26,7 +26,7 @@ export default () => {
         data-sal-duration="1000"
         data-sal-easing="ease"
       >
-        <h2 className="text-color-shadow">Photography</h2>
+        <h2 className="text-color-shadow">Photo</h2>
         <div id="sc3">
           <Separator
             marginBottom="-44px"

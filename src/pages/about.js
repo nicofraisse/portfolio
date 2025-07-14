@@ -14,30 +14,13 @@ export default () => (
             data-sal-duration="1000"
             data-sal-easing="ease"
           >
-            <h2 className="my-5 text-color-shadow">Values</h2>
+            <h2 className="my-5 text-color-shadow">Mindset</h2>
             <div id="sc4">
               <Separator
                 marginBottom="-56px"
                 transform="perspective(48px) rotateX(18deg)"
               />
             </div>
-          </div>
-
-          <div
-            data-sal="fade"
-            data-sal-delay="0"
-            data-sal-duration="1000"
-            data-sal-easing="ease"
-          >
-            <p>
-              <span className="value-header">
-                Big Picture Focus in Every Detail.
-              </span>{" "}
-              Even the smallest tasks should be approached with the broader goal
-              of realizing the product's vision. I believe this mindset drives
-              motivation and ensures that every piece of work leads to a
-              meaningful outcome.
-            </p>
           </div>
 
           <div
@@ -79,10 +62,9 @@ export default () => (
               <span className="value-header">
                 Prioritize Decisions, Then Productivity.
               </span>{" "}
-              The quality of a project starts with clear decision-making. It’s
-              not about doing more but making sure the right things are done
-              well. Success comes from prioritizing impactful work, not just
-              output.
+              Real-world success comes from prioritizing the most impactful
+              work. It’s not about doing more but making sure the right things
+              are done well.
             </p>
           </div>
 
