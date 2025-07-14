@@ -4,7 +4,7 @@
 
 ## About
 
-A website designed and built from scratch to showcase my projects, technical skills, and other interests.
+Personal website to showcase my projects, technical skills, and other interests.
 
 ## Technologies
 
